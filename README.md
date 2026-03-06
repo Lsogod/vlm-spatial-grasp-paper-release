@@ -1,106 +1,130 @@
 # 基于视觉提示的具身智能空间感知增强方法研究
 
-本仓库用于对齐论文中的四类内容：`数据`、`方法`、`实验`、`结果`。
+本仓库按论文结构组织为四部分：`数据`、`方法`、`实验`、`结果`。
 
 - 方法工程：`vlm-spatial-grasp`
 - 论文复现与结果：`paper_release`
 
+## 快速跳转
+
+- 项目主页（GitHub Pages）：<https://lsogod.github.io/vlm-spatial-grasp-paper-release/>
+- 论文对齐说明（本页）：[README.md](README.md)
+- 复现实验说明：[paper_release/README.md](paper_release/README.md)
+- 方法工程说明：[vlm-spatial-grasp/README.md](vlm-spatial-grasp/README.md)
+- 跳转到数据内容：[1. 数据内容](#1-数据内容对应论文数据部分)
+- 跳转到实验映射：[3. 实验内容](#3-实验内容对应论文实验部分)
+- 跳转到结果摘要：[4. 结果内容](#4-结果内容对应论文结果部分)
+
 ## 1. 数据内容（对应论文数据部分）
 
-论文主评测数据位于：
+论文主评测数据：
 
 - `paper_release/data/dist_all`（160 个 `.npz` 样本）
 
-三域划分规则（与论文统计口径一致）：
+三域划分（与论文统计口径一致）：
 
 - `0-99` -> GraspNet-Desk
 - `100-129` -> Real-Desk
 - `130-159` -> Sim-Desk
 
-每个样本的核心字段（160/160 全覆盖）：
+每个样本核心字段（160/160）：
 
-- `image`：RGB 图像
-- `labeled_image`：可视化标注图
-- `instance_masks`：实例掩码集合
-- `results`：实例信息（`id/mask_index/bbox/centroid/area`）
-- `trajectories`：任务轨迹与金标准动作（JSON 字符串）
+- `image`、`labeled_image`
+- `instance_masks`、`results`
+- `trajectories`（任务轨迹与金标准动作）
 
-补充字段（仅少量样本存在）：
+补充字段（少量样本）：
 
 - `instruction`、`action`
 - `keypoints`、`keypoint_ids`、`keypoint_mask_indices`
 
-数据可视化样例：
+### 数据集示例图
 
-- `paper_release/data/dataset_vis/0-99_grid.png`
-- `paper_release/data/dataset_vis/100-129_grid.png`
-- `paper_release/data/dataset_vis/130-159_grid.png`
-- `paper_release/data/dataset_vis/summary.txt`
+| GraspNet-Desk | Real-Desk | Sim-Desk |
+|---|---|---|
+| ![GraspNet-Desk](paper_release/data/dataset_vis/0-99_grid.png) | ![Real-Desk](paper_release/data/dataset_vis/100-129_grid.png) | ![Sim-Desk](paper_release/data/dataset_vis/130-159_grid.png) |
 
-## 2. 方法内容
+示例图来源：`paper_release/data/dataset_vis/`
+
+## 2. 方法内容（对应论文方法部分）
 
 论文主方法（SVA + SVP + 闭环执行）在 `vlm-spatial-grasp`：
 
-- `vision_agent_v2.py`：结构化视觉锚点（SVA）与结构化视觉提示（SVP）主链路
-- `main_vlm.py`：端到端执行入口（支持 `VLM_METHOD=svp/qwen` 切换）
+- `vision_agent_v2.py`：结构化视觉锚点（SVA）+ 结构化视觉提示（SVP）主链路
+- `main_vlm.py`：端到端执行入口（支持 `VLM_METHOD=svp/qwen`）
 - `grasp_process.py`：抓取候选生成与筛选
 - `manipulator_grasp/`：MuJoCo 机械臂执行环境
 
 论文对比方法（基线）在 `paper_release/experiments`：
 
-- `qwen_batch_inference.py`：Qwen 基线
-- `gpt_batch_inference.py`：GPT 基线
-- `ours_svp_batch_inference.py`：本文方法批量推理
+- `ours_svp_batch_inference.py`
+- `qwen_batch_inference.py`
+- `gpt_batch_inference.py`
 
-## 3. 实验内容
+## 3. 实验内容（对应论文实验部分）
 
-### 3.1 输入与预测结果目录
+输入与预测目录：
 
 - 数据输入：`paper_release/data/dist_all`
-- 各方法预测：`paper_release/results/predictions_json/`
+- 预测结果：`paper_release/results/predictions_json/`
   - `ai_results`、`ai_results_4o`
   - `gpt-4o_results`、`gpt-5_results`
   - `qwen_plus_results_newGT`、`qwen_flash_results_newGT`
 
-### 3.2 论文表格对应关系
+论文表格与脚本映射：
 
-| 论文表号 | 表格含义 | 实验脚本 | 输出文件 |
+| 论文表号 | 表格含义 | 脚本 | 输出 |
 |---|---|---|---|
-| 表3-2 | 三域数据规模统计 | 按 `dist_all` 文件名前缀区间统计 | 数据划分统计口径 |
+| 表3-2 | 三域数据规模统计 | 按 `dist_all` 文件名前缀统计 | 数据划分统计口径 |
 | 表3-4 | 三域静态评估（命中率/偏差） | `paper_release/experiments/table3_3.py` | `paper_release/results/tables/table3_3_ai_results*/summary.csv` |
-| 表4-1 | Full 评测（Oracle-Action） | `paper_release/experiments/table4_1.py` | `paper_release/results/tables/table4_full.csv`、`table4_full_recomputed.csv` |
-| 表4-2 | Strict 补充评测（Supplementary） | `paper_release/experiments/table4_2.py` | `paper_release/results/tables/table4_2_strict.csv`、`table4_2_strict_recomputed.csv` |
+| 表4-1 | Full（Oracle-Action）主对比 | `paper_release/experiments/table4_1.py` | `paper_release/results/tables/table4_full*.csv` |
+| 表4-2 | Strict（Supplementary）一致性评估 | `paper_release/experiments/table4_2.py` | `paper_release/results/tables/table4_2_strict*.csv` |
 
-说明：脚本名 `table3_3.py` 是历史命名，当前用于生成论文中的表3-4对应结果。
+说明：`table3_3.py` 是历史脚本名，当前用于生成论文表3-4对应评估结果。
 
 ## 4. 结果内容（对应论文结果部分）
 
-论文主结果表（CSV）：
+### 4.1 表4-1（`table4_full_recomputed.csv` 摘要）
 
-- `paper_release/results/tables/table4_full.csv`
-- `paper_release/results/tables/table4_full_recomputed.csv`
-- `paper_release/results/tables/table4_2_strict.csv`
-- `paper_release/results/tables/table4_2_strict_recomputed.csv`
+| Method | A_hit_g | D_spatial_g_px | A_hit_p | D_spatial_p_px | A_joint |
+|---|---:|---:|---:|---:|---:|
+| E1-GPT-5 (Free-coordinate) | 0.342 | 46.299 | 0.785 | 10.032 | 0.423 |
+| E1-GPT-4o (Free-coordinate) | 0.605 | 30.022 | 0.794 | 8.554 | 0.640 |
+| E2-Qwen3-VL-Plus (Trained) | 0.785 | 29.901 | 0.897 | 10.767 | 0.805 |
+| E2-Qwen3-VL-Flash (Trained) | 0.737 | 28.634 | 0.844 | 21.678 | 0.757 |
+| E3-GPT-5 (SVP-Full, Ours) | 0.877 | 14.564 | 0.985 | 0.015 | 0.896 |
+| E3-GPT-4o (SVP-Full, Ours) | 0.708 | 21.513 | 0.776 | 2.202 | 0.721 |
 
-三域评估结果（表3-4对应）：
+### 4.2 表4-2（`table4_2_strict_recomputed.csv` 摘要）
 
-- `paper_release/results/tables/table3_3_ai_results/summary.csv`
-- `paper_release/results/tables/table3_3_ai_results_4o/summary.csv`
+| Method | InstrMatch | TrajSucc | ActAcc | CoordHit | JointSucc | AvgDev_px |
+|---|---:|---:|---:|---:|---:|---:|
+| E1-GPT-5 (Free-coordinate) | 1.000 | 0.328 | 1.000 | 0.423 | 0.795 | 39.677 |
+| E1-GPT-4o (Free-coordinate) | 1.000 | 0.595 | 1.000 | 0.640 | 0.872 | 26.050 |
+| E2-Qwen3-VL-Plus (Trained Coord) | 1.000 | 0.770 | 1.000 | 0.805 | 0.931 | 26.407 |
+| E2-Qwen3-VL-Flash (Trained Coord) | 1.000 | 0.716 | 0.995 | 0.754 | 0.910 | 28.024 |
+| E3-GPT-5 (SVP-Full, Ours) | 0.997 | 0.873 | 1.000 | 0.896 | 0.963 | 11.789 |
+| E3-GPT-4o (SVP-Full, Ours) | 1.000 | 0.672 | 0.993 | 0.721 | 0.894 | 17.205 |
 
-三域柱状图：
+### 4.3 三域结果图（表3-4对应）
 
-- `paper_release/results/tables/table3_3_ai_results_4o/bar_A_hit_g.png`
-- `paper_release/results/tables/table3_3_ai_results_4o/bar_A_hit_p.png`
-- `paper_release/results/tables/table3_3_ai_results_4o/bar_A_joint.png`
-- `paper_release/results/tables/table3_3_ai_results_4o/bar_D_spatial_g.png`
-- `paper_release/results/tables/table3_3_ai_results_4o/bar_D_spatial_p.png`
+| A_hit_g | A_hit_p | A_joint |
+|---|---|---|
+| ![A_hit_g](paper_release/results/tables/table3_3_ai_results_4o/bar_A_hit_g.png) | ![A_hit_p](paper_release/results/tables/table3_3_ai_results_4o/bar_A_hit_p.png) | ![A_joint](paper_release/results/tables/table3_3_ai_results_4o/bar_A_joint.png) |
 
-## 5. 非论文主表文件（保留用于调试）
+| D_spatial_g | D_spatial_p |
+|---|---|
+| ![D_spatial_g](paper_release/results/tables/table3_3_ai_results_4o/bar_D_spatial_g.png) | ![D_spatial_p](paper_release/results/tables/table3_3_ai_results_4o/bar_D_spatial_p.png) |
+
+完整结果文件目录：
+
+- `paper_release/results/tables/`
+- `paper_release/results/out_summary/`
+
+## 5. 非论文主表文件（调试保留）
 
 以下文件不作为论文主表对应项：
 
 - `paper_release/results/tables/table4_full_diag.csv`
 - `paper_release/results/tables/table4_full_recomputed_diag.csv`
 - `paper_release/results/tables/table3_4_*.csv`
-
-
