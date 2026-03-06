@@ -11,7 +11,13 @@
       --text: #1f2a37;
       --muted: #52606d;
       --primary: #0f766e;
+      --primary-light: #e6f7f5;
+      --accent: #6366f1;
+      --accent-light: #eef2ff;
       --line: #d9e2ec;
+      --success: #059669;
+      --warning: #d97706;
+      --danger: #dc2626;
     }
     * { box-sizing: border-box; }
     body {
@@ -21,144 +27,311 @@
       background: linear-gradient(180deg, #eef3f8 0%, #f8fafc 100%);
     }
     .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 48px; }
-    .hero {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 22px;
-      margin-bottom: 14px;
+
+    /* ─── Sticky Nav ─── */
+    .top-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      padding: 10px 0;
     }
-    h1 { font-size: 28px; margin: 0 0 8px; }
-    h2 { font-size: 22px; margin: 0 0 10px; }
-    p, li { line-height: 1.6; color: var(--text); }
-    .muted { color: var(--muted); }
+    .top-nav .inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 16px;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .nav-brand {
+      font-weight: 700; font-size: 15px; color: var(--primary);
+      display: flex; align-items: center; gap: 6px; margin-right: auto;
+      text-decoration: none;
+    }
+    .nav-brand svg { width: 22px; height: 22px; }
+    .nav-link {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 13px; color: var(--muted); text-decoration: none;
+      padding: 5px 10px; border-radius: 8px; transition: all .2s;
+    }
+    .nav-link:hover { background: var(--primary-light); color: var(--primary); text-decoration: none; }
+    .nav-link svg { width: 15px; height: 15px; fill: currentColor; }
+
+    /* ─── Hero ─── */
+    .hero {
+      background: linear-gradient(135deg, #0f766e 0%, #6366f1 100%);
+      border-radius: 20px;
+      padding: 36px 28px;
+      margin-bottom: 16px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute; right: -40px; top: -40px;
+      width: 200px; height: 200px;
+      background: rgba(255,255,255,.08);
+      border-radius: 50%;
+    }
+    .hero::after {
+      content: "";
+      position: absolute; left: -60px; bottom: -60px;
+      width: 260px; height: 260px;
+      background: rgba(255,255,255,.05);
+      border-radius: 50%;
+    }
+    .hero h1 { font-size: 30px; margin: 0 0 8px; position: relative; z-index: 1; }
+    .hero .subtitle { opacity: .85; font-size: 15px; margin: 0 0 18px; position: relative; z-index: 1; }
+    .hero-links { display: flex; flex-wrap: wrap; gap: 10px; position: relative; z-index: 1; }
+    .hero-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 9px 18px; border-radius: 10px;
+      font-size: 14px; font-weight: 600; text-decoration: none;
+      transition: all .2s; border: 1.5px solid rgba(255,255,255,.3);
+    }
+    .hero-btn svg { width: 18px; height: 18px; }
+    .btn-github { background: rgba(255,255,255,.15); color: #fff; }
+    .btn-github:hover { background: rgba(255,255,255,.28); text-decoration: none; }
+    .btn-paper { background: rgba(255,255,255,.92); color: var(--primary); }
+    .btn-paper:hover { background: #fff; text-decoration: none; }
+
+    /* ─── Section Icons ─── */
+    .section-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: 10px;
+      margin-right: 10px; vertical-align: middle; flex-shrink: 0;
+    }
+    .section-icon svg { width: 20px; height: 20px; fill: #fff; }
+    .icon-data { background: linear-gradient(135deg, #3b82f6, #6366f1); }
+    .icon-method { background: linear-gradient(135deg, #0f766e, #059669); }
+    .icon-exp { background: linear-gradient(135deg, #d97706, #f59e0b); }
+    .icon-result { background: linear-gradient(135deg, #dc2626, #f97316); }
+    .icon-repo { background: linear-gradient(135deg, #7c3aed, #a855f7); }
+
+    /* ─── Cards ─── */
     .card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
-      padding: 18px;
-      margin-top: 14px;
+      padding: 22px;
+      margin-top: 16px;
+      transition: box-shadow .2s;
     }
-    .grid-2 {
+    .card:hover { box-shadow: 0 4px 24px rgba(0,0,0,.06); }
+    .card h2 {
+      font-size: 20px; margin: 0 0 14px;
+      display: flex; align-items: center;
+    }
+
+    /* ─── Quick Links Grid ─── */
+    .quick-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
     }
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
+    .quick-card {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 14px; border-radius: 12px;
+      border: 1px solid var(--line); background: #fafbfc;
+      text-decoration: none; color: var(--text);
+      transition: all .2s;
     }
-    .img-card {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 10px;
-      background: #fff;
+    .quick-card:hover { border-color: var(--primary); background: var(--primary-light); text-decoration: none; }
+    .quick-card .qc-icon {
+      width: 34px; height: 34px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .img-card img {
-      width: 100%;
-      border-radius: 8px;
-      display: block;
+    .quick-card .qc-icon svg { width: 18px; height: 18px; fill: #fff; }
+    .quick-card .qc-text { font-size: 13px; font-weight: 600; }
+    .quick-card .qc-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    /* ─── Domain Badges ─── */
+    .domain-badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 16px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 12px; border-radius: 20px;
+      font-size: 13px; font-weight: 600;
     }
-    .img-card p {
-      margin: 8px 0 0;
-      font-size: 14px;
-      color: var(--muted);
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-    th, td {
-      border: 1px solid var(--line);
-      padding: 8px;
-      text-align: left;
-      vertical-align: top;
-    }
-    th { background: #f8fafc; }
+    .badge svg { width: 14px; height: 14px; fill: currentColor; }
+    .badge-blue { background: #dbeafe; color: #1d4ed8; }
+    .badge-green { background: #d1fae5; color: #047857; }
+    .badge-purple { background: #ede9fe; color: #6d28d9; }
+
+    /* ─── Images / Grid / Table ─── */
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .img-card { border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: #fff; }
+    .img-card img { width: 100%; border-radius: 8px; display: block; }
+    .img-card p { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f8fafc; font-weight: 600; }
+    tr.highlight td { background: #f0fdf4; font-weight: 600; }
+
     a { color: var(--primary); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .gh-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #fff;
-      vertical-align: middle;
-    }
-    .gh-link:hover { background: #f8fafc; text-decoration: none; }
-    .gh-link svg {
-      width: 20px;
-      height: 20px;
-      fill: #111827;
-    }
-    pre {
-      margin: 0;
-      white-space: pre-wrap;
-      background: #f8fafc;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 10px;
-      overflow-x: auto;
-      font-size: 13px;
-    }
+    p, li { line-height: 1.7; color: var(--text); }
+    .muted { color: var(--muted); }
+
     .kbd {
       font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      background: #f1f5f9;
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-      padding: 2px 6px;
-      font-size: 12px;
+      background: #f1f5f9; border: 1px solid #cbd5e1;
+      border-radius: 6px; padding: 2px 6px; font-size: 12px;
     }
+    pre {
+      margin: 0; white-space: pre-wrap; background: #f8fafc;
+      border: 1px solid var(--line); border-radius: 10px;
+      padding: 10px; overflow-x: auto; font-size: 13px;
+    }
+
+    /* ─── File Tree ─── */
+    .file-item {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 10px; border-radius: 6px;
+      font-size: 13px; font-family: ui-monospace, monospace;
+      background: #f8fafc; border: 1px solid var(--line);
+      margin: 3px 2px;
+    }
+    .file-item svg { width: 14px; height: 14px; fill: var(--muted); }
+
+    /* ─── Footer ─── */
+    .footer {
+      text-align: center; padding: 28px 0 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .footer a { color: var(--primary); }
+
     @media (max-width: 920px) {
       .grid-2, .grid-3 { grid-template-columns: 1fr; }
-      h1 { font-size: 24px; }
+      .hero h1 { font-size: 24px; }
+      .quick-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 540px) {
+      .quick-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
+
+  <!-- ─── Sticky Navigation ─── -->
+  <nav class="top-nav">
+    <div class="inner">
+      <a class="nav-brand" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+        </svg>
+        VLM-Spatial-Grasp
+      </a>
+      <a class="nav-link" href="#sec-data">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 9h16M9 4v16" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        数据
+      </a>
+      <a class="nav-link" href="#sec-method">
+        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        方法
+      </a>
+      <a class="nav-link" href="#sec-exp">
+        <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0-4h18" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        实验
+      </a>
+      <a class="nav-link" href="#sec-result">
+        <svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        结果
+      </a>
+      <a class="nav-link" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.7 7.7 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </nav>
+
   <div class="wrap">
+
+    <!-- ─── Hero ─── -->
     <section class="hero">
       <h1>基于视觉提示的具身智能空间感知增强方法研究</h1>
-      <p class="muted">
-        论文补充主页：对齐论文中的数据、方法、实验与结果，并提供开源代码与复现入口。
-      </p>
-      <p>
-        仓库主页：
-        <a class="gh-link" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release" target="_blank" rel="noreferrer" aria-label="GitHub Repository">
-          <svg viewBox="0 0 16 16" aria-hidden="true">
-            <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.7 7.7 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
-          </svg>
+      <p class="subtitle">Research on Spatial Perception Enhancement Method for Embodied Intelligence Based on Visual Prompting</p>
+      <div class="hero-links">
+        <a class="hero-btn btn-github" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.7 7.7 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          GitHub 仓库
         </a>
-      </p>
+        <a class="hero-btn btn-paper" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/blob/main/README.md" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          论文对齐说明
+        </a>
+      </div>
     </section>
 
+    <!-- ─── Quick Links ─── -->
     <section class="card">
-      <h2>1. 项目目录</h2>
-      <ul>
-        <li><span class="kbd">vlm-spatial-grasp</span>：论文主方法工程（SVA + SVP + 闭环抓取执行）。</li>
-        <li><span class="kbd">paper_release</span>：论文数据、标注工具、对比实验脚本、主结果表格与图表。</li>
-      </ul>
-      <p>
-        代码入口：
-        <a href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/vlm-spatial-grasp" target="_blank" rel="noreferrer">vlm-spatial-grasp</a>
-        |
-        <a href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/paper_release" target="_blank" rel="noreferrer">paper_release</a>
-      </p>
+      <h2>
+        <span class="section-icon icon-repo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </span>
+        快速导航
+      </h2>
+      <div class="quick-grid">
+        <a class="quick-card" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/vlm-spatial-grasp" target="_blank" rel="noreferrer">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#0f766e,#059669)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </span>
+          <span><span class="qc-text">方法工程</span><br/><span class="qc-sub">vlm-spatial-grasp</span></span>
+        </a>
+        <a class="quick-card" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/paper_release" target="_blank" rel="noreferrer">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#6366f1,#a855f7)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </span>
+          <span><span class="qc-text">复现与数据</span><br/><span class="qc-sub">paper_release</span></span>
+        </a>
+        <a class="quick-card" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/paper_release/README.md" target="_blank" rel="noreferrer">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#d97706,#f59e0b)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </span>
+          <span><span class="qc-text">复现说明</span><br/><span class="qc-sub">README.md</span></span>
+        </a>
+        <a class="quick-card" href="#sec-data">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#3b82f6,#6366f1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </span>
+          <span><span class="qc-text">数据集</span><br/><span class="qc-sub">160 个 npz 样本</span></span>
+        </a>
+        <a class="quick-card" href="#sec-exp">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#dc2626,#f97316)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/></svg>
+          </span>
+          <span><span class="qc-text">实验映射</span><br/><span class="qc-sub">表格与脚本对应</span></span>
+        </a>
+        <a class="quick-card" href="#sec-result">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#059669,#10b981)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6" stroke-linecap="round"/></svg>
+          </span>
+          <span><span class="qc-text">结果图表</span><br/><span class="qc-sub">主表 & 可视化</span></span>
+        </a>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>2. 数据集说明（与论文对齐）</h2>
-      <p>主评测数据：<span class="kbd">paper_release/data/dist_all</span>（160 个样本）。</p>
-      <ul>
-        <li>0-99：GraspNet-Desk</li>
-        <li>100-129：Real-Desk</li>
-        <li>130-159：Sim-Desk</li>
-      </ul>
+    <!-- ─── 1. Data ─── -->
+    <section class="card" id="sec-data">
+      <h2>
+        <span class="section-icon icon-data">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </span>
+        1. 数据集说明
+      </h2>
+      <p>主评测数据：<span class="kbd">paper_release/data/dist_all</span>（<strong>160</strong> 个样本）。</p>
+      <div class="domain-badges">
+        <span class="badge badge-blue">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/><line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/></svg>
+          GraspNet-Desk（0-99）
+        </span>
+        <span class="badge badge-green">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="9 22 9 12 15 12 15 22" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          Real-Desk（100-129）
+        </span>
+        <span class="badge badge-purple">
+          <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5v3H7V7a5 5 0 0 1 5-5z" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="10" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          Sim-Desk（130-159）
+        </span>
+      </div>
       <div class="grid-3">
         <div class="img-card">
           <img src="./assets/dataset_0_99.png" alt="GraspNet-Desk samples">
@@ -175,49 +348,96 @@
       </div>
     </section>
 
-    <section class="card">
-      <h2>3. 论文实验映射</h2>
+    <!-- ─── 2. Method ─── -->
+    <section class="card" id="sec-method">
+      <h2>
+        <span class="section-icon icon-method">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </span>
+        2. 方法内容
+      </h2>
+      <p><strong>论文主方法</strong>（SVA + SVP + 闭环执行）—— <span class="kbd">vlm-spatial-grasp</span></p>
+      <table>
+        <thead><tr><th style="width:40%">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--muted)" stroke-width="2" style="vertical-align:middle;margin-right:4px"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+          文件</th><th>功能</th></tr></thead>
+        <tbody>
+          <tr><td><span class="file-item"><svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="13 2 13 9 20 9" fill="none" stroke="currentColor" stroke-width="2"/></svg> vision_agent_v2.py</span></td><td>结构化视觉锚点（SVA）+ 结构化视觉提示（SVP）主链路</td></tr>
+          <tr><td><span class="file-item"><svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="13 2 13 9 20 9" fill="none" stroke="currentColor" stroke-width="2"/></svg> main_vlm.py</span></td><td>端到端执行入口（支持 <span class="kbd">VLM_METHOD=svp/qwen</span>）</td></tr>
+          <tr><td><span class="file-item"><svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="13 2 13 9 20 9" fill="none" stroke="currentColor" stroke-width="2"/></svg> grasp_process.py</span></td><td>抓取候选生成与筛选</td></tr>
+          <tr><td><span class="file-item"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="2"/></svg> manipulator_grasp/</span></td><td>MuJoCo 机械臂执行环境</td></tr>
+        </tbody>
+      </table>
+      <br/>
+      <p><strong>论文对比方法（基线）</strong> —— <span class="kbd">paper_release/experiments</span></p>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">
+        <span class="file-item"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="13 2 13 9 20 9" fill="none" stroke="currentColor" stroke-width="2"/></svg> ours_svp_batch_inference.py</span>
+        <span class="file-item"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="13 2 13 9 20 9" fill="none" stroke="currentColor" stroke-width="2"/></svg> qwen_batch_inference.py</span>
+        <span class="file-item"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="13 2 13 9 20 9" fill="none" stroke="currentColor" stroke-width="2"/></svg> gpt_batch_inference.py</span>
+      </div>
+    </section>
+
+    <!-- ─── 3. Experiments ─── -->
+    <section class="card" id="sec-exp">
+      <h2>
+        <span class="section-icon icon-exp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/></svg>
+        </span>
+        3. 论文实验映射
+      </h2>
       <table>
         <thead>
           <tr>
             <th>论文表号</th>
             <th>含义</th>
-            <th>脚本</th>
-            <th>输出</th>
+            <th>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--muted)" stroke-width="2" style="vertical-align:middle;margin-right:3px"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              脚本
+            </th>
+            <th>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--muted)" stroke-width="2" style="vertical-align:middle;margin-right:3px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              输出
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>表3-2</td>
+            <td><strong>表3-2</strong></td>
             <td>三域数据规模统计</td>
             <td>按 <span class="kbd">dist_all</span> 前缀区间统计</td>
             <td>数据划分口径</td>
           </tr>
           <tr>
-            <td>表3-4</td>
+            <td><strong>表3-4</strong></td>
             <td>三域静态评估（命中率/偏差）</td>
             <td><span class="kbd">paper_release/experiments/table3_3.py</span></td>
             <td><span class="kbd">results/tables/table3_3_ai_results*/summary.csv</span></td>
           </tr>
           <tr>
-            <td>表4-1</td>
+            <td><strong>表4-1</strong></td>
             <td>Full（Oracle-Action）主对比</td>
             <td><span class="kbd">paper_release/experiments/table4_1.py</span></td>
             <td><span class="kbd">table4_full.csv</span> / <span class="kbd">table4_full_recomputed.csv</span></td>
           </tr>
           <tr>
-            <td>表4-2</td>
+            <td><strong>表4-2</strong></td>
             <td>Strict（Supplementary）一致性评估</td>
             <td><span class="kbd">paper_release/experiments/table4_2.py</span></td>
             <td><span class="kbd">table4_2_strict.csv</span> / <span class="kbd">table4_2_strict_recomputed.csv</span></td>
           </tr>
         </tbody>
       </table>
-      <p class="muted">说明：<span class="kbd">table3_3.py</span> 是历史脚本名，用于当前论文表3-4对应评估。</p>
+      <p class="muted" style="margin-top:10px"><strong>注意：</strong><span class="kbd">table3_3.py</span> 是历史脚本名，用于当前论文表3-4对应评估。</p>
     </section>
 
-    <section class="card">
-      <h2>4. 结果图（表3-4对应）</h2>
+    <!-- ─── 4. Results ─── -->
+    <section class="card" id="sec-result">
+      <h2>
+        <span class="section-icon icon-result">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        </span>
+        4. 结果图（表3-4对应）
+      </h2>
       <div class="grid-2">
         <div class="img-card">
           <img src="./assets/bar_A_hit_g.png" alt="A_hit_g">
@@ -242,14 +462,46 @@
       </div>
     </section>
 
+    <!-- ─── 5. Reproduce ─── -->
     <section class="card">
-      <h2>5. 复现入口</h2>
-      <ul>
-        <li>批量推理（方法对比）：<span class="kbd">paper_release/experiments/*.py</span></li>
-        <li>主表评估：<span class="kbd">table3_3.py</span> / <span class="kbd">table4_1.py</span> / <span class="kbd">table4_2.py</span></li>
-        <li>交互执行入口：<span class="kbd">vlm-spatial-grasp/main_vlm.py</span></li>
-      </ul>
+      <h2>
+        <span class="section-icon" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+        </span>
+        5. 复现入口
+      </h2>
+      <div class="quick-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">
+        <a class="quick-card" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/paper_release/experiments" target="_blank" rel="noreferrer">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#3b82f6,#6366f1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/></svg>
+          </span>
+          <span><span class="qc-text">批量推理</span><br/><span class="qc-sub">paper_release/experiments/*.py</span></span>
+        </a>
+        <a class="quick-card" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/paper_release/experiments" target="_blank" rel="noreferrer">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#d97706,#f59e0b)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0-4h18" /></svg>
+          </span>
+          <span><span class="qc-text">主表评估</span><br/><span class="qc-sub">table3_3 / table4_1 / table4_2</span></span>
+        </a>
+        <a class="quick-card" href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/vlm-spatial-grasp/main_vlm.py" target="_blank" rel="noreferrer">
+          <span class="qc-icon" style="background:linear-gradient(135deg,#059669,#10b981)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </span>
+          <span><span class="qc-text">交互执行入口</span><br/><span class="qc-sub">vlm-spatial-grasp/main_vlm.py</span></span>
+        </a>
+      </div>
     </section>
+
+    <!-- ─── Footer ─── -->
+    <div class="footer">
+      <p>
+        <a href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="var(--muted)" style="vertical-align:middle;margin-right:4px"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.7 7.7 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          VLM-Spatial-Grasp Paper Release
+        </a>
+        · 基于视觉提示的具身智能空间感知增强方法
+      </p>
+    </div>
 
   </div>
 </body>
