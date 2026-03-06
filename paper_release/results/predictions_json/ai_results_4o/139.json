@@ -1,0 +1,327 @@
+{
+  "source_file": "../dist/all\\139.npz",
+  "image_filename": "139.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "壶身"
+                },
+                {
+                  "id": 10,
+                  "part": "壶盖"
+                },
+                {
+                  "id": 19,
+                  "part": "壶嘴"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的壶身部分，注意避免触碰编号10的壶盖和编号19的壶嘴以防止松动或损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              385,
+              105
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手",
+            "target_id": 1,
+            "coords": [
+              385,
+              105
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黄色日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色日光灯",
+        "intent_analysis": {
+          "user_intent": "抓取黄色日光灯",
+          "objects": [
+            {
+              "name": "黄色日光灯",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "灯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的黄色日光灯，注意避免碰到周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow light tube",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黄色日光灯中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "yellow light tube",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色日光灯中段"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow light tube",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "yellow light tube",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow light tube",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黄色日光灯中段实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              427,
+              273
+            ]
+          },
+          {
+            "component": [
+              "yellow light tube",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色日光灯中段",
+            "target_id": 1,
+            "coords": [
+              427,
+              273
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水果刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水果刀",
+        "intent_analysis": {
+          "user_intent": "抓取水果刀",
+          "objects": [
+            {
+              "name": "水果刀",
+              "components": [
+                {
+                  "id": 14,
+                  "part": "刀刃"
+                },
+                {
+                  "id": 11,
+                  "part": "刀柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号11的刀柄，避免接触编号14的刀刃以防受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水果刀的手柄部分，确保抓取稳定且安全"
+            },
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水果刀的手柄部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水果刀的手柄部分，确保抓取稳定且安全",
+            "target_id": 1,
+            "coords": [
+              413,
+              385
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水果刀的手柄部分",
+            "target_id": 1,
+            "coords": [
+              413,
+              385
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

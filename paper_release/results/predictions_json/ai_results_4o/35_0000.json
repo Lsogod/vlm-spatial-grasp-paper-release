@@ -1,0 +1,324 @@
+{
+  "source_file": "../dist/all\\35_0000.npz",
+  "image_filename": "35_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取犀牛",
+          "objects": [
+            {
+              "name": "犀牛1",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "犀牛主体"
+                }
+              ]
+            },
+            {
+              "name": "犀牛2",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "犀牛主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "可以选择抓取编号8或编号6的犀牛主体，直接用手抓取即可，无需额外操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准左侧犀牛中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧犀牛中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 4
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准左侧犀牛中段实体表面，稳定且不易滑落",
+            "target_id": 5,
+            "coords": [
+              595,
+              259
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛中段实体表面",
+            "target_id": 5,
+            "coords": [
+              595,
+              259
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "intent_analysis": {
+          "user_intent": "抓取大象玩具",
+          "objects": [
+            {
+              "name": "大象玩具",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "大象主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的大象玩具，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "elephant",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大象模型的主体部分，确保抓取稳定"
+            },
+            {
+              "component": [
+                "elephant",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大象模型的主体部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "elephant",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "elephant",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "elephant",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大象模型的主体部分，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              693,
+              189
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象模型的主体部分",
+            "target_id": 2,
+            "coords": [
+              693,
+              189
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取红笔",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取红笔",
+        "intent_analysis": {
+          "user_intent": "抓取红笔",
+          "objects": [
+            {
+              "name": "红笔",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "笔身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号9的红笔，注意避免碰到旁边的剪刀和其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红笔中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红笔中段，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红笔中段实体表面，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              973,
+              483
+            ]
+          },
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红笔中段，确保抓取牢固",
+            "target_id": 2,
+            "coords": [
+              973,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

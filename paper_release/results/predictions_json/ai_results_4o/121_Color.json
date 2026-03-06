@@ -1,0 +1,394 @@
+{
+  "source_file": "../dist/all\\121_Color.npz",
+  "image_filename": "121_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黑色胶带",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色胶带",
+        "intent_analysis": {
+          "user_intent": "抓取黑色胶带",
+          "objects": [
+            {
+              "name": "黑色胶带",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "胶带本体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的黑色胶带，确保抓取时避免碰到周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black tape",
+                "outer_ring"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑色胶带的外圈实体材质区域，避免抓取中心空洞导致不稳定"
+            },
+            {
+              "component": [
+                "black tape",
+                "outer_ring"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色胶带的外圈实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black tape",
+              "part": "outer_ring",
+              "id": 1
+            },
+            {
+              "object": "black tape",
+              "part": "outer_ring",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black tape",
+              "outer_ring"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色胶带的外圈实体材质区域，避免抓取中心空洞导致不稳定",
+            "target_id": 1,
+            "coords": [
+              707,
+              119
+            ]
+          },
+          {
+            "component": [
+              "black tape",
+              "outer_ring"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色胶带的外圈实体表面",
+            "target_id": 1,
+            "coords": [
+              707,
+              119
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取灰色盒子中的电池",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色盒子中的电池",
+        "intent_analysis": {
+          "user_intent": "抓取灰色盒子中的电池",
+          "objects": [
+            {
+              "name": "灰色盒子",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "盒体"
+                }
+              ]
+            },
+            {
+              "name": "电池",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "电池"
+                }
+              ]
+            }
+          ],
+          "constraints": "先打开编号11的灰色盒子，确保电池（编号7）可以被安全取出，然后用手抓取编号7的电池。注意避免用力过猛以免损坏电池或盒子。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准灰色盒子中电池的中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧电池中部实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准灰色盒子中电池的中部实体表面，确保抓取稳定",
+            "target_id": 0,
+            "coords": [
+              791,
+              539
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电池中部实体表面",
+            "target_id": 0,
+            "coords": [
+              791,
+              539
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取灰色盒子中的电池放到白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色盒子中的电池放到白色笔筒中",
+        "intent_analysis": {
+          "user_intent": "抓取灰色盒子中的电池放到白色笔筒中",
+          "objects": [
+            {
+              "name": "灰色盒子",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "盒体"
+                }
+              ]
+            },
+            {
+              "name": "电池",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "电池"
+                }
+              ]
+            },
+            {
+              "name": "白色笔筒",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "笔筒"
+                }
+              ]
+            }
+          ],
+          "constraints": "先打开编号7的灰色盒子，取出编号5的电池，然后将电池放入编号3的白色笔筒中，确保电池放置稳妥。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准灰色盒子中电池的中段实体表面，确保稳定抓取"
+            },
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧电池中段实体表面"
+            },
+            {
+              "component": [
+                "white pen holder",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色笔筒的内部上方，准备放置电池"
+            },
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将电池放入白色笔筒中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "white pen holder",
+              "part": "inside",
+              "id": 0
+            },
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准灰色盒子中电池的中段实体表面，确保稳定抓取",
+            "target_id": 5,
+            "coords": [
+              903,
+              469
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电池中段实体表面",
+            "target_id": 5,
+            "coords": [
+              903,
+              469
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒的内部上方，准备放置电池",
+            "target_id": 0,
+            "coords": [
+              385,
+              357
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将电池放入白色笔筒中",
+            "target_id": 5,
+            "coords": [
+              903,
+              469
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

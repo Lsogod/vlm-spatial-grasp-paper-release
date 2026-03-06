@@ -1,0 +1,384 @@
+{
+  "source_file": "../dist/all\\103_Color.npz",
+  "image_filename": "103_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取白色带黄色旋钮的杯盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取白色带黄色旋钮的杯盖",
+        "intent_analysis": {
+          "user_intent": "抓取白色带黄色旋钮的杯盖",
+          "objects": [
+            {
+              "name": "杯盖",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盖体"
+                },
+                {
+                  "id": 7,
+                  "part": "黄色旋钮"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的白色杯盖，注意抓取时确保握住黄色旋钮（编号7）以便于操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "cup lid with yellow knob",
+                "sidewall"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准杯盖侧壁实体表面，避免抓取黄色旋钮以确保稳定性"
+            },
+            {
+              "component": [
+                "cup lid with yellow knob",
+                "sidewall"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧杯盖侧壁实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "cup lid with yellow knob",
+              "part": "sidewall",
+              "id": 3
+            },
+            {
+              "object": "cup lid with yellow knob",
+              "part": "sidewall",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "cup lid with yellow knob",
+              "sidewall"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准杯盖侧壁实体表面，避免抓取黄色旋钮以确保稳定性",
+            "target_id": 3,
+            "coords": [
+              931,
+              189
+            ]
+          },
+          {
+            "component": [
+              "cup lid with yellow knob",
+              "sidewall"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧杯盖侧壁实体表面",
+            "target_id": 3,
+            "coords": [
+              931,
+              189
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "intent_analysis": {
+          "user_intent": "抓取黑红色测温枪",
+          "objects": [
+            {
+              "name": "测温枪",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "枪体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的测温枪，注意握住枪体部分以确保稳固。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑红色测温枪的手柄部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧测温枪的手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 2
+            },
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑红色测温枪的手柄部位，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              917,
+              595
+            ]
+          },
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪的手柄，确保抓取牢固",
+            "target_id": 2,
+            "coords": [
+              917,
+              595
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取冰淇淋放入白色方形盒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取冰淇淋放入白色方形盒中",
+        "intent_analysis": {
+          "user_intent": "抓取冰淇淋放入白色方形盒中",
+          "objects": [
+            {
+              "name": "冰淇淋",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "冰淇淋主体"
+                },
+                {
+                  "id": 11,
+                  "part": "冰淇淋底座"
+                }
+              ]
+            },
+            {
+              "name": "白色方形盒",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "盒体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号(10,11)的冰淇淋，确保稳固后将其放入编号2的白色方形盒中，注意避免倾倒或损坏冰淇淋。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "ice cream",
+                "cone"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准冰淇淋的圆锥部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "ice cream",
+                "cone"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧冰淇淋的圆锥部分"
+            },
+            {
+              "component": [
+                "white box",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色方形盒的上方准备放置"
+            },
+            {
+              "component": [
+                "ice cream",
+                "cone"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将冰淇淋放入白色方形盒中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "ice cream",
+              "part": "cone",
+              "id": 8
+            },
+            {
+              "object": "ice cream",
+              "part": "cone",
+              "id": 8
+            },
+            {
+              "object": "white box",
+              "part": "inside",
+              "id": 2
+            },
+            {
+              "object": "ice cream",
+              "part": "cone",
+              "id": 8
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "ice cream",
+              "cone"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准冰淇淋的圆锥部分，便于稳定抓取",
+            "target_id": 8,
+            "coords": [
+              749,
+              301
+            ]
+          },
+          {
+            "component": [
+              "ice cream",
+              "cone"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧冰淇淋的圆锥部分",
+            "target_id": 8,
+            "coords": [
+              749,
+              301
+            ]
+          },
+          {
+            "component": [
+              "white box",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色方形盒的上方准备放置",
+            "target_id": 2,
+            "coords": [
+              651,
+              133
+            ]
+          },
+          {
+            "component": [
+              "ice cream",
+              "cone"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将冰淇淋放入白色方形盒中",
+            "target_id": 8,
+            "coords": [
+              749,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

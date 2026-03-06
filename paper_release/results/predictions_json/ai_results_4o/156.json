@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/all\\156.npz",
+  "image_filename": "156.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取小黄鸭",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取小黄鸭",
+        "intent_analysis": {
+          "user_intent": "抓取小黄鸭",
+          "objects": [
+            {
+              "name": "小黄鸭",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号7的小黄鸭，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow duck",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准小黄鸭的中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "yellow duck",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧小黄鸭"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow duck",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "yellow duck",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow duck",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准小黄鸭的中部实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              189,
+              91
+            ]
+          },
+          {
+            "component": [
+              "yellow duck",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小黄鸭",
+            "target_id": 1,
+            "coords": [
+              189,
+              91
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取锤子",
+        "intent_analysis": {
+          "user_intent": "抓取锤子",
+          "objects": [
+            {
+              "name": "锤子",
+              "components": [
+                {
+                  "id": 17,
+                  "part": "锤头"
+                },
+                {
+                  "id": 11,
+                  "part": "锤柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号11的锤柄，确保握紧以便安全使用。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准锤子手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧锤子手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 0
+            },
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准锤子手柄部分，便于稳定抓取",
+            "target_id": 0,
+            "coords": [
+              343,
+              357
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧锤子手柄，确保抓取牢固",
+            "target_id": 0,
+            "coords": [
+              343,
+              357
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "香蕉"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的香蕉，注意轻拿轻放以免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中段实体表面，稳定且不易滑落",
+            "target_id": 2,
+            "coords": [
+              539,
+              357
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 2,
+            "coords": [
+              539,
+              357
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

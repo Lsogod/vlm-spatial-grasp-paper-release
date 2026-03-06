@@ -1,0 +1,437 @@
+{
+  "source_file": "../dist/0-99\\43_0000.npz",
+  "image_filename": "43_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取螺丝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝",
+        "intent_analysis": {
+          "user_intent": "抓取螺丝",
+          "objects": [
+            {
+              "name": "螺丝",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "螺丝本体"
+                }
+              ]
+            }
+          ],
+          "constraints": "使用合适的工具或直接用手抓取编号7的螺丝，注意保持手部稳定以防螺丝滑落或滚动。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "silver screw",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心偏左、无遮挡的银色螺丝中部以便抓取"
+            },
+            {
+              "component": [
+                "silver screw",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧银色螺丝"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "silver screw",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "silver screw",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "silver screw",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心偏左、无遮挡的银色螺丝中部以便抓取",
+            "target_id": 0,
+            "coords": [
+              343,
+              287
+            ]
+          },
+          {
+            "component": [
+              "silver screw",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧银色螺丝",
+            "target_id": 0,
+            "coords": [
+              343,
+              287
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取草莓放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓放入红杯",
+        "intent_analysis": {
+          "user_intent": "抓取草莓放入红杯",
+          "objects": [
+            {
+              "name": "草莓",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "草莓果体"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或工具抓取编号4的草莓，保持轻拿轻放以避免压坏果体，将其放入编号6的红杯中，确保草莓完全进入杯内且不倾倒杯子。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准草莓中部以便稳定抓取，草莓位于图像右下方无遮挡"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧草莓以防掉落"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪将草莓放入红杯中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 1
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准草莓中部以便稳定抓取，草莓位于图像右下方无遮挡",
+            "target_id": 2,
+            "coords": [
+              833,
+              567
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓以防掉落",
+            "target_id": 2,
+            "coords": [
+              833,
+              567
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯杯沿正上方以便放入",
+            "target_id": 1,
+            "coords": [
+              686,
+              553
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将草莓放入红杯中",
+            "target_id": 2,
+            "coords": [
+              833,
+              567
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取李子放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子放入红杯",
+        "intent_analysis": {
+          "user_intent": "抓取李子放入红杯",
+          "objects": [
+            {
+              "name": "李子",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "李子果实"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或工具抓取编号3的李子，保持轻拿轻放以防果实受损，将其放入编号6的红杯中，确保杯子稳放在平面上避免倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准图像中心附近无遮挡的李子中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧李子以防掉落"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪将李子放入红杯中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 3
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像中心附近无遮挡的李子中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              651,
+              441
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子以防掉落",
+            "target_id": 1,
+            "coords": [
+              651,
+              441
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯杯沿正上方以便放入",
+            "target_id": 3,
+            "coords": [
+              632,
+              520
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将李子放入红杯中",
+            "target_id": 1,
+            "coords": [
+              651,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

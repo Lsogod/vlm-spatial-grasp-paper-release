@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\138.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水果刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水果刀",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水果刀的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              399,
+              382
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水果刀",
+            "target_id": 0,
+            "coords": [
+              399,
+              382
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取锤子",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到锤子手柄处准备抓取",
+            "target_id": 0,
+            "coords": [
+              147,
+              382
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧锤子手柄",
+            "target_id": 0,
+            "coords": [
+              147,
+              382
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取小黄鸭",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取小黄鸭",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "duck",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小黄鸭顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              106,
+              73
+            ]
+          },
+          {
+            "component": [
+              "duck",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小黄鸭",
+            "target_id": 0,
+            "coords": [
+              106,
+              73
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

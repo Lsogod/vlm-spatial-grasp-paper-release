@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/all\\135.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将香蕉放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              587,
+              248
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉中部",
+            "target_id": 0,
+            "coords": [
+              587,
+              248
+            ]
+          },
+          {
+            "component": [
+              "red square tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘中心位置",
+            "target_id": 1,
+            "coords": [
+              338,
+              157
+            ]
+          },
+          {
+            "component": [
+              "red square tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将香蕉放入盘中",
+            "target_id": 1,
+            "coords": [
+              338,
+              157
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将橙子放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将橙子放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到橙子中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              168,
+              261
+            ]
+          },
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧橙子",
+            "target_id": 0,
+            "coords": [
+              168,
+              261
+            ]
+          },
+          {
+            "component": [
+              "red square tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将橙子移动到红色方形盘中心位置",
+            "target_id": 1,
+            "coords": [
+              338,
+              157
+            ]
+          },
+          {
+            "component": [
+              "red square tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪放下橙子",
+            "target_id": 1,
+            "coords": [
+              338,
+              157
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将锤子放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将锤子放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到锤子握持位置",
+            "target_id": 0,
+            "coords": [
+              383,
+              396
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧锤子手柄",
+            "target_id": 0,
+            "coords": [
+              383,
+              396
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘中心位置",
+            "target_id": 1,
+            "coords": [
+              338,
+              144
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开锤子放入盘中",
+            "target_id": 1,
+            "coords": [
+              338,
+              144
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

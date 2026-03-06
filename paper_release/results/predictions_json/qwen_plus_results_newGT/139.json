@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\139.npz",
+  "results": [
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黄色日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色日光灯",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "yellow light bulb",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黄色日光灯中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              437,
+              254
+            ]
+          },
+          {
+            "component": [
+              "yellow light bulb",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取黄色日光灯",
+            "target_id": 0,
+            "coords": [
+              437,
+              254
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手处准备抓取",
+            "target_id": 0,
+            "coords": [
+              377,
+              247
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取水壶把手",
+            "target_id": 0,
+            "coords": [
+              377,
+              247
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水果刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水果刀",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水果刀中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              403,
+              378
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取水果刀",
+            "target_id": 0,
+            "coords": [
+              403,
+              378
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

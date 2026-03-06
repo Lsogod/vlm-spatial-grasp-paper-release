@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/0-99\\93_0000.npz",
+  "image_filename": "93_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黄色包装护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色包装护发素",
+        "intent_analysis": {
+          "user_intent": "抓取黄色包装的护发素",
+          "objects": [
+            {
+              "name": "黄色包装护发素",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "瓶身正面"
+                },
+                {
+                  "id": 7,
+                  "part": "瓶盖"
+                },
+                {
+                  "id": 9,
+                  "part": "瓶身背面"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号(5,9)的瓶身以确保稳定，避免挤压导致内容物溢出；可根据需要用另一只手握住编号7的瓶盖进行开合。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow conditioner",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黄色包装护发素瓶身中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "yellow conditioner",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色包装护发素"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow conditioner",
+              "part": "body",
+              "id": 3
+            },
+            {
+              "object": "yellow conditioner",
+              "part": "body",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow conditioner",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黄色包装护发素瓶身中部以便稳定抓取",
+            "target_id": 3,
+            "coords": [
+              721,
+              231
+            ]
+          },
+          {
+            "component": [
+              "yellow conditioner",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色包装护发素",
+            "target_id": 3,
+            "coords": [
+              721,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取桃子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子",
+        "intent_analysis": {
+          "user_intent": "抓取桃子",
+          "objects": [
+            {
+              "name": "桃子",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或工具稳固抓住编号3的果体，避免用力过大导致果皮受损或果汁溢出。可从顶部或侧面轻握，保持平衡防止滚落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心无遮挡的桃子中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧桃子以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心无遮挡的桃子中部以便稳定抓取",
+            "target_id": 0,
+            "coords": [
+              508,
+              382
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子以防滑落",
+            "target_id": 0,
+            "coords": [
+              508,
+              382
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取左下方骆驼",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左下方骆驼",
+        "intent_analysis": {
+          "user_intent": "抓取左下方的骆驼玩偶",
+          "objects": [
+            {
+              "name": "骆驼玩偶",
+              "components": [
+                {
+                  "id": 19,
+                  "part": "骆驼身体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或工具抓取编号19的骆驼玩偶，注意从身体中部或腿部稳固握住，避免用力过大造成损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "camel",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准左下方无遮挡的骆驼中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "camel",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧骆驼确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "camel",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "camel",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准左下方无遮挡的骆驼中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              427,
+              511
+            ]
+          },
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧骆驼确保抓取牢固",
+            "target_id": 2,
+            "coords": [
+              427,
+              511
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

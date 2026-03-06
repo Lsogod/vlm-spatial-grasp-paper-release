@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/all\\122_Color.npz",
+  "image_filename": "122_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取左上方黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上方黑色美工刀",
+        "intent_analysis": {
+          "user_intent": "抓取左上方的黑色美工刀",
+          "objects": [
+            {
+              "name": "美工刀",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "刀身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的美工刀，注意握住刀身部分，避免接触刀刃以防受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准左上方黑色美工刀的中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色美工刀的中段"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准左上方黑色美工刀的中段实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              133,
+              105
+            ]
+          },
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色美工刀的中段",
+            "target_id": 2,
+            "coords": [
+              133,
+              105
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 0,
+                  "part": "壶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号0的水壶壶身，注意握住壶柄以确保稳固。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 4
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 4,
+            "coords": [
+              1113,
+              273
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 4,
+            "coords": [
+              1113,
+              273
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色胶带",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色胶带",
+        "intent_analysis": {
+          "user_intent": "抓取黑色胶带",
+          "objects": [
+            {
+              "name": "黑色胶带",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "胶带本体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的黑色胶带，确保手部干燥以防滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black tape",
+                "outer_ring"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑色胶带的外圈实体表面，避免抓取空洞区域，确保稳定性"
+            },
+            {
+              "component": [
+                "black tape",
+                "outer_ring"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色胶带的外圈实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black tape",
+              "part": "outer_ring",
+              "id": 2
+            },
+            {
+              "object": "black tape",
+              "part": "outer_ring",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black tape",
+              "outer_ring"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色胶带的外圈实体表面，避免抓取空洞区域，确保稳定性",
+            "target_id": 2,
+            "coords": [
+              749,
+              147
+            ]
+          },
+          {
+            "component": [
+              "black tape",
+              "outer_ring"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色胶带的外圈实体表面",
+            "target_id": 2,
+            "coords": [
+              749,
+              147
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

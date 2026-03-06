@@ -1,0 +1,327 @@
+{
+  "source_file": "../dist/all\\06_0000.npz",
+  "image_filename": "06_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取电动螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取电动螺丝刀",
+        "intent_analysis": {
+          "user_intent": "抓取电动螺丝刀",
+          "objects": [
+            {
+              "name": "电动螺丝刀",
+              "components": [
+                {
+                  "id": 15,
+                  "part": "螺丝刀头"
+                },
+                {
+                  "id": 18,
+                  "part": "手柄"
+                },
+                {
+                  "id": 19,
+                  "part": "电池仓"
+                },
+                {
+                  "id": 6,
+                  "part": "尾部"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号18的手柄部分，确保手指避开编号15的螺丝刀头以防止意外触碰。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "electric screwdriver",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准电动螺丝刀的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "electric screwdriver",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧电动螺丝刀的手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "electric screwdriver",
+              "part": "handle",
+              "id": 9
+            },
+            {
+              "object": "electric screwdriver",
+              "part": "handle",
+              "id": 9
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "electric screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准电动螺丝刀的手柄部分，便于稳定抓取",
+            "target_id": 9,
+            "coords": [
+              553,
+              217
+            ]
+          },
+          {
+            "component": [
+              "electric screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电动螺丝刀的手柄，确保抓取牢固",
+            "target_id": 9,
+            "coords": [
+              553,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取零食",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取零食",
+        "intent_analysis": {
+          "user_intent": "抓取零食",
+          "objects": [
+            {
+              "name": "零食罐",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "罐体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的零食罐，注意避免碰倒周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "snack container",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准零食容器的中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "snack container",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧零食容器"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "snack container",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "snack container",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "snack container",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准零食容器的中部实体表面，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              511,
+              483
+            ]
+          },
+          {
+            "component": [
+              "snack container",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧零食容器",
+            "target_id": 2,
+            "coords": [
+              511,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取蓝色螺母",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色螺母",
+        "intent_analysis": {
+          "user_intent": "抓取蓝色螺母",
+          "objects": [
+            {
+              "name": "蓝色螺母",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "螺母主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的蓝色螺母，注意避免碰到周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue nut",
+                "outer_edge"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色螺母的外边缘实体部分，避免抓取空洞区域"
+            },
+            {
+              "component": [
+                "blue nut",
+                "outer_edge"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色螺母的外边缘实体部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue nut",
+              "part": "outer_edge",
+              "id": 0
+            },
+            {
+              "object": "blue nut",
+              "part": "outer_edge",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue nut",
+              "outer_edge"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色螺母的外边缘实体部分，避免抓取空洞区域",
+            "target_id": 0,
+            "coords": [
+              441,
+              189
+            ]
+          },
+          {
+            "component": [
+              "blue nut",
+              "outer_edge"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色螺母的外边缘实体部分",
+            "target_id": 0,
+            "coords": [
+              441,
+              189
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

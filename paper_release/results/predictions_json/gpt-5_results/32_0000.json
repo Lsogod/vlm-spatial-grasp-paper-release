@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\32_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到鼠标中心上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              372,
+              177
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标中心进行抓取",
+            "target_id": 0,
+            "coords": [
+              372,
+              177
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到香蕉中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              865,
+              146
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉中部",
+            "target_id": 0,
+            "coords": [
+              865,
+              146
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取一字起子放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取一字起子放入蓝盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "screwdriver",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到一字起子中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              723,
+              513
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧一字起子中部",
+            "target_id": 0,
+            "coords": [
+              723,
+              513
+            ]
+          },
+          {
+            "component": [
+              "blue cap",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将一字起子移动到蓝盖中心位置",
+            "target_id": 1,
+            "coords": [
+              613,
+              374
+            ]
+          },
+          {
+            "component": [
+              "blue cap",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将一字起子放入蓝盖",
+            "target_id": 1,
+            "coords": [
+              613,
+              374
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

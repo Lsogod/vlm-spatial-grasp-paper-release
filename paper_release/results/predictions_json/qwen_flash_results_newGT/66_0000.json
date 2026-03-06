@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\66_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              780,
+              514
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              780,
+              514
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取好爸爸洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取好爸爸洗衣液",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "detergent bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗衣液瓶顶部的抓取位置",
+            "target_id": 0,
+            "coords": [
+              560,
+              691
+            ]
+          },
+          {
+            "component": [
+              "detergent bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗衣液瓶",
+            "target_id": 0,
+            "coords": [
+              560,
+              691
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取海飞丝洗发露",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取海飞丝洗发露",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "shampoo",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到海飞丝洗发露瓶盖位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              576,
+              627
+            ]
+          },
+          {
+            "component": [
+              "shampoo",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧海飞丝洗发露瓶盖",
+            "target_id": 0,
+            "coords": [
+              576,
+              627
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

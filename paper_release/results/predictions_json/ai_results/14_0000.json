@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/0-99\\14_0000.npz",
+  "image_filename": "14_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗面奶",
+        "intent_analysis": {
+          "user_intent": "抓取洗面奶",
+          "objects": [
+            {
+              "name": "洗面奶",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓住编号2的瓶身，注意握紧防止滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "facial cleanser",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心且无遮挡的洗面奶瓶身以便抓取"
+            },
+            {
+              "component": [
+                "facial cleanser",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧洗面奶瓶身确保稳固抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "facial cleanser",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "facial cleanser",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "facial cleanser",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心且无遮挡的洗面奶瓶身以便抓取",
+            "target_id": 2,
+            "coords": [
+              567,
+              525
+            ]
+          },
+          {
+            "component": [
+              "facial cleanser",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗面奶瓶身确保稳固抓取",
+            "target_id": 2,
+            "coords": [
+              567,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "intent_analysis": {
+          "user_intent": "抓取大象模型",
+          "objects": [
+            {
+              "name": "大象模型",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "大象整体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手直接抓取编号4的大象模型，注意握持位置以避免滑落或损坏模型。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "elephant",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像左下方无遮挡的大象中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "elephant",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大象确保稳固抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "elephant",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "elephant",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像左下方无遮挡的大象中部以便稳定抓取",
+            "target_id": 3,
+            "coords": [
+              252,
+              483
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象确保稳固抓取",
+            "target_id": 3,
+            "coords": [
+              252,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取犀牛模型",
+          "objects": [
+            {
+              "name": "犀牛模型",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "犀牛全身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓取编号9的犀牛模型，注意避开周围的剪刀和其他物品以防碰撞或刮伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心附近无遮挡的犀牛中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧犀牛确保稳固抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心附近无遮挡的犀牛中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              651,
+              329
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛确保稳固抓取",
+            "target_id": 1,
+            "coords": [
+              651,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "source_file": "../dist/0-99\\08_0000.npz",
+  "image_filename": "08_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取剪刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取剪刀",
+        "final_action_plan": [
+          {
+            "component": [
+              "scissors",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准剪刀手柄实体部分，避免接触刀刃确保抓取安全",
+            "target_id": 5,
+            "coords": [
+              324,
+              702
+            ]
+          },
+          {
+            "component": [
+              "scissors",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧剪刀手柄以稳定抓取",
+            "target_id": 5,
+            "coords": [
+              324,
+              702
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取灰色犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色犀牛",
+        "final_action_plan": [
+          {
+            "component": [
+              "grey rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准灰色犀牛中段实体表面，避开腿部和头部以确保稳定抓取",
+            "target_id": 2,
+            "coords": [
+              842,
+              301
+            ]
+          },
+          {
+            "component": [
+              "grey rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色犀牛中段实体表面",
+            "target_id": 2,
+            "coords": [
+              842,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取电钻",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取电钻",
+        "intent_analysis": {
+          "user_intent": "抓取电钻",
+          "objects": [
+            {
+              "name": "电钻",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "电钻机身"
+                },
+                {
+                  "id": 21,
+                  "part": "钻头部分"
+                },
+                {
+                  "id": 23,
+                  "part": "手柄握把"
+                }
+              ]
+            }
+          ],
+          "constraints": "用一只手握住编号23的手柄握把，另一只手可辅助支撑编号12的机身，确保编号21的钻头朝外且远离身体，避免误触开关造成伤害。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "electric drill",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准电钻手柄位置以便稳定抓取"
+            },
+            {
+              "component": [
+                "electric drill",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧电钻手柄确保牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "electric drill",
+              "part": "handle",
+              "id": 6
+            },
+            {
+              "object": "electric drill",
+              "part": "handle",
+              "id": 6
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "electric drill",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准电钻手柄位置以便稳定抓取",
+            "target_id": 6,
+            "coords": [
+              651,
+              595
+            ]
+          },
+          {
+            "component": [
+              "electric drill",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电钻手柄确保牢固",
+            "target_id": 6,
+            "coords": [
+              651,
+              595
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/all\\25_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将梨子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将梨子放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              678,
+              108
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子中部",
+            "target_id": 0,
+            "coords": [
+              678,
+              108
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将梨子移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              448,
+              442
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将梨子放入蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              448,
+              442
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将桃子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将桃子放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到桃子中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              821,
+              314
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子中部",
+            "target_id": 0,
+            "coords": [
+              821,
+              314
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将桃子移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              418,
+              445
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将桃子放入蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              418,
+              445
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将牙膏放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将牙膏放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到牙膏中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              979,
+              486
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏中部",
+            "target_id": 0,
+            "coords": [
+              979,
+              486
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将牙膏移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              441,
+              441
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将牙膏放入蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              441,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

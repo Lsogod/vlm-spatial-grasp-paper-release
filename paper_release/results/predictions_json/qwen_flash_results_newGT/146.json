@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\146.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取橙子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取橙子",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "orange",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到橙子顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              156,
+              296
+            ]
+          },
+          {
+            "component": [
+              "orange",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧橙子",
+            "target_id": 0,
+            "coords": [
+              156,
+              296
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取日光灯",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "flashlight",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到日光灯顶部抓取位置",
+            "target_id": 0,
+            "coords": [
+              421,
+              252
+            ]
+          },
+          {
+            "component": [
+              "flashlight",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧日光灯",
+            "target_id": 0,
+            "coords": [
+              421,
+              252
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              299,
+              224
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶把手",
+            "target_id": 0,
+            "coords": [
+              299,
+              224
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

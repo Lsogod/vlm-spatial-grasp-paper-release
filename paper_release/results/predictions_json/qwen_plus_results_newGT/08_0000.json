@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\08_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取剪刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取剪刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "scissors",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到剪刀中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              381,
+              381
+            ]
+          },
+          {
+            "component": [
+              "scissors",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取剪刀",
+            "target_id": 0,
+            "coords": [
+              381,
+              381
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取灰色犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到灰色犀牛中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              727,
+              154
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色犀牛",
+            "target_id": 0,
+            "coords": [
+              727,
+              154
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取电钻",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取电钻",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "drill",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到电钻中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              695,
+              443
+            ]
+          },
+          {
+            "component": [
+              "drill",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取电钻",
+            "target_id": 0,
+            "coords": [
+              695,
+              443
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

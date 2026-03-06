@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\19_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到螺丝刀手柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              591,
+              231
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝刀手柄",
+            "target_id": 0,
+            "coords": [
+              591,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到香蕉中部的抓取位置",
+            "target_id": 0,
+            "coords": [
+              677,
+              406
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住香蕉中部",
+            "target_id": 0,
+            "coords": [
+              677,
+              406
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色头的洗发水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色头的洗发水",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "shampoo bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到黑色头洗发水的抓取位置",
+            "target_id": 0,
+            "coords": [
+              418,
+              649
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色头洗发水",
+            "target_id": 0,
+            "coords": [
+              418,
+              649
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "source_file": "../dist/0-99\\00_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将香蕉放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              520,
+              208
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹住香蕉",
+            "target_id": 0,
+            "coords": [
+              520,
+              208
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将香蕉移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              224,
+              547
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放香蕉",
+            "target_id": 1,
+            "coords": [
+              224,
+              547
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将桃子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将桃子放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到桃子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              444,
+              424
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住桃子",
+            "target_id": 0,
+            "coords": [
+              444,
+              424
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将桃子移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              224,
+              544
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开桃子，放入盆中",
+            "target_id": 1,
+            "coords": [
+              224,
+              544
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取双面胶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到双面胶中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              268,
+              176
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧双面胶",
+            "target_id": 0,
+            "coords": [
+              268,
+              176
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

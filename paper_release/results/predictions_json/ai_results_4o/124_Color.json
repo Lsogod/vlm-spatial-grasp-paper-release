@@ -1,0 +1,376 @@
+{
+  "source_file": "../dist/all\\124_Color.npz",
+  "image_filename": "124_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取猕猴桃",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猕猴桃",
+        "intent_analysis": {
+          "user_intent": "抓取猕猴桃",
+          "objects": [
+            {
+              "name": "猕猴桃",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号7的猕猴桃，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kiwi",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准猕猴桃中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "kiwi",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧猕猴桃"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kiwi",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "kiwi",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kiwi",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准猕猴桃中段实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              763,
+              511
+            ]
+          },
+          {
+            "component": [
+              "kiwi",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猕猴桃",
+            "target_id": 2,
+            "coords": [
+              763,
+              511
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取蓝色勺子放到左侧螺丝盒子上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色勺子放到左侧螺丝盒子上",
+        "intent_analysis": {
+          "user_intent": "抓取蓝色勺子放到左侧螺丝盒子上",
+          "objects": [
+            {
+              "name": "蓝色勺子",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "勺子主体"
+                }
+              ]
+            },
+            {
+              "name": "螺丝盒子",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "盒子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓取编号2的蓝色勺子，将其移动到编号6的螺丝盒子上方，确保勺子平稳放置在盒子上，避免掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色勺子的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色勺子的手柄部分"
+            },
+            {
+              "component": [
+                "screw box",
+                "top"
+              ],
+              "action": "move_to_point",
+              "description": "移动到左侧螺丝盒子上方，准备放置"
+            },
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将蓝色勺子放置在螺丝盒子上"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "screw box",
+              "part": "top",
+              "id": 5
+            },
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色勺子的手柄部分，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              1029,
+              133
+            ]
+          },
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色勺子的手柄部分",
+            "target_id": 1,
+            "coords": [
+              1029,
+              133
+            ]
+          },
+          {
+            "component": [
+              "screw box",
+              "top"
+            ],
+            "action": "move_to_point",
+            "description": "移动到左侧螺丝盒子上方，准备放置",
+            "target_id": 5,
+            "coords": [
+              35,
+              301
+            ]
+          },
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将蓝色勺子放置在螺丝盒子上",
+            "target_id": 1,
+            "coords": [
+              1029,
+              133
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取橙子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取橙子",
+        "intent_analysis": {
+          "user_intent": "抓取橙子",
+          "objects": [
+            {
+              "name": "橙子",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的橙子，注意力度适中以免掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "orange",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准橙子中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "orange",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧橙子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "orange",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "orange",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准橙子中部实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              595,
+              161
+            ]
+          },
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧橙子",
+            "target_id": 1,
+            "coords": [
+              595,
+              161
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

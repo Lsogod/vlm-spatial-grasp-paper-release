@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\24_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将李子放入红杯中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将李子放入红杯中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "plum",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到李子顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              806,
+              605
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住李子",
+            "target_id": 0,
+            "coords": [
+              806,
+              605
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "将李子移动到红杯开口处",
+            "target_id": 1,
+            "coords": [
+              778,
+              298
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开李子，放入红杯中",
+            "target_id": 1,
+            "coords": [
+              778,
+              298
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将猩猩放入红杯中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将猩猩放入红杯中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "gorilla figurine",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "将猩猩玩具移动到抓取姿态",
+            "target_id": 0,
+            "coords": [
+              714,
+              126
+            ]
+          },
+          {
+            "component": [
+              "gorilla figurine",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住猩猩玩具",
+            "target_id": 0,
+            "coords": [
+              714,
+              126
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "将猩猩玩具移动到红色杯子开口处",
+            "target_id": 1,
+            "coords": [
+              778,
+              298
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开猩猩玩具，使其放入杯中",
+            "target_id": 1,
+            "coords": [
+              778,
+              298
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将梨子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将梨子放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              504,
+              128
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住梨子",
+            "target_id": 0,
+            "coords": [
+              504,
+              128
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将梨子移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              465,
+              525
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开手，将梨子放入盆中",
+            "target_id": 1,
+            "coords": [
+              465,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

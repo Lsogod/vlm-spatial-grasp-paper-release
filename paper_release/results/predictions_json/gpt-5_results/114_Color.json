@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/all\\114_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑红色测温枪的握柄位置",
+            "target_id": 0,
+            "coords": [
+              601,
+              462
+            ]
+          },
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑红色测温枪的握柄",
+            "target_id": 0,
+            "coords": [
+              601,
+              462
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑绿色测距仪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑绿色测距仪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "distance meter",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到黑绿色测距仪中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              1107,
+              235
+            ]
+          },
+          {
+            "component": [
+              "distance meter",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑绿色测距仪中部",
+            "target_id": 0,
+            "coords": [
+              1107,
+              235
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将测温枪放到螺丝盒上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将测温枪放到螺丝盒上",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到测温枪握柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              631,
+              462
+            ]
+          },
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪握柄",
+            "target_id": 0,
+            "coords": [
+              631,
+              462
+            ]
+          },
+          {
+            "component": [
+              "screw box",
+              "top"
+            ],
+            "action": "move_to_point",
+            "description": "将测温枪移动到螺丝盒顶部位置",
+            "target_id": 1,
+            "coords": [
+              259,
+              175
+            ]
+          },
+          {
+            "component": [
+              "screw box",
+              "top"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将测温枪放到螺丝盒上",
+            "target_id": 1,
+            "coords": [
+              259,
+              175
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

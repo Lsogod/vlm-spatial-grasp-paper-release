@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\67_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "screwdriver",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺丝刀中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              773,
+              270
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝刀中部",
+            "target_id": 0,
+            "coords": [
+              773,
+              270
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取好爸爸洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取好爸爸洗衣液",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Kao detergent",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到好爸爸洗衣液中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              330,
+              506
+            ]
+          },
+          {
+            "component": [
+              "Kao detergent",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧好爸爸洗衣液",
+            "target_id": 0,
+            "coords": [
+              330,
+              506
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至鼠标中心上方抓取姿态",
+            "target_id": 0,
+            "coords": [
+              623,
+              616
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取鼠标",
+            "target_id": 0,
+            "coords": [
+              623,
+              616
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

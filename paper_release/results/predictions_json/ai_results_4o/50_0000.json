@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/all\\50_0000.npz",
+  "image_filename": "50_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取护发素",
+        "intent_analysis": {
+          "user_intent": "抓取护发素",
+          "objects": [
+            {
+              "name": "护发素",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "护发素瓶身"
+                },
+                {
+                  "id": 11,
+                  "part": "护发素瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的护发素瓶身，确保瓶盖（编号11）已拧紧以防止液体泄漏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "conditioner",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准护发素瓶身中段，确保抓取稳定"
+            },
+            {
+              "component": [
+                "conditioner",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧护发素瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "conditioner",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "conditioner",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "conditioner",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准护发素瓶身中段，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              637,
+              133
+            ]
+          },
+          {
+            "component": [
+              "conditioner",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧护发素瓶身",
+            "target_id": 2,
+            "coords": [
+              637,
+              133
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取刀",
+        "intent_analysis": {
+          "user_intent": "抓取刀",
+          "objects": [
+            {
+              "name": "刀",
+              "components": [
+                {
+                  "id": 23,
+                  "part": "刀身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号23的刀身，注意握住刀柄部分以确保安全，避免接触刀刃。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "knife",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准刀的中段实体表面，确保抓取稳定且避免滑落"
+            },
+            {
+              "component": [
+                "knife",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧刀的中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "knife",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "knife",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准刀的中段实体表面，确保抓取稳定且避免滑落",
+            "target_id": 1,
+            "coords": [
+              693,
+              301
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧刀的中段实体表面",
+            "target_id": 1,
+            "coords": [
+              693,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取骆驼",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取骆驼",
+        "intent_analysis": {
+          "user_intent": "抓取骆驼",
+          "objects": [
+            {
+              "name": "骆驼",
+              "components": [
+                {
+                  "id": 13,
+                  "part": "骆驼模型"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号13的骆驼模型，注意避免碰到周围的物体以免造成干扰。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "camel",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准骆驼主体实体表面，稳定抓取避免滑落"
+            },
+            {
+              "component": [
+                "camel",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧骆驼主体"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "camel",
+              "part": "body",
+              "id": 1
+            },
+            {
+              "object": "camel",
+              "part": "body",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "camel",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准骆驼主体实体表面，稳定抓取避免滑落",
+            "target_id": 1,
+            "coords": [
+              903,
+              343
+            ]
+          },
+          {
+            "component": [
+              "camel",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧骆驼主体",
+            "target_id": 1,
+            "coords": [
+              903,
+              343
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

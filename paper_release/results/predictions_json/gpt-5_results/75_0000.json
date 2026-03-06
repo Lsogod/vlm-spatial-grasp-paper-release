@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/all\\75_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到刀的握柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              591,
+              134
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧刀的握柄",
+            "target_id": 0,
+            "coords": [
+              591,
+              134
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑人牙膏",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑人牙膏",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到黑人牙膏中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              418,
+              412
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑人牙膏中部",
+            "target_id": 0,
+            "coords": [
+              418,
+              412
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取桃子放到盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子放到盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到桃子中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              261,
+              486
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子中部",
+            "target_id": 0,
+            "coords": [
+              261,
+              486
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              787,
+              256
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将桃子放入蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              787,
+              256
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

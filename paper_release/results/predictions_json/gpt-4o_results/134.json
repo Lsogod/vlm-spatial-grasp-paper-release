@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/all\\134.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将小黄鸭放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将小黄鸭放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "duck",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小黄鸭的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              76,
+              76
+            ]
+          },
+          {
+            "component": [
+              "duck",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "抓取小黄鸭",
+            "target_id": 0,
+            "coords": [
+              76,
+              76
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的中心位置",
+            "target_id": 1,
+            "coords": [
+              320,
+              192
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "放开小黄鸭到红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              320,
+              192
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将水果刀放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将水果刀放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水果刀的抓取位置",
+            "target_id": 0,
+            "coords": [
+              320,
+              384
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "抓取水果刀",
+            "target_id": 0,
+            "coords": [
+              320,
+              384
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的中心位置",
+            "target_id": 1,
+            "coords": [
+              320,
+              192
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "将水果刀放入红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              320,
+              192
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将香蕉放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中部的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              576,
+              192
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "抓紧香蕉",
+            "target_id": 0,
+            "coords": [
+              576,
+              192
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的中心位置",
+            "target_id": 1,
+            "coords": [
+              320,
+              192
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将香蕉放入红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              320,
+              192
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

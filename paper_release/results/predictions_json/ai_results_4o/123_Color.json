@@ -1,0 +1,380 @@
+{
+  "source_file": "../dist/all\\123_Color.npz",
+  "image_filename": "123_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黄色水杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色水杯",
+        "intent_analysis": {
+          "user_intent": "抓取黄色水杯",
+          "objects": [
+            {
+              "name": "黄色水杯",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的黄色水杯，注意避免碰倒周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow cup",
+                "rim"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黄色水杯的杯沿，避免抓取空腔区域，确保稳定性"
+            },
+            {
+              "component": [
+                "yellow cup",
+                "rim"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色水杯的杯沿"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow cup",
+              "part": "rim",
+              "id": 0
+            },
+            {
+              "object": "yellow cup",
+              "part": "rim",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow cup",
+              "rim"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黄色水杯的杯沿，避免抓取空腔区域，确保稳定性",
+            "target_id": 0,
+            "coords": [
+              1183,
+              35
+            ]
+          },
+          {
+            "component": [
+              "yellow cup",
+              "rim"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色水杯的杯沿",
+            "target_id": 0,
+            "coords": [
+              1183,
+              35
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将电池放到左侧螺丝盒上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将电池放到左侧螺丝盒上",
+        "intent_analysis": {
+          "user_intent": "将电池放到左侧螺丝盒上",
+          "objects": [
+            {
+              "name": "电池",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "电池本体"
+                }
+              ]
+            },
+            {
+              "name": "螺丝盒",
+              "components": [
+                {
+                  "id": 15,
+                  "part": "螺丝盒本体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号7的电池拾起并轻放到编号15的螺丝盒上，确保电池稳定放置，避免掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准电池中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧电池"
+            },
+            {
+              "component": [
+                "screw box",
+                "top"
+              ],
+              "action": "move_to_point",
+              "description": "移动到左侧螺丝盒上方，准备放置电池"
+            },
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将电池放置在螺丝盒上"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "screw box",
+              "part": "top",
+              "id": 3
+            },
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准电池中部实体表面，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              721,
+              203
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电池",
+            "target_id": 1,
+            "coords": [
+              721,
+              203
+            ]
+          },
+          {
+            "component": [
+              "screw box",
+              "top"
+            ],
+            "action": "move_to_point",
+            "description": "移动到左侧螺丝盒上方，准备放置电池",
+            "target_id": 3,
+            "coords": [
+              105,
+              343
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将电池放置在螺丝盒上",
+            "target_id": 1,
+            "coords": [
+              721,
+              203
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 0,
+                  "part": "壶身"
+                },
+                {
+                  "id": 14,
+                  "part": "壶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取时需同时握住编号0的壶身和编号14的壶盖，确保壶盖不会掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 5
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 5,
+            "coords": [
+              1197,
+              301
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 5,
+            "coords": [
+              1197,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/100-129\\121_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黑色胶带",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色胶带",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "black tape",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色胶带顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              725,
+              136
+            ]
+          },
+          {
+            "component": [
+              "black tape",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色胶带",
+            "target_id": 0,
+            "coords": [
+              725,
+              136
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取灰色盒子中的电池",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色盒子中的电池",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "gray box",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到灰色盒子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              683,
+              627
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住电池",
+            "target_id": 1,
+            "coords": [
+              908,
+              514
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取灰色盒子中的电池放到白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色盒子中的电池放到白色笔筒中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "gray box",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到灰色盒子顶部准备抓取电池",
+            "target_id": 0,
+            "coords": [
+              683,
+              640
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹取电池",
+            "target_id": 1,
+            "coords": [
+              908,
+              514
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将电池移动到白色笔筒中心位置",
+            "target_id": 2,
+            "coords": [
+              414,
+              421
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在白色笔筒中心位置释放电池",
+            "target_id": 2,
+            "coords": [
+              414,
+              421
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

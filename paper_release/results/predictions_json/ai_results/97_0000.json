@@ -1,0 +1,259 @@
+{
+  "source_file": "../dist/0-99\\97_0000.npz",
+  "image_filename": "97_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "intent_analysis": {
+          "user_intent": "抓取梨子",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "梨子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手或机械手抓取编号1的梨子主体，注意控制力度避免挤压过度导致损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黄色梨子中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "yellow pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色梨子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow pear",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "yellow pear",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黄色梨子中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              840,
+              266
+            ]
+          },
+          {
+            "component": [
+              "yellow pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色梨子",
+            "target_id": 1,
+            "coords": [
+              840,
+              266
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色猩猩玩具",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色猩猩玩具",
+        "final_action_plan": [
+          {
+            "component": [
+              "black gorilla toy",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色猩猩玩具中段实体表面，稳定抓取避免滑落",
+            "target_id": 1,
+            "coords": [
+              553,
+              217
+            ]
+          },
+          {
+            "component": [
+              "black gorilla toy",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色猩猩玩具中段",
+            "target_id": 1,
+            "coords": [
+              553,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取螺栓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺栓",
+        "intent_analysis": {
+          "user_intent": "抓取螺栓",
+          "objects": [
+            {
+              "name": "螺栓",
+              "components": [
+                {
+                  "id": 18,
+                  "part": "螺栓本体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手或工具抓取编号18的螺栓，确保抓取时手指或夹具稳固夹住螺栓头部或杆部，避免滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "bolt",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心且无遮挡的螺栓中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "bolt",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧螺栓确保牢固抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "bolt",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "bolt",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心且无遮挡的螺栓中部以便稳定抓取",
+            "target_id": 0,
+            "coords": [
+              714,
+              234
+            ]
+          },
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺栓确保牢固抓取",
+            "target_id": 0,
+            "coords": [
+              714,
+              234
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

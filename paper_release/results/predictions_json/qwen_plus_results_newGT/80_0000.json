@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\80_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大象模型中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              305,
+              277
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象模型",
+            "target_id": 0,
+            "coords": [
+              305,
+              277
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "screwdriver",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺丝刀中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              641,
+              283
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝刀中部",
+            "target_id": 0,
+            "coords": [
+              641,
+              283
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至香蕉中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              823,
+              470
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取香蕉",
+            "target_id": 0,
+            "coords": [
+              823,
+              470
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

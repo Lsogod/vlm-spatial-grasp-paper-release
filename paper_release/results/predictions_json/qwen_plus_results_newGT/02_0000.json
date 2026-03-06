@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\02_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取李子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到李子中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              341,
+              334
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子",
+            "target_id": 0,
+            "coords": [
+              341,
+              334
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取梨子放入蓝盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子放入蓝盆",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              341,
+              334
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 0,
+            "coords": [
+              341,
+              334
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将梨子移至蓝盆中心上方",
+            "target_id": 1,
+            "coords": [
+              903,
+              186
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开梨子，放入蓝盆",
+            "target_id": 1,
+            "coords": [
+              903,
+              186
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至香蕉中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              522,
+              390
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取香蕉",
+            "target_id": 0,
+            "coords": [
+              522,
+              390
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

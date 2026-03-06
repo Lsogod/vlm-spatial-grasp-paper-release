@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\32_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              375,
+              214
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              375,
+              214
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉顶部位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              806,
+              125
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 0,
+            "coords": [
+              806,
+              125
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取一字起子放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取一字起子放入蓝盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue cap",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盖子的开口处准备放置",
+            "target_id": 0,
+            "coords": [
+              806,
+              601
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到一字起子顶部准备抓取",
+            "target_id": 1,
+            "coords": [
+              528,
+              612
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住一字起子",
+            "target_id": 1,
+            "coords": [
+              528,
+              612
+            ]
+          },
+          {
+            "component": [
+              "blue cap",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "将一字起子放入蓝色盖子开口中",
+            "target_id": 0,
+            "coords": [
+              806,
+              601
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

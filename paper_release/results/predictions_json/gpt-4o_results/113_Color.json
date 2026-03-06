@@ -1,0 +1,207 @@
+{
+  "source_file": "../dist/all\\113_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取左上角遥控器放入灰色透明箱中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上角遥控器放入灰色透明箱中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器中部的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              1088,
+              180
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪以抓取遥控器",
+            "target_id": 0,
+            "coords": [
+              1088,
+              180
+            ]
+          },
+          {
+            "component": [
+              "gray transparent box",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到灰色透明箱的中心上方",
+            "target_id": 1,
+            "coords": [
+              640,
+              540
+            ]
+          },
+          {
+            "component": [
+              "gray transparent box",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "打开夹爪以放下遥控器",
+            "target_id": 1,
+            "coords": [
+              640,
+              540
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取左上角遥控器放入白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上角遥控器放入白色笔筒中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              1088,
+              216
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取遥控器",
+            "target_id": 0,
+            "coords": [
+              1088,
+              216
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒的上方",
+            "target_id": 1,
+            "coords": [
+              384,
+              216
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "打开夹爪将遥控器放入白色笔筒中",
+            "target_id": 1,
+            "coords": [
+              384,
+              216
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑红色测温枪的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              512,
+              540
+            ]
+          },
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪以抓取黑红色测温枪",
+            "target_id": 0,
+            "coords": [
+              512,
+              540
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

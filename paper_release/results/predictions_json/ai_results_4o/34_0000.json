@@ -1,0 +1,380 @@
+{
+  "source_file": "../dist/all\\34_0000.npz",
+  "image_filename": "34_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香水放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香水放入蓝盖",
+        "intent_analysis": {
+          "user_intent": "将香水放入蓝色盖子中",
+          "objects": [
+            {
+              "name": "香水",
+              "components": [
+                {
+                  "id": 21,
+                  "part": "香水瓶"
+                }
+              ]
+            },
+            {
+              "name": "蓝色盖子",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盖子"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号21的香水瓶，将其放入编号4的蓝色盖子中，确保香水瓶稳定放置，避免倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香水瓶中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香水瓶"
+            },
+            {
+              "component": [
+                "blue cap",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盖子内部上方，准备放置香水瓶"
+            },
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，放置香水瓶到蓝色盖子内"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "blue cap",
+              "part": "inside",
+              "id": 3
+            },
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香水瓶中段实体表面，便于稳定抓取",
+            "target_id": 5,
+            "coords": [
+              623,
+              329
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香水瓶",
+            "target_id": 5,
+            "coords": [
+              623,
+              329
+            ]
+          },
+          {
+            "component": [
+              "blue cap",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盖子内部上方，准备放置香水瓶",
+            "target_id": 3,
+            "coords": [
+              847,
+              315
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，放置香水瓶到蓝色盖子内",
+            "target_id": 5,
+            "coords": [
+              623,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大宝sod",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝sod",
+        "intent_analysis": {
+          "user_intent": "抓取大宝SOD蜜",
+          "objects": [
+            {
+              "name": "大宝SOD蜜",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 8,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的瓶身，确保瓶盖（编号8）未松动以防止液体泄漏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "sod lotion",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大宝SOD蜜瓶身，瓶身为实体材质，抓取稳定"
+            },
+            {
+              "component": [
+                "sod lotion",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大宝SOD蜜瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "sod lotion",
+              "part": "body",
+              "id": 5
+            },
+            {
+              "object": "sod lotion",
+              "part": "body",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "sod lotion",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大宝SOD蜜瓶身，瓶身为实体材质，抓取稳定",
+            "target_id": 5,
+            "coords": [
+              875,
+              553
+            ]
+          },
+          {
+            "component": [
+              "sod lotion",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝SOD蜜瓶身",
+            "target_id": 5,
+            "coords": [
+              875,
+              553
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取罐头",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取罐头",
+        "intent_analysis": {
+          "user_intent": "抓取罐头",
+          "objects": [
+            {
+              "name": "罐头",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "罐体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的罐头，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "can",
+                "sidewall"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准罐头侧壁实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "can",
+                "sidewall"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧罐头侧壁"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "can",
+              "part": "sidewall",
+              "id": 3
+            },
+            {
+              "object": "can",
+              "part": "sidewall",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "can",
+              "sidewall"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准罐头侧壁实体表面，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              441,
+              189
+            ]
+          },
+          {
+            "component": [
+              "can",
+              "sidewall"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧罐头侧壁",
+            "target_id": 3,
+            "coords": [
+              441,
+              189
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

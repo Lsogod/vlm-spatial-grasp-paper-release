@@ -1,0 +1,530 @@
+{
+  "source_file": "../dist/0-99\\25_0000.npz",
+  "image_filename": "25_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将梨子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将梨子放入盆中",
+        "intent_analysis": {
+          "user_intent": "将梨子放入盆中",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "梨子果体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "盆内壁"
+                },
+                {
+                  "id": 7,
+                  "part": "盆底图案"
+                },
+                {
+                  "id": 14,
+                  "part": "盆外沿"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号2的梨子，将其轻轻放入编号6的盆内，确保梨子稳稳地置于编号7的盆底位置，避免用力过猛导致盆倾倒或梨子受损。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像上方的黄色梨子中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色梨子"
+            },
+            {
+              "component": [
+                "blue basin",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放梨子到盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "blue basin",
+              "part": "rim",
+              "id": 10
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像上方的黄色梨子中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              576,
+              180
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色梨子",
+            "target_id": 1,
+            "coords": [
+              576,
+              180
+            ]
+          },
+          {
+            "component": [
+              "blue basin",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的杯沿正上方以便放入",
+            "target_id": 10,
+            "coords": [
+              287,
+              595
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放梨子到盆中",
+            "target_id": 1,
+            "coords": [
+              576,
+              180
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将桃子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将桃子放入盆中",
+        "intent_analysis": {
+          "user_intent": "将桃子放入盆中",
+          "objects": [
+            {
+              "name": "桃子",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "桃子果体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "盆内壁"
+                },
+                {
+                  "id": 7,
+                  "part": "盆底"
+                },
+                {
+                  "id": 14,
+                  "part": "盆外沿"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号4的桃子，将其轻放入由编号(6,7,14)组成的盆中，避免用力过猛以防桃子受损或盆倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心附近无遮挡的桃子中部以便抓取"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧桃子以防搬运过程中掉落"
+            },
+            {
+              "component": [
+                "blue basin",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪将桃子放入盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "blue basin",
+              "part": "rim",
+              "id": 9
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心附近无遮挡的桃子中部以便抓取",
+            "target_id": 0,
+            "coords": [
+              737,
+              334
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子以防搬运过程中掉落",
+            "target_id": 0,
+            "coords": [
+              737,
+              334
+            ]
+          },
+          {
+            "component": [
+              "blue basin",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的杯沿正上方以便放入",
+            "target_id": 9,
+            "coords": [
+              287,
+              595
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将桃子放入盆中",
+            "target_id": 0,
+            "coords": [
+              737,
+              334
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将牙膏放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将牙膏放入盆中",
+        "intent_analysis": {
+          "user_intent": "将牙膏放入盆中",
+          "objects": [
+            {
+              "name": "牙膏",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "牙膏管身"
+                },
+                {
+                  "id": 13,
+                  "part": "牙膏盖"
+                },
+                {
+                  "id": 17,
+                  "part": "牙膏尾部"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "盆内底部"
+                },
+                {
+                  "id": 7,
+                  "part": "盆内物品"
+                },
+                {
+                  "id": 14,
+                  "part": "盆边"
+                }
+              ]
+            }
+          ],
+          "constraints": "先确保牙膏盖(13)已旋紧或取下，根据需要将牙膏整体搬运至盆(6,7,14)内，注意避免牙膏在搬运过程中挤压导致膏体溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "toothpaste",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色牙膏管主体以便稳定抓取"
+            },
+            {
+              "component": [
+                "toothpaste",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧牙膏管以防滑落"
+            },
+            {
+              "component": [
+                "blue basin",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的盆沿正上方以便放入"
+            },
+            {
+              "component": [
+                "toothpaste",
+                "body"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪将牙膏放入盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "toothpaste",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "toothpaste",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "blue basin",
+              "part": "rim",
+              "id": 12
+            },
+            {
+              "object": "toothpaste",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "toothpaste",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色牙膏管主体以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              880,
+              385
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏管以防滑落",
+            "target_id": 2,
+            "coords": [
+              880,
+              385
+            ]
+          },
+          {
+            "component": [
+              "blue basin",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的盆沿正上方以便放入",
+            "target_id": 12,
+            "coords": [
+              287,
+              595
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "body"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将牙膏放入盆中",
+            "target_id": 2,
+            "coords": [
+              880,
+              385
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

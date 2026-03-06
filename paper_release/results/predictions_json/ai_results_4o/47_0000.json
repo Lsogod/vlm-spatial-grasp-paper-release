@@ -1,0 +1,498 @@
+{
+  "source_file": "../dist/all\\47_0000.npz",
+  "image_filename": "47_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取洗发水放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗发水放入盆中",
+        "intent_analysis": {
+          "user_intent": "抓取洗发水放入盆中",
+          "objects": [
+            {
+              "name": "洗发水",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "瓶身"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号2的洗发水瓶，将其放入编号1的盆中，确保瓶子稳定放置，避免倾倒或溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "shampoo bottle",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准洗发水瓶的中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "shampoo bottle",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧洗发水瓶"
+            },
+            {
+              "component": [
+                "basin",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到盆的上方，准备放置洗发水瓶"
+            },
+            {
+              "component": [
+                "shampoo bottle",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，放置洗发水瓶到盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "shampoo bottle",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "shampoo bottle",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "basin",
+              "part": "rim",
+              "id": 5
+            },
+            {
+              "object": "shampoo bottle",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准洗发水瓶的中部实体表面，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              497,
+              217
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗发水瓶",
+            "target_id": 1,
+            "coords": [
+              497,
+              217
+            ]
+          },
+          {
+            "component": [
+              "basin",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到盆的上方，准备放置洗发水瓶",
+            "target_id": 5,
+            "coords": [
+              917,
+              385
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，放置洗发水瓶到盆中",
+            "target_id": 1,
+            "coords": [
+              497,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取牙膏放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏放入盆中",
+        "intent_analysis": {
+          "user_intent": "抓取牙膏放入盆中",
+          "objects": [
+            {
+              "name": "牙膏",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "牙膏管"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号11的牙膏管，将其放入编号1的盆中，确保牙膏管稳定放置，避免掉落或挤压出内容物。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "toothpaste",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准牙膏管中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "toothpaste",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧牙膏管中段，确保抓取牢固"
+            },
+            {
+              "component": [
+                "bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到盆的上方，准备放置牙膏"
+            },
+            {
+              "component": [
+                "toothpaste",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将牙膏放入盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "toothpaste",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "toothpaste",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "bowl",
+              "part": "rim",
+              "id": 5
+            },
+            {
+              "object": "toothpaste",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准牙膏管中段实体表面，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              749,
+              259
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏管中段，确保抓取牢固",
+            "target_id": 3,
+            "coords": [
+              749,
+              259
+            ]
+          },
+          {
+            "component": [
+              "bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到盆的上方，准备放置牙膏",
+            "target_id": 5,
+            "coords": [
+              917,
+              385
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将牙膏放入盆中",
+            "target_id": 3,
+            "coords": [
+              749,
+              259
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取塑料圆盖酸奶放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取塑料圆盖酸奶放入盆中",
+        "intent_analysis": {
+          "user_intent": "抓取塑料圆盖酸奶放入盆中",
+          "objects": [
+            {
+              "name": "塑料圆盖酸奶",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "酸奶瓶"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号3的塑料圆盖酸奶，将其放入编号1的盆中，注意轻放以避免倾倒或溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yogurt with orange plastic lid",
+                "lid"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准塑料圆盖酸奶的盖子部分，便于抓取"
+            },
+            {
+              "component": [
+                "yogurt with orange plastic lid",
+                "lid"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧塑料圆盖酸奶的盖子部分"
+            },
+            {
+              "component": [
+                "bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的上方，准备放置酸奶"
+            },
+            {
+              "component": [
+                "yogurt with orange plastic lid",
+                "lid"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将酸奶放入蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yogurt with orange plastic lid",
+              "part": "lid",
+              "id": 6
+            },
+            {
+              "object": "yogurt with orange plastic lid",
+              "part": "lid",
+              "id": 6
+            },
+            {
+              "object": "bowl",
+              "part": "rim",
+              "id": 1
+            },
+            {
+              "object": "yogurt with orange plastic lid",
+              "part": "lid",
+              "id": 6
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yogurt with orange plastic lid",
+              "lid"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准塑料圆盖酸奶的盖子部分，便于抓取",
+            "target_id": 6,
+            "coords": [
+              497,
+              595
+            ]
+          },
+          {
+            "component": [
+              "yogurt with orange plastic lid",
+              "lid"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧塑料圆盖酸奶的盖子部分",
+            "target_id": 6,
+            "coords": [
+              497,
+              595
+            ]
+          },
+          {
+            "component": [
+              "bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的上方，准备放置酸奶",
+            "target_id": 1,
+            "coords": [
+              1001,
+              413
+            ]
+          },
+          {
+            "component": [
+              "yogurt with orange plastic lid",
+              "lid"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将酸奶放入蓝色盆中",
+            "target_id": 6,
+            "coords": [
+              497,
+              595
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

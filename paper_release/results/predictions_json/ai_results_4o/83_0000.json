@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/all\\83_0000.npz",
+  "image_filename": "83_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取棕色河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取棕色河马",
+        "intent_analysis": {
+          "user_intent": "抓取棕色河马",
+          "objects": [
+            {
+              "name": "棕色河马",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "整体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号9的棕色河马，注意避免碰到周围的其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "brown hippo",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准棕色河马的中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "brown hippo",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧棕色河马的中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "brown hippo",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "brown hippo",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "brown hippo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准棕色河马的中段实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              483,
+              399
+            ]
+          },
+          {
+            "component": [
+              "brown hippo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧棕色河马的中段实体表面",
+            "target_id": 2,
+            "coords": [
+              483,
+              399
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "intent_analysis": {
+          "user_intent": "抓取草莓",
+          "objects": [
+            {
+              "name": "草莓",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "草莓主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的草莓，注意避免碰到周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准草莓中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧草莓"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准草莓中部实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              567,
+              567
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓",
+            "target_id": 2,
+            "coords": [
+              567,
+              567
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取犀牛",
+          "objects": [
+            {
+              "name": "犀牛",
+              "components": [
+                {
+                  "id": 23,
+                  "part": "犀牛身体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号23的犀牛身体，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准犀牛的身体部分，稳定抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧犀牛的身体部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "body",
+              "id": 0
+            },
+            {
+              "object": "rhino",
+              "part": "body",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准犀牛的身体部分，稳定抓取",
+            "target_id": 0,
+            "coords": [
+              581,
+              231
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛的身体部分",
+            "target_id": 0,
+            "coords": [
+              581,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

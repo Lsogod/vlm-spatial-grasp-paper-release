@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\45_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              407,
+              324
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 0,
+            "coords": [
+              407,
+              324
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取塑料圆盖酸奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取塑料圆盖酸奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "plastic lid",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到塑料圆盖酸奶顶部的抓取位",
+            "target_id": 0,
+            "coords": [
+              320,
+              488
+            ]
+          },
+          {
+            "component": [
+              "plastic lid",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧塑料圆盖酸奶",
+            "target_id": 0,
+            "coords": [
+              320,
+              488
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取罐头",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取罐头",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "can",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到罐头顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              670,
+              266
+            ]
+          },
+          {
+            "component": [
+              "can",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧罐头",
+            "target_id": 0,
+            "coords": [
+              670,
+              266
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

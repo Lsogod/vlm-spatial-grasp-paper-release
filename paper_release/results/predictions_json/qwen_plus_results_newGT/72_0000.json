@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\72_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至梨子中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              192,
+              196
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取梨子",
+            "target_id": 0,
+            "coords": [
+              192,
+              196
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取双面胶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到双面胶中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              509,
+              177
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取双面胶",
+            "target_id": 0,
+            "coords": [
+              509,
+              177
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取大宝男士洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝男士洗面奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Dabao facial cleanser",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大宝男士洗面奶中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              811,
+              177
+            ]
+          },
+          {
+            "component": [
+              "Dabao facial cleanser",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝男士洗面奶",
+            "target_id": 0,
+            "coords": [
+              811,
+              177
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

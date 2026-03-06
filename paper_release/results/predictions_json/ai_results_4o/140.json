@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/all\\140.npz",
+  "image_filename": "140.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "壶身"
+                },
+                {
+                  "id": 14,
+                  "part": "壶嘴"
+                },
+                {
+                  "id": 15,
+                  "part": "壶把手"
+                },
+                {
+                  "id": 17,
+                  "part": "壶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取时应握住编号15的壶把手，确保编号17的壶盖未松动以防掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "teapot",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "teapot",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "teapot",
+              "part": "handle",
+              "id": 4
+            },
+            {
+              "object": "teapot",
+              "part": "handle",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 4,
+            "coords": [
+              301,
+              203
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手",
+            "target_id": 4,
+            "coords": [
+              301,
+              203
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取饮料罐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取饮料罐",
+        "intent_analysis": {
+          "user_intent": "抓取饮料罐",
+          "objects": [
+            {
+              "name": "饮料罐",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "罐体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的饮料罐，注意避免碰倒周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "drink can",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准饮料罐中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "drink can",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧饮料罐中段"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "drink can",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "drink can",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "drink can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准饮料罐中段实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              175,
+              147
+            ]
+          },
+          {
+            "component": [
+              "drink can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧饮料罐中段",
+            "target_id": 1,
+            "coords": [
+              175,
+              147
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取日光灯",
+        "intent_analysis": {
+          "user_intent": "抓取日光灯",
+          "objects": [
+            {
+              "name": "日光灯",
+              "components": [
+                {
+                  "id": 16,
+                  "part": "灯管"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号16的日光灯灯管，注意轻拿轻放以防损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "fluorescent lamp",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准日光灯中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "fluorescent lamp",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧日光灯中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "fluorescent lamp",
+              "part": "middle",
+              "id": null
+            },
+            {
+              "object": "fluorescent lamp",
+              "part": "middle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "fluorescent lamp",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准日光灯中段实体表面，确保抓取稳定",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "fluorescent lamp",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧日光灯中段实体表面",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

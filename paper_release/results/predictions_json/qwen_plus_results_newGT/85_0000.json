@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\85_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取灰色犀牛玩具",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色犀牛玩具",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino toy",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到灰色犀牛玩具中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              718,
+              131
+            ]
+          },
+          {
+            "component": [
+              "rhino toy",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取灰色犀牛玩具",
+            "target_id": 0,
+            "coords": [
+              718,
+              131
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取棕色河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取棕色河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippo",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到棕色河马中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              919,
+              168
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧棕色河马",
+            "target_id": 0,
+            "coords": [
+              919,
+              168
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取马克笔",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取马克笔",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "red marker",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到红色马克笔中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              320,
+              365
+            ]
+          },
+          {
+            "component": [
+              "red marker",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色马克笔中部",
+            "target_id": 0,
+            "coords": [
+              320,
+              365
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

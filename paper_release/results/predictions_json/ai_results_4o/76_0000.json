@@ -1,0 +1,372 @@
+{
+  "source_file": "../dist/all\\76_0000.npz",
+  "image_filename": "76_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将桃子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将桃子放入盆中",
+        "intent_analysis": {
+          "user_intent": "将桃子放入盆中",
+          "objects": [
+            {
+              "name": "桃子",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "桃子本体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号4的桃子放入编号2的盆中，确保桃子完全进入盆内，避免掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准桃子中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧桃子，确保抓取成功"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的上方，准备放置桃子"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将桃子放入蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 6
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准桃子中部实体表面，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              469,
+              175
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子，确保抓取成功",
+            "target_id": 2,
+            "coords": [
+              469,
+              175
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的上方，准备放置桃子",
+            "target_id": 6,
+            "coords": [
+              567,
+              455
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将桃子放入蓝色盆中",
+            "target_id": 2,
+            "coords": [
+              469,
+              175
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑人牙膏",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑人牙膏",
+        "intent_analysis": {
+          "user_intent": "抓取黑人牙膏",
+          "objects": [
+            {
+              "name": "黑人牙膏",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "牙膏管"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的黑人牙膏，注意避免挤压牙膏管以防内容物溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "Darlie toothpaste",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑人牙膏中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "Darlie toothpaste",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑人牙膏中段，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "Darlie toothpaste",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "Darlie toothpaste",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "Darlie toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑人牙膏中段实体表面，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              931,
+              497
+            ]
+          },
+          {
+            "component": [
+              "Darlie toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑人牙膏中段，确保抓取牢固",
+            "target_id": 2,
+            "coords": [
+              931,
+              497
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黄色包装护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色包装护发素",
+        "intent_analysis": {
+          "user_intent": "抓取黄色包装护发素",
+          "objects": [
+            {
+              "name": "护发素",
+              "components": [
+                {
+                  "id": 29,
+                  "part": "瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号29的护发素瓶身，注意避免碰到旁边的刀具（编号25）。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow conditioner bottle",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黄色护发素瓶的中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "yellow conditioner bottle",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色护发素瓶的中部"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow conditioner bottle",
+              "part": "middle",
+              "id": null
+            },
+            {
+              "object": "yellow conditioner bottle",
+              "part": "middle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow conditioner bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黄色护发素瓶的中部实体表面，确保抓取稳定",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "yellow conditioner bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色护发素瓶的中部",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

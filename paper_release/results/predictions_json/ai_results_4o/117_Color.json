@@ -1,0 +1,376 @@
+{
+  "source_file": "../dist/all\\117_Color.npz",
+  "image_filename": "117_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将蓝色勺子放入白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将蓝色勺子放入白色笔筒中",
+        "intent_analysis": {
+          "user_intent": "将蓝色勺子放入白色笔筒中",
+          "objects": [
+            {
+              "name": "蓝色勺子",
+              "components": [
+                {
+                  "id": 17,
+                  "part": "勺子"
+                }
+              ]
+            },
+            {
+              "name": "白色笔筒",
+              "components": [
+                {
+                  "id": 16,
+                  "part": "笔筒"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号17的蓝色勺子从橙色托盘中取出，放入编号16的白色笔筒中，确保勺子稳定放置在笔筒内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色勺子的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色勺子的手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "white pen holder",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色笔筒的上方，为放置勺子做准备"
+            },
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将蓝色勺子放入白色笔筒中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "white pen holder",
+              "part": "inside",
+              "id": 5
+            },
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色勺子的手柄部分，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              399,
+              217
+            ]
+          },
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色勺子的手柄，确保抓取牢固",
+            "target_id": 1,
+            "coords": [
+              399,
+              217
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒的上方，为放置勺子做准备",
+            "target_id": 5,
+            "coords": [
+              567,
+              329
+            ]
+          },
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将蓝色勺子放入白色笔筒中",
+            "target_id": 1,
+            "coords": [
+              399,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "壶身"
+                },
+                {
+                  "id": 12,
+                  "part": "壶口"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号10的壶身部分，注意避免触碰编号12的壶口以保持清洁。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": null
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色美工刀",
+        "intent_analysis": {
+          "user_intent": "抓取黑色美工刀",
+          "objects": [
+            {
+              "name": "美工刀",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "刀身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的美工刀，注意握住刀身部分，避免接触刀刃以防割伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑色美工刀中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色美工刀"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色美工刀中段实体表面，确保抓取稳定",
+            "target_id": 3,
+            "coords": [
+              805,
+              245
+            ]
+          },
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色美工刀",
+            "target_id": 3,
+            "coords": [
+              805,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

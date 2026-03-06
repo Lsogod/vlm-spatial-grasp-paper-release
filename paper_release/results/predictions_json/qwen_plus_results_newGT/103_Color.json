@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/100-129\\103_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取白色带黄色旋钮的杯盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取白色带黄色旋钮的杯盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "white lid",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到白色带黄色旋钮杯盖的中心抓取位姿",
+            "target_id": 0,
+            "coords": [
+              869,
+              159
+            ]
+          },
+          {
+            "component": [
+              "white lid",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取杯盖",
+            "target_id": 0,
+            "coords": [
+              869,
+              159
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "thermometer",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑红色测温枪中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              1091,
+              156
+            ]
+          },
+          {
+            "component": [
+              "thermometer",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑红色测温枪中部",
+            "target_id": 0,
+            "coords": [
+              1091,
+              156
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取冰淇淋放入白色方形盒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取冰淇淋放入白色方形盒中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "ice cream",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到冰淇淋中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              750,
+              300
+            ]
+          },
+          {
+            "component": [
+              "ice cream",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧冰淇淋",
+            "target_id": 0,
+            "coords": [
+              750,
+              300
+            ]
+          },
+          {
+            "component": [
+              "white box",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将冰淇淋移至白色方盒中心上方",
+            "target_id": 1,
+            "coords": [
+              591,
+              124
+            ]
+          },
+          {
+            "component": [
+              "white box",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，放入冰淇淋",
+            "target_id": 1,
+            "coords": [
+              591,
+              124
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

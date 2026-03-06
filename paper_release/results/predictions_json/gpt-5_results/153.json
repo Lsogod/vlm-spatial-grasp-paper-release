@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\153.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取日光灯",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "lamp",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到日光灯中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              468,
+              208
+            ]
+          },
+          {
+            "component": [
+              "lamp",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧日光灯中部",
+            "target_id": 0,
+            "coords": [
+              468,
+              208
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中部的抓取位置",
+            "target_id": 0,
+            "coords": [
+              565,
+              410
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉中部",
+            "target_id": 0,
+            "coords": [
+              565,
+              410
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取薯片盒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取薯片盒",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "chips can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到薯片盒中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              69,
+              553
+            ]
+          },
+          {
+            "component": [
+              "chips can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧薯片盒中部",
+            "target_id": 0,
+            "coords": [
+              69,
+              553
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

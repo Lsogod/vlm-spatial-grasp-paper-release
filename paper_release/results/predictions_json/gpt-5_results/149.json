@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\149.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取右下方香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右下方香蕉",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              600,
+              583
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉中部",
+            "target_id": 0,
+            "coords": [
+              600,
+              583
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取水果刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水果刀",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水果刀的握柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              251,
+              366
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水果刀的握柄",
+            "target_id": 0,
+            "coords": [
+              251,
+              366
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取饮料",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取饮料",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "energy drink can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到饮料罐中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              575,
+              106
+            ]
+          },
+          {
+            "component": [
+              "energy drink can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧饮料罐",
+            "target_id": 0,
+            "coords": [
+              575,
+              106
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\56_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取马克笔",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取马克笔",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "marker",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到马克笔中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              615,
+              205
+            ]
+          },
+          {
+            "component": [
+              "marker",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧马克笔中部",
+            "target_id": 0,
+            "coords": [
+              615,
+              205
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至大象玩具中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              683,
+              522
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取大象玩具",
+            "target_id": 0,
+            "coords": [
+              683,
+              522
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取螺栓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺栓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bolt",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺栓中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              806,
+              454
+            ]
+          },
+          {
+            "component": [
+              "bolt",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取螺栓",
+            "target_id": 0,
+            "coords": [
+              806,
+              454
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

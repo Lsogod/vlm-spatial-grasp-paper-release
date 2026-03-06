@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/all\\112_Color.npz",
+  "image_filename": "112_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取胶带",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取胶带",
+        "intent_analysis": {
+          "user_intent": "抓取胶带",
+          "objects": [
+            {
+              "name": "胶带",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "胶带卷"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的胶带卷，无需其他操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "tape",
+                "outer_ring"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "胶带为环形中空物体，选择外圈实体材质区域以确保抓取稳定"
+            },
+            {
+              "component": [
+                "tape",
+                "outer_ring"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧胶带外圈实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "tape",
+              "part": "outer_ring",
+              "id": 0
+            },
+            {
+              "object": "tape",
+              "part": "outer_ring",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "tape",
+              "outer_ring"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "胶带为环形中空物体，选择外圈实体材质区域以确保抓取稳定",
+            "target_id": 0,
+            "coords": [
+              427,
+              441
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "outer_ring"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧胶带外圈实体表面",
+            "target_id": 0,
+            "coords": [
+              427,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色美工刀",
+        "intent_analysis": {
+          "user_intent": "抓取黑色美工刀",
+          "objects": [
+            {
+              "name": "美工刀",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "刀身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的美工刀刀身，注意避免接触刀刃以防割伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑色美工刀的中段实体部分，确保抓取稳定"
+            },
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色美工刀的中段实体部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色美工刀的中段实体部分，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              665,
+              161
+            ]
+          },
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色美工刀的中段实体部分",
+            "target_id": 1,
+            "coords": [
+              665,
+              161
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑绿色测距仪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑绿色测距仪",
+        "intent_analysis": {
+          "user_intent": "抓取黑绿色测距仪",
+          "objects": [
+            {
+              "name": "测距仪",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的测距仪主体，注意轻拿轻放，避免损坏设备。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black-green rangefinder",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑绿色测距仪的中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "black-green rangefinder",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑绿色测距仪"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black-green rangefinder",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "black-green rangefinder",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black-green rangefinder",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑绿色测距仪的中部实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              1085,
+              427
+            ]
+          },
+          {
+            "component": [
+              "black-green rangefinder",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑绿色测距仪",
+            "target_id": 2,
+            "coords": [
+              1085,
+              427
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

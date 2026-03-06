@@ -1,0 +1,38 @@
+<mujocoinclude>
+
+  <asset>
+
+    <mesh name="obj_Kana_Coffe_mesh" file="../mesh/Kana_Coffe.stl"
+      scale="0.0045 0.0045 0.0045"/>
+
+  </asset>
+
+
+
+  <worldbody>
+
+    <body name="obj_Kana_Coffe" pos="1.8 1.4 0.74" euler="0 0 1.57079632679">
+        <joint name="obj_Kana_Coffe_joint" type="free" damping="0.01"/>
+
+        <geom name="visual_mesh" type="mesh" mesh="obj_Kana_Coffe_mesh"
+                rgba="0.9 0.2 0.2 1"
+                contype="0" conaffinity="0" group="1"
+                density="0"/>
+
+        <geom name="col_body" type="sphere" size="0.06" pos="0 0 0"
+                rgba="0 1 0 0.3" friction="1 0.005 0.0001" density="500"/>
+
+        <geom name="col_h1" type="capsule" size="0.006" fromto="0.05 0 0.04  0.08 0 0.06"
+                rgba="0 1 0 0.3" friction="1 0.005 0.0001"/>
+        
+        <geom name="col_h2" type="capsule" size="0.006" fromto="0.08 0 0.06  0.08 0 -0.02"
+                rgba="0 1 0 0.3" friction="1 0.005 0.0001"/>
+        
+        <geom name="col_h3" type="capsule" size="0.006" fromto="0.08 0 -0.02  0.05 0 -0.04"
+                rgba="0 1 0 0.3" friction="1 0.005 0.0001"/>
+
+        </body>
+
+  </worldbody>
+
+</mujocoinclude>

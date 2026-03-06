@@ -1,0 +1,320 @@
+{
+  "source_file": "../dist/0-99\\63_0000.npz",
+  "image_filename": "63_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取双面胶放到盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶放到盆中",
+        "intent_analysis": {
+          "user_intent": "将双面胶放入盆中",
+          "objects": [
+            {
+              "name": "双面胶",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "胶带卷"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓取编号2的双面胶，确保握持稳固，避免掉落或粘到其他物体，然后将其放入编号5的盆体中，注意不要碰到盆内已有物品以防损坏或位置混乱。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "double-sided tape",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准图像左侧无遮挡的双面胶中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "double-sided tape",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧双面胶以防搬运过程中滑落"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的杯沿正上方以便放入物体"
+            },
+            {
+              "component": [
+                "double-sided tape",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "在盆中释放双面胶"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "double-sided tape",
+              "part": "middle",
+              "id": 4
+            },
+            {
+              "object": "double-sided tape",
+              "part": "middle",
+              "id": 4
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 3
+            },
+            {
+              "object": "double-sided tape",
+              "part": "middle",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "double-sided tape",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像左侧无遮挡的双面胶中部以便稳定抓取",
+            "target_id": 4,
+            "coords": [
+              354,
+              343
+            ]
+          },
+          {
+            "component": [
+              "double-sided tape",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧双面胶以防搬运过程中滑落",
+            "target_id": 4,
+            "coords": [
+              354,
+              343
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的杯沿正上方以便放入物体",
+            "target_id": 3,
+            "coords": [
+              455,
+              203
+            ]
+          },
+          {
+            "component": [
+              "double-sided tape",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "在盆中释放双面胶",
+            "target_id": 4,
+            "coords": [
+              354,
+              343
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取下方的牙膏",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取下方的牙膏",
+        "intent_analysis": {
+          "user_intent": "抓取牙膏",
+          "objects": [
+            {
+              "name": "牙膏",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "牙膏管身"
+                },
+                {
+                  "id": 22,
+                  "part": "牙膏盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号3的牙膏管身，确保抓稳后可同时握住编号22的牙膏盖部分以防滑落。注意不要挤压过度以避免牙膏溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "toothpaste",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于下方的牙膏中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "toothpaste",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧牙膏防止滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "toothpaste",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "toothpaste",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于下方的牙膏中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              609,
+              588
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏防止滑落",
+            "target_id": 2,
+            "coords": [
+              609,
+              588
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取桃子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子",
+        "final_action_plan": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准桃子中段实体表面，便于稳固抓取",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子实体部分",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

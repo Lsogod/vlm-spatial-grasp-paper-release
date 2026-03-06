@@ -1,0 +1,376 @@
+{
+  "source_file": "../dist/all\\108_Color.npz",
+  "image_filename": "108_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "intent_analysis": {
+          "user_intent": "抓取黑红色测温枪",
+          "objects": [
+            {
+              "name": "测温枪",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "枪体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的测温枪，确保握住枪体部分以便于操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑红色测温枪的手柄部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧测温枪的手柄部位"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑红色测温枪的手柄部位，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              651,
+              567
+            ]
+          },
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪的手柄部位",
+            "target_id": 1,
+            "coords": [
+              651,
+              567
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色锤子",
+        "intent_analysis": {
+          "user_intent": "抓取黑色锤子",
+          "objects": [
+            {
+              "name": "黑色锤子",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "锤子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号8的黑色锤子，确保握住锤柄部分以便于操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black hammer",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑色锤子的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "black hammer",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色锤子的手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black hammer",
+              "part": "handle",
+              "id": 3
+            },
+            {
+              "object": "black hammer",
+              "part": "handle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色锤子的手柄部分，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              497,
+              329
+            ]
+          },
+          {
+            "component": [
+              "black hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色锤子的手柄，确保抓取牢固",
+            "target_id": 3,
+            "coords": [
+              497,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将胶带放入白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将胶带放入白色笔筒中",
+        "intent_analysis": {
+          "user_intent": "将胶带放入白色笔筒中",
+          "objects": [
+            {
+              "name": "白色笔筒",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "笔筒主体"
+                }
+              ]
+            },
+            {
+              "name": "胶带",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "胶带主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号7的胶带放入编号2的白色笔筒中，确保胶带完全进入笔筒内部。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "tape",
+                "outer_ring"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准胶带外圈的实体材质区域，避免抓取空洞部分"
+            },
+            {
+              "component": [
+                "tape",
+                "outer_ring"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧胶带外圈的实体表面"
+            },
+            {
+              "component": [
+                "pen holder",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色笔筒的上方，准备放置胶带"
+            },
+            {
+              "component": [
+                "tape",
+                "outer_ring"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将胶带放入白色笔筒中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "tape",
+              "part": "outer_ring",
+              "id": 5
+            },
+            {
+              "object": "tape",
+              "part": "outer_ring",
+              "id": 5
+            },
+            {
+              "object": "pen holder",
+              "part": "inside",
+              "id": 2
+            },
+            {
+              "object": "tape",
+              "part": "outer_ring",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "tape",
+              "outer_ring"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准胶带外圈的实体材质区域，避免抓取空洞部分",
+            "target_id": 5,
+            "coords": [
+              469,
+              427
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "outer_ring"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧胶带外圈的实体表面",
+            "target_id": 5,
+            "coords": [
+              469,
+              427
+            ]
+          },
+          {
+            "component": [
+              "pen holder",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒的上方，准备放置胶带",
+            "target_id": 2,
+            "coords": [
+              245,
+              147
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "outer_ring"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将胶带放入白色笔筒中",
+            "target_id": 5,
+            "coords": [
+              469,
+              427
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

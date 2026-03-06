@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\29_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到河马中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              372,
+              181
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马中部",
+            "target_id": 0,
+            "coords": [
+              372,
+              181
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhinoceros",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到犀牛中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              1059,
+              216
+            ]
+          },
+          {
+            "component": [
+              "rhinoceros",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住犀牛中部",
+            "target_id": 0,
+            "coords": [
+              1059,
+              216
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取电钻",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取电钻",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "drill",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到电钻手柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              418,
+              429
+            ]
+          },
+          {
+            "component": [
+              "drill",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电钻手柄进行抓取",
+            "target_id": 0,
+            "coords": [
+              418,
+              429
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

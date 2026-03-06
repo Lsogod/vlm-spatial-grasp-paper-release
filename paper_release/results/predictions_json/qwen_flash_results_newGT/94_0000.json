@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\94_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黄色包装护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色包装护发素",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Pantene tube",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到护发素管顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              407,
+              158
+            ]
+          },
+          {
+            "component": [
+              "Pantene tube",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧护发素管顶部",
+            "target_id": 0,
+            "coords": [
+              407,
+              158
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取桃子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到桃子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              823,
+              329
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子",
+            "target_id": 0,
+            "coords": [
+              823,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取中间的灰色大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取中间的灰色大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到灰色大象中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              670,
+              482
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色大象",
+            "target_id": 0,
+            "coords": [
+              670,
+              482
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

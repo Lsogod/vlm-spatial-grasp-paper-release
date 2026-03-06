@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\83_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取棕色河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取棕色河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到棕色河马中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              522,
+              332
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧棕色河马中部",
+            "target_id": 0,
+            "coords": [
+              522,
+              332
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到草莓顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              636,
+              486
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓顶部进行抓取",
+            "target_id": 0,
+            "coords": [
+              636,
+              486
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              724,
+              251
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛中部",
+            "target_id": 0,
+            "coords": [
+              724,
+              251
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

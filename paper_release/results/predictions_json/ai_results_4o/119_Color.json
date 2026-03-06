@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/all\\119_Color.npz",
+  "image_filename": "119_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取蓝扣白色透明盒子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝扣白色透明盒子",
+        "intent_analysis": {
+          "user_intent": "抓取蓝扣白色透明盒子",
+          "objects": [
+            {
+              "name": "蓝扣白色透明盒子",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "盒体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的盒体，注意避免用力过大以免损坏盒子。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue-latch transparent box",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝扣白色透明盒子的实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "blue-latch transparent box",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝扣白色透明盒子的实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue-latch transparent box",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "blue-latch transparent box",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue-latch transparent box",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝扣白色透明盒子的实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              665,
+              147
+            ]
+          },
+          {
+            "component": [
+              "blue-latch transparent box",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝扣白色透明盒子的实体表面",
+            "target_id": 2,
+            "coords": [
+              665,
+              147
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取蓝色水杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色水杯",
+        "intent_analysis": {
+          "user_intent": "抓取蓝色水杯",
+          "objects": [
+            {
+              "name": "蓝色水杯",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的蓝色水杯，注意握住杯柄以确保稳固。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue cup",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色水杯的把手，便于稳定抓取"
+            },
+            {
+              "component": [
+                "blue cup",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色水杯的把手"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue cup",
+              "part": "handle",
+              "id": null
+            },
+            {
+              "object": "blue cup",
+              "part": "handle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue cup",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色水杯的把手，便于稳定抓取",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "blue cup",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色水杯的把手",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 13,
+                  "part": "壶身"
+                },
+                {
+                  "id": 14,
+                  "part": "壶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取时需同时握住编号13的壶身和编号14的壶盖，确保壶盖不会脱落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 3
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              1253,
+              105
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 3,
+            "coords": [
+              1253,
+              105
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

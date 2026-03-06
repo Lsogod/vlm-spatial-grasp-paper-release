@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/all\\126_Color.npz",
+  "image_filename": "126_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "香蕉主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的香蕉主体，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中段实体表面，稳定且不易滑落",
+            "target_id": 2,
+            "coords": [
+              1169,
+              231
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 2,
+            "coords": [
+              1169,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取猕猴桃",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猕猴桃",
+        "intent_analysis": {
+          "user_intent": "抓取猕猴桃",
+          "objects": [
+            {
+              "name": "猕猴桃",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号11的猕猴桃，注意轻拿轻放以避免损坏果体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kiwi",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准猕猴桃中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "kiwi",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧猕猴桃"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kiwi",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "kiwi",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kiwi",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准猕猴桃中部实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              665,
+              427
+            ]
+          },
+          {
+            "component": [
+              "kiwi",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猕猴桃",
+            "target_id": 1,
+            "coords": [
+              665,
+              427
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取苹果",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取苹果",
+        "intent_analysis": {
+          "user_intent": "抓取苹果",
+          "objects": [
+            {
+              "name": "苹果",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的苹果，注意力度适中以免损坏果体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "apple",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准苹果中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "apple",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧苹果"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "apple",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "apple",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "apple",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准苹果中段实体表面，确保抓取稳定",
+            "target_id": 3,
+            "coords": [
+              749,
+              231
+            ]
+          },
+          {
+            "component": [
+              "apple",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧苹果",
+            "target_id": 3,
+            "coords": [
+              749,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "source_file": "../dist/0-99\\33_0000.npz",
+  "image_filename": "33_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香水放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香水放入蓝盖",
+        "intent_analysis": {
+          "user_intent": "抓取香水并放入蓝盖中",
+          "objects": [
+            {
+              "name": "香水",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "瓶身"
+                }
+              ]
+            },
+            {
+              "name": "蓝盖",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "盖体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓取编号8的香水瓶，将其放入编号1的蓝盖中，确保香水瓶稳定放置，避免倾倒或溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "perfume",
+                "cap"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香水瓶的瓶盖部位以便抓取"
+            },
+            {
+              "component": [
+                "perfume",
+                "cap"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香水瓶"
+            },
+            {
+              "component": [
+                "blue cap",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盖子的边缘正上方"
+            },
+            {
+              "component": [
+                "perfume",
+                "cap"
+              ],
+              "action": "open_gripper",
+              "description": "释放香水瓶到蓝色盖子中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务结束回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "perfume",
+              "part": "cap",
+              "id": 2
+            },
+            {
+              "object": "perfume",
+              "part": "cap",
+              "id": 2
+            },
+            {
+              "object": "blue cap",
+              "part": "rim",
+              "id": 0
+            },
+            {
+              "object": "perfume",
+              "part": "cap",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "perfume",
+              "cap"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香水瓶的瓶盖部位以便抓取",
+            "target_id": 2,
+            "coords": [
+              931,
+              231
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "cap"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香水瓶",
+            "target_id": 2,
+            "coords": [
+              931,
+              231
+            ]
+          },
+          {
+            "component": [
+              "blue cap",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盖子的边缘正上方",
+            "target_id": 0,
+            "coords": [
+              345,
+              170
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "cap"
+            ],
+            "action": "open_gripper",
+            "description": "释放香水瓶到蓝色盖子中",
+            "target_id": 2,
+            "coords": [
+              931,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务结束回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "intent_analysis": {
+          "user_intent": "抓取鼠标",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "鼠标主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的鼠标主体，注意轻拿轻放，避免按压鼠标按键。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准鼠标中部以便抓取"
+            },
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准鼠标中部以便抓取",
+            "target_id": 0,
+            "coords": [
+              679,
+              217
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              679,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "香蕉主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的香蕉主体，注意避免碰到周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中部以便抓取"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              469,
+              392
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 1,
+            "coords": [
+              469,
+              392
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

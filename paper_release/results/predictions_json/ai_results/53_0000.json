@@ -1,0 +1,331 @@
+{
+  "source_file": "../dist/0-99\\53_0000.npz",
+  "image_filename": "53_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "intent_analysis": {
+          "user_intent": "抓取河马玩具",
+          "objects": [
+            {
+              "name": "河马玩具",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "河马玩具主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或机械夹具抓取编号7的河马玩具主体，注意控制力度以避免损坏玩具或使其滑落。可从顶部或侧面夹取，确保抓取时周围物体不被碰倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准河马玩具中部以便稳定抓取，位置靠近图像中心且无遮挡"
+            },
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧河马玩具"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准河马玩具中部以便稳定抓取，位置靠近图像中心且无遮挡",
+            "target_id": 1,
+            "coords": [
+              497,
+              273
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马玩具",
+            "target_id": 1,
+            "coords": [
+              497,
+              273
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取牙膏盒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏盒",
+        "intent_analysis": {
+          "user_intent": "抓取牙膏盒",
+          "objects": [
+            {
+              "name": "牙膏盒",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "盒身"
+                },
+                {
+                  "id": 15,
+                  "part": "图案区域"
+                },
+                {
+                  "id": 16,
+                  "part": "侧面"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号(2)的牙膏盒主体，注意握持位置避免压坏盒身，可从编号(16)的侧面或编号(15)的图案区域下方发力以便提起。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "toothpaste box",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准牙膏盒中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "toothpaste box",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧牙膏盒防止滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "toothpaste box",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "toothpaste box",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "toothpaste box",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准牙膏盒中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              903,
+              315
+            ]
+          },
+          {
+            "component": [
+              "toothpaste box",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏盒防止滑落",
+            "target_id": 1,
+            "coords": [
+              903,
+              315
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取身体乳",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取身体乳",
+        "intent_analysis": {
+          "user_intent": "抓取身体乳",
+          "objects": [
+            {
+              "name": "身体乳",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 11,
+                  "part": "按压泵头"
+                },
+                {
+                  "id": 12,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号3的瓶身，确保手指避开编号11的按压泵头以防误挤出乳液；如需使用可将瓶口朝上并按压编号11的泵头。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "body lotion",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择图像中心附近无遮挡的白色泵头身体乳主体并对准以便抓取"
+            },
+            {
+              "component": [
+                "body lotion",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧身体乳主体以确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "body lotion",
+              "part": "body",
+              "id": 5
+            },
+            {
+              "object": "body lotion",
+              "part": "body",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "body lotion",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心附近无遮挡的白色泵头身体乳主体并对准以便抓取",
+            "target_id": 5,
+            "coords": [
+              760,
+              567
+            ]
+          },
+          {
+            "component": [
+              "body lotion",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧身体乳主体以确保稳定抓取",
+            "target_id": 5,
+            "coords": [
+              760,
+              567
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

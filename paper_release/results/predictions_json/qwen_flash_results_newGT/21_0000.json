@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\21_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将骆驼放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将骆驼放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "camel toy",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到骆驼玩具的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              444,
+              227
+            ]
+          },
+          {
+            "component": [
+              "camel toy",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹住骆驼玩具",
+            "target_id": 0,
+            "coords": [
+              444,
+              227
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将骆驼玩具移动到蓝色盆子中心位置",
+            "target_id": 1,
+            "coords": [
+              707,
+              249
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆子中心释放骆驼玩具",
+            "target_id": 1,
+            "coords": [
+              707,
+              249
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将鼠标放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将鼠标放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标顶部抓取位置",
+            "target_id": 0,
+            "coords": [
+              345,
+              492
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住鼠标",
+            "target_id": 0,
+            "coords": [
+              345,
+              492
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将鼠标移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              707,
+              249
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放鼠标",
+            "target_id": 1,
+            "coords": [
+              707,
+              249
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将草莓放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将草莓放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到草莓顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              576,
+              473
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住草莓",
+            "target_id": 0,
+            "coords": [
+              576,
+              473
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将草莓移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              707,
+              249
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放草莓",
+            "target_id": 1,
+            "coords": [
+              707,
+              249
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

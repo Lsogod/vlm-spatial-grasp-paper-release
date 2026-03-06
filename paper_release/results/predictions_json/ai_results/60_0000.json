@@ -1,0 +1,263 @@
+{
+  "source_file": "../dist/0-99\\60_0000.npz",
+  "image_filename": "60_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "香蕉主体"
+                },
+                {
+                  "id": 22,
+                  "part": "香蕉尾部"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号(2)靠近编号(22)的一端或中部，确保抓握稳固，避免用力过大导致香蕉损伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于红色杯子中的香蕉中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉确保不滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于红色杯子中的香蕉中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              497,
+              329
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉确保不滑落",
+            "target_id": 2,
+            "coords": [
+              497,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取身体乳",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取身体乳",
+        "intent_analysis": {
+          "user_intent": "抓取身体乳",
+          "objects": [
+            {
+              "name": "身体乳瓶",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "瓶盖"
+                },
+                {
+                  "id": 15,
+                  "part": "瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号15的瓶身，确保瓶盖编号5朝上以防液体溢出，保持瓶身直立状态进行抓取。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "body lotion",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心偏右、无遮挡的白色红盖身体乳中部以便抓取"
+            },
+            {
+              "component": [
+                "body lotion",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧身体乳瓶身以确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "body lotion",
+              "part": "middle",
+              "id": 4
+            },
+            {
+              "object": "body lotion",
+              "part": "middle",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "body lotion",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心偏右、无遮挡的白色红盖身体乳中部以便抓取",
+            "target_id": 4,
+            "coords": [
+              786,
+              254
+            ]
+          },
+          {
+            "component": [
+              "body lotion",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧身体乳瓶身以确保稳定抓取",
+            "target_id": 4,
+            "coords": [
+              786,
+              254
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取左上方的河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上方的河马",
+        "final_action_plan": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准左上方河马中段实体表面，便于稳定抓取",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马中段实体表面",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

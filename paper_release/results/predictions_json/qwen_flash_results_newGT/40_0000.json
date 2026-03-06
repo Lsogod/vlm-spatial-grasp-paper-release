@@ -1,0 +1,158 @@
+{
+  "source_file": "../dist/0-99\\40_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取蓝盆中的大宝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝盆中的大宝",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝盆中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              609,
+              489
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝盆中的大宝",
+            "target_id": 0,
+            "coords": [
+              609,
+              489
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "back_to_zero",
+            "description": "收回机械臂至初始位置",
+            "target_id": 0,
+            "coords": [
+              609,
+              489
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黄色小样香水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色小样香水",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "small bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小样香水顶部抓取位置",
+            "target_id": 0,
+            "coords": [
+              623,
+              445
+            ]
+          },
+          {
+            "component": [
+              "small bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小样香水",
+            "target_id": 0,
+            "coords": [
+              623,
+              445
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取红色头的洗浴用品",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取红色头的洗浴用品",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bottle",
+              "opening"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到红色头洗浴用品的开口处准备抓取",
+            "target_id": 0,
+            "coords": [
+              729,
+              229
+            ]
+          },
+          {
+            "component": [
+              "bottle",
+              "opening"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色头洗浴用品",
+            "target_id": 0,
+            "coords": [
+              729,
+              229
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

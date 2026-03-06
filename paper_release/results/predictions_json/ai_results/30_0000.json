@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/0-99\\30_0000.npz",
+  "image_filename": "30_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "intent_analysis": {
+          "user_intent": "抓取河马模型",
+          "objects": [
+            {
+              "name": "河马模型",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "张嘴的河马"
+                },
+                {
+                  "id": 4,
+                  "part": "闭嘴的河马"
+                }
+              ]
+            }
+          ],
+          "constraints": "根据需要选择抓取编号3或编号4的河马模型，使用手直接抓取，注意握持稳固以防掉落。若周围有其他物品阻挡，应先移开障碍物再进行抓取。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择图像中心偏左无遮挡的河马中部作为抓取点"
+            },
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧河马以确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心偏左无遮挡的河马中部作为抓取点",
+            "target_id": 2,
+            "coords": [
+              402,
+              424
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马以确保稳定抓取",
+            "target_id": 2,
+            "coords": [
+              402,
+              424
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取电钻",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取电钻",
+        "intent_analysis": {
+          "user_intent": "抓取电钻",
+          "objects": [
+            {
+              "name": "电钻",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "钻头"
+                },
+                {
+                  "id": 16,
+                  "part": "电钻机身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号16的电钻机身，确保手指远离编号7的钻头位置；抓取时保持电钻水平或竖直以防滑落，避免在电钻通电或钻头旋转时进行抓取。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "orange electric drill",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心且无遮挡的橙色电钻手柄以便稳定抓取"
+            },
+            {
+              "component": [
+                "orange electric drill",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧橙色电钻手柄确保牢固抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "orange electric drill",
+              "part": "handle",
+              "id": 2
+            },
+            {
+              "object": "orange electric drill",
+              "part": "handle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "orange electric drill",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心且无遮挡的橙色电钻手柄以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              665,
+              518
+            ]
+          },
+          {
+            "component": [
+              "orange electric drill",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧橙色电钻手柄确保牢固抓取",
+            "target_id": 2,
+            "coords": [
+              665,
+              518
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取犀牛模型",
+          "objects": [
+            {
+              "name": "犀牛模型",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "犀牛全身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓取编号4的犀牛模型，注意避开周围的剪刀(编号10)和其他物品，防止碰撞或刮伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于右侧无遮挡的犀牛中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧犀牛确保稳固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于右侧无遮挡的犀牛中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              954,
+              488
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛确保稳固",
+            "target_id": 1,
+            "coords": [
+              954,
+              488
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

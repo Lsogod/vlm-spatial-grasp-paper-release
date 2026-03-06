@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/all\\150.npz",
+  "image_filename": "150.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取可乐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取可乐",
+        "intent_analysis": {
+          "user_intent": "抓取可乐",
+          "objects": [
+            {
+              "name": "可乐",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "可乐罐"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的可乐罐，注意轻拿轻放以防止罐体变形或液体溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "coca-cola can",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准可乐罐中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "coca-cola can",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧可乐罐"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "coca-cola can",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "coca-cola can",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "coca-cola can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准可乐罐中段实体表面，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              175,
+              161
+            ]
+          },
+          {
+            "component": [
+              "coca-cola can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧可乐罐",
+            "target_id": 1,
+            "coords": [
+              175,
+              161
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 22,
+                  "part": "壶身"
+                },
+                {
+                  "id": 23,
+                  "part": "壶盖"
+                },
+                {
+                  "id": 8,
+                  "part": "壶嘴"
+                },
+                {
+                  "id": 14,
+                  "part": "壶把手"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取时应使用编号14的壶把手，确保壶盖（编号23）稳固，避免壶盖松动或掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "teapot",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "teapot",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "teapot",
+              "part": "handle",
+              "id": 3
+            },
+            {
+              "object": "teapot",
+              "part": "handle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              525,
+              217
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手",
+            "target_id": 3,
+            "coords": [
+              525,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取小黄鸭",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取小黄鸭",
+        "intent_analysis": {
+          "user_intent": "抓取小黄鸭",
+          "objects": [
+            {
+              "name": "小黄鸭",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的小黄鸭，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow duck",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准小黄鸭的中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "yellow duck",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧小黄鸭"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow duck",
+              "part": "middle",
+              "id": null
+            },
+            {
+              "object": "yellow duck",
+              "part": "middle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow duck",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准小黄鸭的中部实体表面，确保抓取稳定",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "yellow duck",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小黄鸭",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

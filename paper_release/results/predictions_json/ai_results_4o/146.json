@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/all\\146.npz",
+  "image_filename": "146.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取橙子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取橙子",
+        "intent_analysis": {
+          "user_intent": "抓取橙子",
+          "objects": [
+            {
+              "name": "橙子",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "橙子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的橙子，注意力度适中以免损坏橙子表皮。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "orange",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准橙子中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "orange",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧橙子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "orange",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "orange",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准橙子中部实体表面，确保抓取稳定",
+            "target_id": 0,
+            "coords": [
+              161,
+              301
+            ]
+          },
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧橙子",
+            "target_id": 0,
+            "coords": [
+              161,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取日光灯",
+        "intent_analysis": {
+          "user_intent": "抓取日光灯",
+          "objects": [
+            {
+              "name": "日光灯",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "灯管"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号7的日光灯灯管，注意轻拿轻放，避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "fluorescent light",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准日光灯中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "fluorescent light",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧日光灯中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "fluorescent light",
+              "part": "middle",
+              "id": null
+            },
+            {
+              "object": "fluorescent light",
+              "part": "middle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "fluorescent light",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准日光灯中段实体表面，确保抓取稳定",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "fluorescent light",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧日光灯中段实体表面",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "壶身"
+                },
+                {
+                  "id": 14,
+                  "part": "壶嘴"
+                },
+                {
+                  "id": 15,
+                  "part": "壶盖"
+                },
+                {
+                  "id": 16,
+                  "part": "壶把手"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取水壶时，建议使用编号16的壶把手进行操作，确保稳固抓握，避免倾倒或滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "teapot",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "teapot",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "teapot",
+              "part": "handle",
+              "id": 8
+            },
+            {
+              "object": "teapot",
+              "part": "handle",
+              "id": 8
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 8,
+            "coords": [
+              273,
+              245
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 8,
+            "coords": [
+              273,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

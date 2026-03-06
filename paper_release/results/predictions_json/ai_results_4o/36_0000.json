@@ -1,0 +1,324 @@
+{
+  "source_file": "../dist/all\\36_0000.npz",
+  "image_filename": "36_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "intent_analysis": {
+          "user_intent": "抓取大象玩具",
+          "objects": [
+            {
+              "name": "大象玩具1",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "整体"
+                }
+              ]
+            },
+            {
+              "name": "大象玩具2",
+              "components": [
+                {
+                  "id": 18,
+                  "part": "整体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓取编号4或编号18的大象玩具，注意避免碰到周围的其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "elephant",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大象的身体部分，确保抓取稳定"
+            },
+            {
+              "component": [
+                "elephant",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大象的身体部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "elephant",
+              "part": "body",
+              "id": 1
+            },
+            {
+              "object": "elephant",
+              "part": "body",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "elephant",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大象的身体部分，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              805,
+              245
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象的身体部分",
+            "target_id": 1,
+            "coords": [
+              805,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗面奶",
+        "intent_analysis": {
+          "user_intent": "抓取洗面奶",
+          "objects": [
+            {
+              "name": "洗面奶",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的洗面奶瓶身，注意避免碰倒周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "facial cleanser",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准洗面奶瓶身中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "facial cleanser",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧洗面奶瓶身中段"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "facial cleanser",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "facial cleanser",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "facial cleanser",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准洗面奶瓶身中段实体表面，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              623,
+              399
+            ]
+          },
+          {
+            "component": [
+              "facial cleanser",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗面奶瓶身中段",
+            "target_id": 1,
+            "coords": [
+              623,
+              399
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "intent_analysis": {
+          "user_intent": "抓取河马",
+          "objects": [
+            {
+              "name": "河马",
+              "components": [
+                {
+                  "id": 18,
+                  "part": "河马玩具"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号18的河马玩具，注意避免碰到周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hippo",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准河马中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "hippo",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧河马中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hippo",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "hippo",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准河马中段实体表面，确保抓取稳定",
+            "target_id": 3,
+            "coords": [
+              441,
+              497
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马中段实体表面",
+            "target_id": 3,
+            "coords": [
+              441,
+              497
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

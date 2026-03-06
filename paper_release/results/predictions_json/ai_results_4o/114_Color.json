@@ -1,0 +1,380 @@
+{
+  "source_file": "../dist/all\\114_Color.npz",
+  "image_filename": "114_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "intent_analysis": {
+          "user_intent": "抓取黑红色测温枪",
+          "objects": [
+            {
+              "name": "测温枪",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "枪体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号9的测温枪，注意避免碰到周围的容器边缘（编号4和5）。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑红色测温枪的手柄部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧测温枪的手柄部位"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 3
+            },
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑红色测温枪的手柄部位，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              665,
+              581
+            ]
+          },
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪的手柄部位",
+            "target_id": 3,
+            "coords": [
+              665,
+              581
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑绿色测距仪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑绿色测距仪",
+        "intent_analysis": {
+          "user_intent": "抓取黑绿色测距仪",
+          "objects": [
+            {
+              "name": "黑绿色测距仪",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "测距仪主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的黑绿色测距仪，注意避免碰到周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black-green rangefinder",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑绿色测距仪的中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "black-green rangefinder",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑绿色测距仪"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black-green rangefinder",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "black-green rangefinder",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black-green rangefinder",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑绿色测距仪的中部实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              1001,
+              217
+            ]
+          },
+          {
+            "component": [
+              "black-green rangefinder",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑绿色测距仪",
+            "target_id": 2,
+            "coords": [
+              1001,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将测温枪放到螺丝盒上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将测温枪放到螺丝盒上",
+        "intent_analysis": {
+          "user_intent": "将测温枪放到螺丝盒上",
+          "objects": [
+            {
+              "name": "测温枪",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "枪体"
+                }
+              ]
+            },
+            {
+              "name": "螺丝盒",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "盒体"
+                },
+                {
+                  "id": 13,
+                  "part": "盒盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "先将编号9的测温枪从编号5的容器中取出，再将其轻放到编号12的螺丝盒上，确保测温枪稳定放置在盒盖（编号13）上，避免滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "temperature gun",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准测温枪的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "temperature gun",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧测温枪手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "screw box",
+                "top"
+              ],
+              "action": "move_to_point",
+              "description": "移动到螺丝盒顶部上方，准备放置测温枪"
+            },
+            {
+              "component": [
+                "temperature gun",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将测温枪放置在螺丝盒上"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "temperature gun",
+              "part": "handle",
+              "id": 7
+            },
+            {
+              "object": "temperature gun",
+              "part": "handle",
+              "id": 7
+            },
+            {
+              "object": "screw box",
+              "part": "top",
+              "id": 1
+            },
+            {
+              "object": "temperature gun",
+              "part": "handle",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准测温枪的手柄部分，便于稳定抓取",
+            "target_id": 7,
+            "coords": [
+              665,
+              581
+            ]
+          },
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪手柄，确保抓取牢固",
+            "target_id": 7,
+            "coords": [
+              665,
+              581
+            ]
+          },
+          {
+            "component": [
+              "screw box",
+              "top"
+            ],
+            "action": "move_to_point",
+            "description": "移动到螺丝盒顶部上方，准备放置测温枪",
+            "target_id": 1,
+            "coords": [
+              259,
+              203
+            ]
+          },
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将测温枪放置在螺丝盒上",
+            "target_id": 7,
+            "coords": [
+              665,
+              581
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

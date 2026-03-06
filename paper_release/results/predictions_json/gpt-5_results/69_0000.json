@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\69_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到梨子中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              784,
+              468
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住梨子中部",
+            "target_id": 0,
+            "coords": [
+              784,
+              468
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取蓝色螺母",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色螺母",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue nut",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到蓝色螺母的抓取位置",
+            "target_id": 0,
+            "coords": [
+              375,
+              462
+            ]
+          },
+          {
+            "component": [
+              "blue nut",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色螺母",
+            "target_id": 0,
+            "coords": [
+              375,
+              462
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黄色包装护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色包装护发素",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "conditioner bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黄色包装护发素的中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              412,
+              342
+            ]
+          },
+          {
+            "component": [
+              "conditioner bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色包装护发素",
+            "target_id": 0,
+            "coords": [
+              412,
+              342
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

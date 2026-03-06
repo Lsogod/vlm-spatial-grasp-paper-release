@@ -1,0 +1,380 @@
+{
+  "source_file": "../dist/all\\100_Color.npz",
+  "image_filename": "100_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "壶身"
+                },
+                {
+                  "id": 8,
+                  "part": "壶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的壶身即可，注意避免壶盖（编号8）松动或掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 4
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 4,
+            "coords": [
+              1239,
+              175
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 4,
+            "coords": [
+              1239,
+              175
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "香蕉主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的香蕉主体，注意力度适中以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中段实体表面，稳定且不易滑落",
+            "target_id": 1,
+            "coords": [
+              833,
+              413
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 1,
+            "coords": [
+              833,
+              413
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取蓝色勺子放到橘色托盘上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色勺子放到橘色托盘上",
+        "intent_analysis": {
+          "user_intent": "抓取蓝色勺子放到橘色托盘上",
+          "objects": [
+            {
+              "name": "蓝色勺子",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "勺子主体"
+                }
+              ]
+            },
+            {
+              "name": "橘色托盘",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "托盘主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓取编号12的蓝色勺子，将其移动到编号3的橘色托盘上，确保勺子稳定放置在托盘内，避免掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色勺子的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色勺子的手柄部分"
+            },
+            {
+              "component": [
+                "orange tray",
+                "middle"
+              ],
+              "action": "move_to_point",
+              "description": "移动到橘色托盘的中心上方，准备放置"
+            },
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将蓝色勺子放置在橘色托盘上"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 0
+            },
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 0
+            },
+            {
+              "object": "orange tray",
+              "part": "middle",
+              "id": 7
+            },
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色勺子的手柄部分，便于稳定抓取",
+            "target_id": 0,
+            "coords": [
+              819,
+              133
+            ]
+          },
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色勺子的手柄部分",
+            "target_id": 0,
+            "coords": [
+              819,
+              133
+            ]
+          },
+          {
+            "component": [
+              "orange tray",
+              "middle"
+            ],
+            "action": "move_to_point",
+            "description": "移动到橘色托盘的中心上方，准备放置",
+            "target_id": 7,
+            "coords": [
+              1015,
+              329
+            ]
+          },
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将蓝色勺子放置在橘色托盘上",
+            "target_id": 0,
+            "coords": [
+              819,
+              133
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

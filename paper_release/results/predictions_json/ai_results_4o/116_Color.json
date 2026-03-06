@@ -1,0 +1,380 @@
+{
+  "source_file": "../dist/all\\116_Color.npz",
+  "image_filename": "116_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "壶身"
+                },
+                {
+                  "id": 10,
+                  "part": "壶口"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号9的壶身或编号10的壶口进行操作，注意避免倾倒或溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 5
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 5,
+            "coords": [
+              1225,
+              175
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 5,
+            "coords": [
+              1225,
+              175
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色美工刀",
+        "intent_analysis": {
+          "user_intent": "抓取黑色美工刀",
+          "objects": [
+            {
+              "name": "美工刀",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "刀身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的美工刀，注意握住刀身部分，避免接触刀刃以防受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑色美工刀中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色美工刀中段"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色美工刀中段实体表面，确保抓取稳定",
+            "target_id": 0,
+            "coords": [
+              805,
+              231
+            ]
+          },
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色美工刀中段",
+            "target_id": 0,
+            "coords": [
+              805,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将遥控器放到白色储物盒上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将遥控器放到白色储物盒上",
+        "intent_analysis": {
+          "user_intent": "将遥控器放到白色储物盒上",
+          "objects": [
+            {
+              "name": "遥控器",
+              "components": [
+                {
+                  "id": 14,
+                  "part": "遥控器主体"
+                }
+              ]
+            },
+            {
+              "name": "白色储物盒",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "储物盒主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号14的遥控器拿起并轻放到编号11的白色储物盒上，确保放置平稳，避免掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准遥控器中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧遥控器"
+            },
+            {
+              "component": [
+                "white storage box",
+                "top"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色储物盒顶部上方，准备放置"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将遥控器放置在白色储物盒上"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "white storage box",
+              "part": "top",
+              "id": 5
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准遥控器中部实体表面，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              707,
+              273
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器",
+            "target_id": 3,
+            "coords": [
+              707,
+              273
+            ]
+          },
+          {
+            "component": [
+              "white storage box",
+              "top"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色储物盒顶部上方，准备放置",
+            "target_id": 5,
+            "coords": [
+              623,
+              315
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将遥控器放置在白色储物盒上",
+            "target_id": 3,
+            "coords": [
+              707,
+              273
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

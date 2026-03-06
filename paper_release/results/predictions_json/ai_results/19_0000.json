@@ -1,0 +1,203 @@
+{
+  "source_file": "../dist/0-99\\19_0000.npz",
+  "image_filename": "19_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "final_action_plan": [
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准螺丝刀手柄实体部位，便于稳定抓取且避免滑动",
+            "target_id": 2,
+            "coords": [
+              413,
+              441
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝刀手柄以确保牢固抓取",
+            "target_id": 2,
+            "coords": [
+              413,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "香蕉果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓住编号6的香蕉中部或靠近根部的位置，避免用力过猛以防压伤果皮。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心且无遮挡的香蕉中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心且无遮挡的香蕉中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              556,
+              483
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉以防滑落",
+            "target_id": 2,
+            "coords": [
+              556,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色头的洗发水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色头的洗发水",
+        "final_action_plan": [
+          {
+            "component": [
+              "shampoo with black cap",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色瓶盖的洗发水瓶身实体部分，瓶身表面稳定便于夹持",
+            "target_id": 3,
+            "coords": [
+              532,
+              616
+            ]
+          },
+          {
+            "component": [
+              "shampoo with black cap",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗发水瓶身实体部分",
+            "target_id": 3,
+            "coords": [
+              532,
+              616
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

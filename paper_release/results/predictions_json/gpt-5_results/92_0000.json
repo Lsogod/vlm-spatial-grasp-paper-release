@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\92_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取桃子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到桃子中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              261,
+              412
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住桃子中部",
+            "target_id": 0,
+            "coords": [
+              261,
+              412
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取灰色倒置的大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色倒置的大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到灰色倒置大象的中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              833,
+              237
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色倒置大象的中部",
+            "target_id": 0,
+            "coords": [
+              833,
+              237
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取中间位置的骆驼",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取中间位置的骆驼",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到骆驼中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              723,
+              406
+            ]
+          },
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧骆驼中间位置",
+            "target_id": 0,
+            "coords": [
+              723,
+              406
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

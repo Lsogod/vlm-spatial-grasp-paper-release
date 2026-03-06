@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\140.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              256,
+              224
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "抓紧水壶的把手",
+            "target_id": 0,
+            "coords": [
+              256,
+              224
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取饮料罐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取饮料罐",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到饮料罐的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              192,
+              128
+            ]
+          },
+          {
+            "component": [
+              "can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取饮料罐",
+            "target_id": 0,
+            "coords": [
+              192,
+              128
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取日光灯",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "flashlight",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到日光灯的抓取位置",
+            "target_id": 0,
+            "coords": [
+              332,
+              230
+            ]
+          },
+          {
+            "component": [
+              "flashlight",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "抓紧日光灯",
+            "target_id": 0,
+            "coords": [
+              332,
+              230
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

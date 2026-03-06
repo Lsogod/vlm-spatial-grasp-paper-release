@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\57_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取左边的犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左边的犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              363,
+              381
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛",
+            "target_id": 0,
+            "coords": [
+              363,
+              381
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取螺栓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺栓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bolt",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺栓顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              823,
+              270
+            ]
+          },
+          {
+            "component": [
+              "bolt",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺栓",
+            "target_id": 0,
+            "coords": [
+              823,
+              270
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取右边的大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右边的大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大象顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              828,
+              396
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象",
+            "target_id": 0,
+            "coords": [
+              828,
+              396
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

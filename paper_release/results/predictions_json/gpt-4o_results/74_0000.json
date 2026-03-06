@@ -1,0 +1,203 @@
+{
+  "source_file": "../dist/0-99\\74_0000.npz",
+  "image_filename": "74_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取猩猩",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猩猩",
+        "final_action_plan": [
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心附近无遮挡的猩猩中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              637,
+              469
+            ]
+          },
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猩猩",
+            "target_id": 1,
+            "coords": [
+              637,
+              469
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "intent_analysis": {
+          "user_intent": "抓取梨子",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "梨子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的梨子，注意轻拿轻放以免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准梨子中部以便抓取"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧梨子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准梨子中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              952,
+              203
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 2,
+            "coords": [
+              952,
+              203
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取牙膏盒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏盒",
+        "final_action_plan": [
+          {
+            "component": [
+              "toothpaste box",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心且无遮挡的牙膏盒中部以便抓取",
+            "target_id": 3,
+            "coords": [
+              693,
+              252
+            ]
+          },
+          {
+            "component": [
+              "toothpaste box",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏盒",
+            "target_id": 3,
+            "coords": [
+              693,
+              252
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

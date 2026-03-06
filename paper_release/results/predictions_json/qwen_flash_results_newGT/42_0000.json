@@ -1,0 +1,207 @@
+{
+  "source_file": "../dist/0-99\\42_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取草莓放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓放入红杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到草莓顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              560,
+              445
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓",
+            "target_id": 0,
+            "coords": [
+              560,
+              445
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色杯子开口处",
+            "target_id": 1,
+            "coords": [
+              380,
+              580
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开草莓，放入杯中",
+            "target_id": 1,
+            "coords": [
+              380,
+              580
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取李子放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子放入红杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "apple",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到李子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              725,
+              482
+            ]
+          },
+          {
+            "component": [
+              "apple",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子",
+            "target_id": 0,
+            "coords": [
+              725,
+              482
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯开口处",
+            "target_id": 1,
+            "coords": [
+              380,
+              579
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开李子，放入红杯",
+            "target_id": 1,
+            "coords": [
+              380,
+              579
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂归零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              436,
+              180
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              436,
+              180
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

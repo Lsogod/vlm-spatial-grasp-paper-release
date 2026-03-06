@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\14_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗面奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗面奶瓶顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              560,
+              486
+            ]
+          },
+          {
+            "component": [
+              "bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗面奶瓶",
+            "target_id": 0,
+            "coords": [
+              560,
+              486
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大象中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              252,
+              434
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象",
+            "target_id": 0,
+            "coords": [
+              252,
+              434
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              252,
+              403
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛",
+            "target_id": 0,
+            "coords": [
+              252,
+              403
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

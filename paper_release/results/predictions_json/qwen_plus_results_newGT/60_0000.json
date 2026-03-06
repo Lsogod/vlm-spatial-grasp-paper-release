@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\60_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至香蕉中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              495,
+              336
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取香蕉",
+            "target_id": 0,
+            "coords": [
+              495,
+              336
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取身体乳",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取身体乳",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "lotion bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到身体乳瓶身中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              791,
+              234
+            ]
+          },
+          {
+            "component": [
+              "lotion bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧身体乳瓶身中部",
+            "target_id": 0,
+            "coords": [
+              791,
+              234
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取左上方的河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上方的河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippo",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到左上方河马的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              341,
+              128
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取河马",
+            "target_id": 0,
+            "coords": [
+              341,
+              128
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

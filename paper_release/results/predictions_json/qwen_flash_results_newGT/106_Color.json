@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/100-129\\106_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标顶部以抓取",
+            "target_id": 0,
+            "coords": [
+              718,
+              480
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              718,
+              480
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取遥控器",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取遥控器",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              1190,
+              257
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器",
+            "target_id": 0,
+            "coords": [
+              1190,
+              257
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取蓝色冰淇淋",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色冰淇淋",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue ice cream",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝色冰淇淋顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              444,
+              112
+            ]
+          },
+          {
+            "component": [
+              "blue ice cream",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色冰淇淋",
+            "target_id": 0,
+            "coords": [
+              444,
+              112
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

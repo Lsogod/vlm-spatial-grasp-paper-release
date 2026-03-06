@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\141.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取可乐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取可乐",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "coke can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到可乐罐中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              152,
+              130
+            ]
+          },
+          {
+            "component": [
+              "coke can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧可乐罐中部",
+            "target_id": 0,
+            "coords": [
+              152,
+              130
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取可乐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取可乐",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "coke can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到可乐罐中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              152,
+              130
+            ]
+          },
+          {
+            "component": [
+              "coke can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧可乐罐中部",
+            "target_id": 0,
+            "coords": [
+              152,
+              130
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "red kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到红色水壶的把手位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              359,
+              261
+            ]
+          },
+          {
+            "component": [
+              "red kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色水壶的把手",
+            "target_id": 0,
+            "coords": [
+              359,
+              261
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

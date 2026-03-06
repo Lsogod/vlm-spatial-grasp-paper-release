@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/0-99\\59_0000.npz",
+  "image_filename": "59_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "intent_analysis": {
+          "user_intent": "抓取河马模型",
+          "objects": [
+            {
+              "name": "河马模型",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "河马全身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号6的河马模型主体，确保握持稳固以防掉落，可从身体中部或背部进行抓取以保持平衡。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准河马中部以便稳定抓取，河马位于图像下方无遮挡且靠近中心"
+            },
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧河马以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准河马中部以便稳定抓取，河马位于图像下方无遮挡且靠近中心",
+            "target_id": 2,
+            "coords": [
+              284,
+              570
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马以防滑落",
+            "target_id": 2,
+            "coords": [
+              284,
+              570
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取漱口水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取漱口水",
+        "intent_analysis": {
+          "user_intent": "抓取漱口水瓶",
+          "objects": [
+            {
+              "name": "漱口水瓶",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 15,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号12的瓶身，确保瓶盖编号15朝上，避免倾斜导致液体泄漏。抓取时应保持瓶身竖直，防止滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouthwash",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心偏上的白色漱口水瓶主体以便抓取"
+            },
+            {
+              "component": [
+                "mouthwash",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧漱口水瓶主体，确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouthwash",
+              "part": "body",
+              "id": 1
+            },
+            {
+              "object": "mouthwash",
+              "part": "body",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouthwash",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心偏上的白色漱口水瓶主体以便抓取",
+            "target_id": 1,
+            "coords": [
+              586,
+              142
+            ]
+          },
+          {
+            "component": [
+              "mouthwash",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧漱口水瓶主体，确保稳定抓取",
+            "target_id": 1,
+            "coords": [
+              586,
+              142
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取罐头",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取罐头",
+        "intent_analysis": {
+          "user_intent": "抓取罐头",
+          "objects": [
+            {
+              "name": "罐头",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "罐身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或工具抓取编号5的罐头，注意保持罐头直立以防内容物倾洒，抓取时可握住罐身中部以确保稳定。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "can",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心附近无遮挡的罐头中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "can",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧罐头以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "can",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "can",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心附近无遮挡的罐头中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              532,
+              371
+            ]
+          },
+          {
+            "component": [
+              "can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧罐头以防滑落",
+            "target_id": 2,
+            "coords": [
+              532,
+              371
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

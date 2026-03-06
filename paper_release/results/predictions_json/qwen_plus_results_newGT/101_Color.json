@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/100-129\\101_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手处准备抓取",
+            "target_id": 0,
+            "coords": [
+              559,
+              58
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取水壶把手",
+            "target_id": 0,
+            "coords": [
+              559,
+              58
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黄色水杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色水杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "yellow cup",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黄色水杯把手处准备抓取",
+            "target_id": 0,
+            "coords": [
+              1045,
+              272
+            ]
+          },
+          {
+            "component": [
+              "yellow cup",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取黄色水杯把手",
+            "target_id": 0,
+            "coords": [
+              1045,
+              272
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取巧克力放入白色方形容器中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取巧克力放入白色方形容器中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "chocolate",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到巧克力中心上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              485,
+              450
+            ]
+          },
+          {
+            "component": [
+              "chocolate",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧巧克力",
+            "target_id": 0,
+            "coords": [
+              485,
+              450
+            ]
+          },
+          {
+            "component": [
+              "white square container",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将巧克力移至白色方形容器中心上方",
+            "target_id": 1,
+            "coords": [
+              869,
+              297
+            ]
+          },
+          {
+            "component": [
+              "white square container",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将巧克力放入容器中",
+            "target_id": 1,
+            "coords": [
+              869,
+              297
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<mujocoinclude>
+  <asset>
+    <mesh name="obj_teapot_mesh" file="../mesh/Assem6.STL" scale="0.0012 0.0012 0.0012"/>
+  </asset>
+
+  <worldbody>
+    <body name="obj_teapot" pos="1.30 0.80 0.74" euler="1.570796 1.396263 0">
+      <joint name="obj_teapot_joint" type="free" damping="0.1"/>
+      <geom name="obj_teapot_geom" type="mesh" mesh="obj_teapot_mesh"
+            rgba="0.9 0.2 0.2 1"
+            contype="1" conaffinity="1" condim="4"
+            density="500"/>
+    </body>
+  </worldbody>
+</mujocoinclude>

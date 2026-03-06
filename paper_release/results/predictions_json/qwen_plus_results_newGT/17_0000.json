@@ -1,0 +1,207 @@
+{
+  "source_file": "../dist/0-99\\17_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取犀牛放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛放入红杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              618,
+              251
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛",
+            "target_id": 0,
+            "coords": [
+              618,
+              251
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将犀牛移至红杯中心上方",
+            "target_id": 1,
+            "coords": [
+              463,
+              630
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开犀牛，使其落入红杯",
+            "target_id": 1,
+            "coords": [
+              463,
+              630
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取六角口放入蓝杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取六角口放入蓝杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hexagonal_nut",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到六角口上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              313,
+              650
+            ]
+          },
+          {
+            "component": [
+              "hexagonal_nut",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧六角口",
+            "target_id": 0,
+            "coords": [
+              313,
+              650
+            ]
+          },
+          {
+            "component": [
+              "blue cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "将六角口移至蓝杯开口处",
+            "target_id": 1,
+            "coords": [
+              295,
+              492
+            ]
+          },
+          {
+            "component": [
+              "blue cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开六角口使其落入蓝杯",
+            "target_id": 1,
+            "coords": [
+              295,
+              492
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取洗发露",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗发露",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗发露瓶身中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              802,
+              347
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗发露瓶身中部",
+            "target_id": 0,
+            "coords": [
+              802,
+              347
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

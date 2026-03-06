@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/all\\72_0000.npz",
+  "image_filename": "72_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "intent_analysis": {
+          "user_intent": "抓取梨子",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "梨子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的梨子主体即可，无需其他操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准梨子中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧梨子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准梨子中段实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              259,
+              217
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 2,
+            "coords": [
+              259,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取双面胶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶",
+        "intent_analysis": {
+          "user_intent": "抓取双面胶",
+          "objects": [
+            {
+              "name": "双面胶",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "胶带主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的双面胶，确保抓取时避免粘到其他物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "double-sided tape",
+                "outer_ring"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准双面胶外圈的实体材质区域，避免抓取中心空洞"
+            },
+            {
+              "component": [
+                "double-sided tape",
+                "outer_ring"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧双面胶外圈的实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "double-sided tape",
+              "part": "outer_ring",
+              "id": 0
+            },
+            {
+              "object": "double-sided tape",
+              "part": "outer_ring",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "double-sided tape",
+              "outer_ring"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准双面胶外圈的实体材质区域，避免抓取中心空洞",
+            "target_id": 0,
+            "coords": [
+              497,
+              105
+            ]
+          },
+          {
+            "component": [
+              "double-sided tape",
+              "outer_ring"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧双面胶外圈的实体表面",
+            "target_id": 0,
+            "coords": [
+              497,
+              105
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取大宝男士洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝男士洗面奶",
+        "intent_analysis": {
+          "user_intent": "抓取大宝男士洗面奶",
+          "objects": [
+            {
+              "name": "大宝男士洗面奶",
+              "components": [
+                {
+                  "id": 24,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 25,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号24的瓶身，同时确保编号25的瓶盖未松动以防止内容物泄漏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "men's facial cleanser",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大宝男士洗面奶瓶身，选择实体表面便于抓取"
+            },
+            {
+              "component": [
+                "men's facial cleanser",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧洗面奶瓶身，确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "men's facial cleanser",
+              "part": "body",
+              "id": 6
+            },
+            {
+              "object": "men's facial cleanser",
+              "part": "body",
+              "id": 6
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "men's facial cleanser",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大宝男士洗面奶瓶身，选择实体表面便于抓取",
+            "target_id": 6,
+            "coords": [
+              819,
+              273
+            ]
+          },
+          {
+            "component": [
+              "men's facial cleanser",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗面奶瓶身，确保稳定抓取",
+            "target_id": 6,
+            "coords": [
+              819,
+              273
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "source_file": "../dist/all\\39_0000.npz",
+  "image_filename": "39_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香水放入蓝盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香水放入蓝盆",
+        "intent_analysis": {
+          "user_intent": "将香水放入蓝色盆中",
+          "objects": [
+            {
+              "name": "香水",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "瓶身"
+                }
+              ]
+            },
+            {
+              "name": "蓝色盆",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号3的香水瓶，将其轻放入编号4的蓝色盆中，确保香水瓶稳定放置，避免倾倒或溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香水瓶中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香水瓶"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的上方准备放置"
+            },
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将香水瓶放入蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "blue bowl",
+              "part": "inside",
+              "id": 6
+            },
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香水瓶中段实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              861,
+              329
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香水瓶",
+            "target_id": 2,
+            "coords": [
+              861,
+              329
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的上方准备放置",
+            "target_id": 6,
+            "coords": [
+              595,
+              581
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将香水瓶放入蓝色盆中",
+            "target_id": 2,
+            "coords": [
+              861,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大宝放入蓝盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝放入蓝盆",
+        "intent_analysis": {
+          "user_intent": "将大宝抓起并放入蓝色盆中",
+          "objects": [
+            {
+              "name": "大宝",
+              "components": [
+                {
+                  "id": 18,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 13,
+                  "part": "瓶口"
+                }
+              ]
+            },
+            {
+              "name": "蓝色盆",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号18的瓶身或编号13的瓶口，将大宝提起后放入编号4的蓝色盆中，确保瓶口朝上以避免泄漏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "dabao bottle",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大宝瓶身中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "dabao bottle",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大宝瓶身"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的上方，准备放置"
+            },
+            {
+              "component": [
+                "dabao bottle",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将大宝放入蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "dabao bottle",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "dabao bottle",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 9
+            },
+            {
+              "object": "dabao bottle",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "dabao bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大宝瓶身中段实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              609,
+              217
+            ]
+          },
+          {
+            "component": [
+              "dabao bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝瓶身",
+            "target_id": 2,
+            "coords": [
+              609,
+              217
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的上方，准备放置",
+            "target_id": 9,
+            "coords": [
+              595,
+              581
+            ]
+          },
+          {
+            "component": [
+              "dabao bottle",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将大宝放入蓝色盆中",
+            "target_id": 2,
+            "coords": [
+              609,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香水放入蓝盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香水放入蓝盆",
+        "intent_analysis": {
+          "user_intent": "抓取香水放入蓝盆",
+          "objects": [
+            {
+              "name": "香水",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "瓶身"
+                }
+              ]
+            },
+            {
+              "name": "蓝盆",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号3的香水瓶，将其轻轻放入编号4的蓝盆中，确保香水瓶稳定放置，避免倾倒或溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香水瓶中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香水瓶"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的上方，准备放置香水"
+            },
+            {
+              "component": [
+                "perfume",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将香水放入蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 6
+            },
+            {
+              "object": "perfume",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香水瓶中段实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              861,
+              329
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香水瓶",
+            "target_id": 2,
+            "coords": [
+              861,
+              329
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的上方，准备放置香水",
+            "target_id": 6,
+            "coords": [
+              595,
+              581
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将香水放入蓝色盆中",
+            "target_id": 2,
+            "coords": [
+              861,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

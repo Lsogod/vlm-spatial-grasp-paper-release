@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\76_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将桃子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将桃子放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到桃子中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              506,
+              164
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子",
+            "target_id": 0,
+            "coords": [
+              506,
+              164
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将桃子移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              695,
+              508
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将桃子放入盆中",
+            "target_id": 1,
+            "coords": [
+              695,
+              508
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑人牙膏",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑人牙膏",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "DARLIE toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑人牙膏中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              939,
+              452
+            ]
+          },
+          {
+            "component": [
+              "DARLIE toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑人牙膏中部",
+            "target_id": 0,
+            "coords": [
+              939,
+              452
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黄色包装护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色包装护发素",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hair conditioner",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黄色包装护发素中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              663,
+              429
+            ]
+          },
+          {
+            "component": [
+              "hair conditioner",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色包装护发素中部",
+            "target_id": 0,
+            "coords": [
+              663,
+              429
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

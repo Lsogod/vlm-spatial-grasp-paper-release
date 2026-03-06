@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\119_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取蓝扣白色透明盒子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝扣白色透明盒子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "white transparent box",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝扣白色透明盒子的顶部抓取位置",
+            "target_id": 0,
+            "coords": [
+              124,
+              282
+            ]
+          },
+          {
+            "component": [
+              "white transparent box",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取蓝扣白色透明盒子",
+            "target_id": 0,
+            "coords": [
+              124,
+              282
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取蓝色水杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色水杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue cup",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到蓝色水杯的把手位置",
+            "target_id": 0,
+            "coords": [
+              569,
+              209
+            ]
+          },
+          {
+            "component": [
+              "blue cup",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色水杯的把手",
+            "target_id": 0,
+            "coords": [
+              569,
+              209
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              1203,
+              129
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶把手",
+            "target_id": 0,
+            "coords": [
+              1203,
+              129
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

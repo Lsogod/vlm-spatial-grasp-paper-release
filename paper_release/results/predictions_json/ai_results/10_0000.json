@@ -1,0 +1,380 @@
+{
+  "source_file": "../dist/0-99\\10_0000.npz",
+  "image_filename": "10_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取李子放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子放入红杯",
+        "intent_analysis": {
+          "user_intent": "抓取李子放入红杯",
+          "objects": [
+            {
+              "name": "李子",
+              "components": [
+                {
+                  "id": 18,
+                  "part": "果实"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓取编号18的李子，保持轻拿轻放以避免损伤果皮，将其放入编号3的红杯中，确保杯子稳固放置以防倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择图像中心附近无遮挡的李子中部进行对准抓取"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧李子以便搬运"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪将李子放入红杯中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 2
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心附近无遮挡的李子中部进行对准抓取",
+            "target_id": 1,
+            "coords": [
+              446,
+              534
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子以便搬运",
+            "target_id": 1,
+            "coords": [
+              446,
+              534
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯杯沿正上方以便放入",
+            "target_id": 2,
+            "coords": [
+              651,
+              567
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将李子放入红杯中",
+            "target_id": 1,
+            "coords": [
+              446,
+              534
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取犀牛模型",
+          "objects": [
+            {
+              "name": "犀牛模型",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "犀牛全身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手稳固抓住编号8的犀牛模型中部，避免用力过大造成损坏；可从顶部或侧面抓取以确保稳定，不要碰到周围的刀具等尖锐物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心附近无遮挡的犀牛中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧犀牛确保稳固抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心附近无遮挡的犀牛中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              422,
+              390
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛确保稳固抓取",
+            "target_id": 2,
+            "coords": [
+              422,
+              390
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取海飞丝润发乳",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取海飞丝润发乳",
+        "intent_analysis": {
+          "user_intent": "抓取海飞丝润发乳",
+          "objects": [
+            {
+              "name": "海飞丝润发乳",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 23,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号2的瓶身，确保瓶盖编号23朝上或朝外以便搬运，避免挤压瓶身导致内容物溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "海飞丝润发乳",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准海飞丝润发乳瓶身中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "海飞丝润发乳",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧海飞丝润发乳瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "海飞丝润发乳",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "海飞丝润发乳",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "海飞丝润发乳",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准海飞丝润发乳瓶身中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              385,
+              198
+            ]
+          },
+          {
+            "component": [
+              "海飞丝润发乳",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧海飞丝润发乳瓶身",
+            "target_id": 2,
+            "coords": [
+              385,
+              198
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

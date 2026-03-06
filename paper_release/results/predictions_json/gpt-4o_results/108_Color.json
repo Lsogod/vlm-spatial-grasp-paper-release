@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/all\\108_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑红色测温枪的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              512,
+              432
+            ]
+          },
+          {
+            "component": [
+              "temperature gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪以抓取黑红色测温枪",
+            "target_id": 0,
+            "coords": [
+              512,
+              432
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "将机械臂移回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色锤子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色锤子中部的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              512,
+              288
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪以抓取黑色锤子",
+            "target_id": 0,
+            "coords": [
+              512,
+              288
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "将机械臂移动回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将胶带放入白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将胶带放入白色笔筒中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到胶带的抓取位置",
+            "target_id": 0,
+            "coords": [
+              384,
+              432
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "抓取胶带",
+            "target_id": 0,
+            "coords": [
+              384,
+              432
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒的开口处",
+            "target_id": 1,
+            "coords": [
+              256,
+              144
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "将胶带放入白色笔筒中",
+            "target_id": 1,
+            "coords": [
+              256,
+              144
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

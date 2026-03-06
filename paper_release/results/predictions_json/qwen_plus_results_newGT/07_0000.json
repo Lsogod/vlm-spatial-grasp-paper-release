@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\07_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取灰色犀牛玩具",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色犀牛玩具",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino toy",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到灰色犀牛玩具中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              358,
+              154
+            ]
+          },
+          {
+            "component": [
+              "rhino toy",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取灰色犀牛玩具",
+            "target_id": 0,
+            "coords": [
+              358,
+              154
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取猩猩",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猩猩",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "gorilla",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至猩猩模型中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              357,
+              154
+            ]
+          },
+          {
+            "component": [
+              "gorilla",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取猩猩模型",
+            "target_id": 0,
+            "coords": [
+              357,
+              154
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至草莓中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              381,
+              343
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取草莓",
+            "target_id": 0,
+            "coords": [
+              381,
+              343
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

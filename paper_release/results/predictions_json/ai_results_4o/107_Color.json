@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/all\\107_Color.npz",
+  "image_filename": "107_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取抓取鼠标",
+        "intent_analysis": {
+          "user_intent": "抓取鼠标",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "鼠标主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的鼠标主体，注意轻拿轻放，避免误按鼠标按键。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准鼠标中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标中部"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准鼠标中部实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              679,
+              455
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标中部",
+            "target_id": 2,
+            "coords": [
+              679,
+              455
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取遥控器",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取遥控器",
+        "intent_analysis": {
+          "user_intent": "抓取遥控器",
+          "objects": [
+            {
+              "name": "遥控器",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "遥控器主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的遥控器，注意避免碰到周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准遥控器中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧遥控器中部，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准遥控器中部实体表面，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              1155,
+              231
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器中部，确保抓取牢固",
+            "target_id": 2,
+            "coords": [
+              1155,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取蓝色冰淇淋",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色冰淇淋",
+        "intent_analysis": {
+          "user_intent": "抓取蓝色冰淇淋",
+          "objects": [
+            {
+              "name": "蓝色冰淇淋",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "冰淇淋主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号11的蓝色冰淇淋主体，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue ice cream",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色冰淇淋的中段实体部分，确保抓取稳定"
+            },
+            {
+              "component": [
+                "blue ice cream",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色冰淇淋"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue ice cream",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "blue ice cream",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue ice cream",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色冰淇淋的中段实体部分，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              483,
+              133
+            ]
+          },
+          {
+            "component": [
+              "blue ice cream",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色冰淇淋",
+            "target_id": 2,
+            "coords": [
+              483,
+              133
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

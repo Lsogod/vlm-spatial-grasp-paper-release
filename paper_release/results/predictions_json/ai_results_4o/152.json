@@ -1,0 +1,335 @@
+{
+  "source_file": "../dist/all\\152.npz",
+  "image_filename": "152.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水果刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水果刀",
+        "intent_analysis": {
+          "user_intent": "抓取水果刀",
+          "objects": [
+            {
+              "name": "水果刀",
+              "components": [
+                {
+                  "id": 20,
+                  "part": "刀身"
+                },
+                {
+                  "id": 17,
+                  "part": "刀柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号17的刀柄，确保手指远离编号20的刀身以避免受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水果刀的手柄部分，确保抓取稳定且安全"
+            },
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水果刀的手柄部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 2
+            },
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水果刀的手柄部分，确保抓取稳定且安全",
+            "target_id": 2,
+            "coords": [
+              105,
+              469
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水果刀的手柄部分",
+            "target_id": 2,
+            "coords": [
+              105,
+              469
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取锤子",
+        "intent_analysis": {
+          "user_intent": "抓取锤子",
+          "objects": [
+            {
+              "name": "锤子",
+              "components": [
+                {
+                  "id": 16,
+                  "part": "锤头"
+                },
+                {
+                  "id": 18,
+                  "part": "锤柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号18的锤柄进行操作，注意避免接触编号16的锤头以防受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hammer",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准锤子中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "hammer",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧锤子中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hammer",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "hammer",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准锤子中段实体表面，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              399,
+              385
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧锤子中段实体表面",
+            "target_id": 3,
+            "coords": [
+              399,
+              385
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "壶嘴"
+                },
+                {
+                  "id": 14,
+                  "part": "壶把手"
+                },
+                {
+                  "id": 15,
+                  "part": "壶身"
+                },
+                {
+                  "id": 19,
+                  "part": "壶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取时建议使用编号14的壶把手进行操作，确保壶盖（编号19）稳固，避免倾斜导致壶内液体溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "teapot",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手，便于稳定抓取"
+            },
+            {
+              "component": [
+                "teapot",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "teapot",
+              "part": "handle",
+              "id": 7
+            },
+            {
+              "object": "teapot",
+              "part": "handle",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手，便于稳定抓取",
+            "target_id": 7,
+            "coords": [
+              553,
+              231
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手",
+            "target_id": 7,
+            "coords": [
+              553,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

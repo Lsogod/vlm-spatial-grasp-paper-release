@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\23_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将鼠标放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将鼠标放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              404,
+              452
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              404,
+              452
+            ]
+          },
+          {
+            "component": [
+              "bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将鼠标移至盆中心上方",
+            "target_id": 1,
+            "coords": [
+              440,
+              480
+            ]
+          },
+          {
+            "component": [
+              "bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开鼠标，使其落入盆中",
+            "target_id": 1,
+            "coords": [
+              440,
+              480
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将小球放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将小球放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue ball",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝色小球中心以准备抓取",
+            "target_id": 0,
+            "coords": [
+              789,
+              319
+            ]
+          },
+          {
+            "component": [
+              "blue ball",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色小球",
+            "target_id": 0,
+            "coords": [
+              789,
+              319
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将小球移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              437,
+              480
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将小球放入盆中",
+            "target_id": 1,
+            "coords": [
+              437,
+              480
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将红笔放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将红笔放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "red marker",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到红笔中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              631,
+              342
+            ]
+          },
+          {
+            "component": [
+              "red marker",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红笔中部",
+            "target_id": 0,
+            "coords": [
+              631,
+              342
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将红笔移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              437,
+              480
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开红笔，使其落入盆中",
+            "target_id": 1,
+            "coords": [
+              437,
+              480
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

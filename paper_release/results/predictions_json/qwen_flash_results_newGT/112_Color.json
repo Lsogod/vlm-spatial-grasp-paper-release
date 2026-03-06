@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/100-129\\112_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取胶带",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取胶带",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "tape",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到胶带顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              448,
+              485
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧胶带",
+            "target_id": 0,
+            "coords": [
+              448,
+              485
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色美工刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "utility knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到美工刀手柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              645,
+              444
+            ]
+          },
+          {
+            "component": [
+              "utility knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧美工刀手柄",
+            "target_id": 0,
+            "coords": [
+              645,
+              444
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑绿色测距仪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑绿色测距仪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "laser distance meter",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑绿色测距仪顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              1109,
+              356
+            ]
+          },
+          {
+            "component": [
+              "laser distance meter",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑绿色测距仪",
+            "target_id": 0,
+            "coords": [
+              1109,
+              356
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

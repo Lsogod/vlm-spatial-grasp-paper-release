@@ -1,0 +1,22 @@
+<mujocoinclude>
+  <asset>
+    <mesh name="obj_box_mesh" file="../mesh/box.stl" scale="0.001 0.001 0.001"/>
+  </asset>
+
+  <worldbody>
+    <body name="obj_box" pos="1.5 1.0 0.8">
+    <joint name="obj_box_joint" type="free" damping="0.1"/>
+
+    <!-- 视觉：mesh，不参与碰撞 -->
+    <geom type="mesh" mesh="obj_box_mesh"
+            rgba="0.9 0.2 0.2 1"
+            contype="0" conaffinity="0"/>
+
+    <!-- 碰撞：用 box/capsule（尺寸你按实际填） -->
+    <geom type="box" size="0.03 0.03 0.03"
+            rgba="0 0 0 0"
+            contype="1" conaffinity="1" condim="4"
+            density="500"/>
+    </body>
+  </worldbody>
+</mujocoinclude>

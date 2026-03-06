@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/all\\149.npz",
+  "image_filename": "149.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取右下方香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右下方香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取右下方的香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "香蕉"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的香蕉，注意轻拿轻放以免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准右下方香蕉中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准右下方香蕉中段实体表面，稳定且不易滑落",
+            "target_id": 0,
+            "coords": [
+              595,
+              595
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 0,
+            "coords": [
+              595,
+              595
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取水果刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水果刀",
+        "intent_analysis": {
+          "user_intent": "抓取水果刀",
+          "objects": [
+            {
+              "name": "水果刀",
+              "components": [
+                {
+                  "id": 17,
+                  "part": "刀身"
+                },
+                {
+                  "id": 15,
+                  "part": "刀柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号15的刀柄，确保手握稳固，避免接触编号17的刀身以防割伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水果刀的手柄部分，确保抓取稳定且安全"
+            },
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水果刀的手柄部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 2
+            },
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水果刀的手柄部分，确保抓取稳定且安全",
+            "target_id": 2,
+            "coords": [
+              343,
+              371
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水果刀的手柄部分",
+            "target_id": 2,
+            "coords": [
+              343,
+              371
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取饮料",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取饮料",
+        "intent_analysis": {
+          "user_intent": "抓取饮料",
+          "objects": [
+            {
+              "name": "饮料罐",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "罐体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的饮料罐，注意握持稳固，避免倾倒或掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "red can",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红色饮料罐的中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "red can",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红色饮料罐"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "red can",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "red can",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "red can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红色饮料罐的中部实体表面，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              539,
+              147
+            ]
+          },
+          {
+            "component": [
+              "red can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色饮料罐",
+            "target_id": 1,
+            "coords": [
+              539,
+              147
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

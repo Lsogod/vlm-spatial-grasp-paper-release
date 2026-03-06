@@ -1,0 +1,324 @@
+{
+  "source_file": "../dist/0-99\\77_0000.npz",
+  "image_filename": "77_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黑人牙膏",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑人牙膏",
+        "intent_analysis": {
+          "user_intent": "抓取黑人牙膏",
+          "objects": [
+            {
+              "name": "黑人牙膏",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "牙膏管身"
+                },
+                {
+                  "id": 18,
+                  "part": "牙膏盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号9的牙膏管身，避免挤压导致牙膏溢出；可根据需要先旋开编号18的牙膏盖或保持盖子关闭以防漏出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "黑人牙膏",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像右上方无遮挡的黑人牙膏中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "黑人牙膏",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑人牙膏以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "黑人牙膏",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "黑人牙膏",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "黑人牙膏",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像右上方无遮挡的黑人牙膏中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              842,
+              245
+            ]
+          },
+          {
+            "component": [
+              "黑人牙膏",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑人牙膏以防滑落",
+            "target_id": 2,
+            "coords": [
+              842,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将桃子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将桃子放入盆中",
+        "intent_analysis": {
+          "user_intent": "将桃子放入盆中",
+          "objects": [
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "盆体"
+                }
+              ]
+            },
+            {
+              "name": "桃子",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "桃子果实"
+                }
+              ]
+            }
+          ],
+          "constraints": "用双手拿起编号12的桃子，确保握持稳固，避免掉落或碰伤，然后将其轻轻放入编号1的盆中，注意不要用力过猛以防损伤桃子或盆。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准图像下方靠近中心无遮挡的桃子中部以便抓取"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧桃子以防搬运过程中滑落"
+            },
+            {
+              "component": [
+                "blue basin",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到左侧蓝色盆的盆沿正上方以便放置"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪将桃子放入盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 6
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 6
+            },
+            {
+              "object": "blue basin",
+              "part": "rim",
+              "id": 0
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 6
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像下方靠近中心无遮挡的桃子中部以便抓取",
+            "target_id": 6,
+            "coords": [
+              469,
+              595
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子以防搬运过程中滑落",
+            "target_id": 6,
+            "coords": [
+              469,
+              595
+            ]
+          },
+          {
+            "component": [
+              "blue basin",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到左侧蓝色盆的盆沿正上方以便放置",
+            "target_id": 0,
+            "coords": [
+              287,
+              161
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将桃子放入盆中",
+            "target_id": 6,
+            "coords": [
+              469,
+              595
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取骆驼",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取骆驼",
+        "final_action_plan": [
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像中心附近无遮挡的骆驼中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              728,
+              525
+            ]
+          },
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧骆驼以确保稳定抓取",
+            "target_id": 1,
+            "coords": [
+              728,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

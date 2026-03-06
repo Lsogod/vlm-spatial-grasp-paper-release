@@ -1,0 +1,259 @@
+{
+  "source_file": "../dist/0-99\\59_0000.npz",
+  "image_filename": "59_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "intent_analysis": {
+          "user_intent": "抓取河马",
+          "objects": [
+            {
+              "name": "河马",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "河马主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的河马主体，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hippo",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准河马中部以便抓取"
+            },
+            {
+              "component": [
+                "hippo",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧河马"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hippo",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "hippo",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准河马中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              284,
+              570
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马",
+            "target_id": 2,
+            "coords": [
+              284,
+              570
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取漱口水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取漱口水",
+        "final_action_plan": [
+          {
+            "component": [
+              "mouthwash bottle",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像中心附近无遮挡的白色漱口水瓶中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              586,
+              142
+            ]
+          },
+          {
+            "component": [
+              "mouthwash bottle",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧漱口水瓶",
+            "target_id": 1,
+            "coords": [
+              586,
+              142
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取罐头",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取罐头",
+        "intent_analysis": {
+          "user_intent": "抓取罐头",
+          "objects": [
+            {
+              "name": "罐头",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "罐体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的罐头，注意握紧避免滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "can",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准罐头的中部以便抓取"
+            },
+            {
+              "component": [
+                "can",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧罐头"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "can",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "can",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准罐头的中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              532,
+              371
+            ]
+          },
+          {
+            "component": [
+              "can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧罐头",
+            "target_id": 2,
+            "coords": [
+              532,
+              371
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

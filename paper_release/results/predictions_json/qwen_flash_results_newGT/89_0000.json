@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\89_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到草莓顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              913,
+              155
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓",
+            "target_id": 0,
+            "coords": [
+              913,
+              155
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取好爸爸洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取好爸爸洗衣液",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Kispa detergent",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到好爸爸洗衣液顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              473,
+              154
+            ]
+          },
+          {
+            "component": [
+              "Kispa detergent",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧好爸爸洗衣液瓶身顶部",
+            "target_id": 0,
+            "coords": [
+              473,
+              154
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺丝刀手柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              337,
+              200
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝刀手柄",
+            "target_id": 0,
+            "coords": [
+              337,
+              200
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

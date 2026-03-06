@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/all\\136.npz",
+  "results": [
+    {
+      "task_index": 1,
+      "original_instruction": "将香蕉放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              595,
+              368
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉中部",
+            "target_id": 0,
+            "coords": [
+              595,
+              368
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将香蕉移至红色方形盘中心上方",
+            "target_id": 1,
+            "coords": [
+              320,
+              156
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开香蕉，将其放入红色方形盘中心",
+            "target_id": 1,
+            "coords": [
+              320,
+              156
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将苹果放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将苹果放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "apple",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到苹果中心上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              353,
+              512
+            ]
+          },
+          {
+            "component": [
+              "apple",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧苹果",
+            "target_id": 0,
+            "coords": [
+              353,
+              512
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将苹果移至红色方形盘中心上方",
+            "target_id": 1,
+            "coords": [
+              320,
+              156
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开苹果，将其放入红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              320,
+              156
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 0,
+      "original_instruction": "将蓝色红牛饮料放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将蓝色红牛饮料放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "red bull can",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝色红牛饮料罐中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              552,
+              138
+            ]
+          },
+          {
+            "component": [
+              "red bull can",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色红牛饮料罐",
+            "target_id": 0,
+            "coords": [
+              552,
+              138
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将红牛饮料罐移至红色方形盘中心上方",
+            "target_id": 1,
+            "coords": [
+              320,
+              156
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将红牛饮料罐放入红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              320,
+              156
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

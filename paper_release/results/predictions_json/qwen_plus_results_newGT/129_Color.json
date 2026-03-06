@@ -1,0 +1,207 @@
+{
+  "source_file": "../dist/100-129\\129_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取电池放到中间的圆形杯托上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取电池放到中间的圆形杯托上",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "battery",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到电池中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              1107,
+              336
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电池",
+            "target_id": 0,
+            "coords": [
+              1107,
+              336
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将电池移动至蓝色碗（中间圆形杯托）中心上方",
+            "target_id": 1,
+            "coords": [
+              509,
+              419
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，放下电池",
+            "target_id": 1,
+            "coords": [
+              509,
+              419
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取猕猴桃放到右侧的杯托上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猕猴桃放到右侧的杯托上",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "kiwi",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到猕猴桃中心上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              657,
+              421
+            ]
+          },
+          {
+            "component": [
+              "kiwi",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取猕猴桃",
+            "target_id": 0,
+            "coords": [
+              657,
+              421
+            ]
+          },
+          {
+            "component": [
+              "orange coaster",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将猕猴桃移动至右侧橙色杯托中心上方",
+            "target_id": 1,
+            "coords": [
+              1018,
+              475
+            ]
+          },
+          {
+            "component": [
+              "orange coaster",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将猕猴桃放置在橙色杯托上",
+            "target_id": 1,
+            "coords": [
+              1018,
+              475
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手处准备抓取",
+            "target_id": 0,
+            "coords": [
+              992,
+              106
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取水壶把手",
+            "target_id": 0,
+            "coords": [
+              992,
+              106
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "source_file": "../dist/0-99\\65_0000.npz",
+  "image_filename": "65_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取好爸爸洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取好爸爸洗衣液",
+        "intent_analysis": {
+          "user_intent": "抓取好爸爸洗衣液",
+          "objects": [
+            {
+              "name": "好爸爸洗衣液",
+              "components": [
+                {
+                  "id": 24,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 25,
+                  "part": "瓶口"
+                },
+                {
+                  "id": 26,
+                  "part": "标签"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号24的瓶身部分，注意避免挤压瓶口（编号25）以防液体溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "laundry detergent",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准好爸爸洗衣液瓶身以便抓取"
+            },
+            {
+              "component": [
+                "laundry detergent",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧好爸爸洗衣液瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "laundry detergent",
+              "part": "body",
+              "id": 1
+            },
+            {
+              "object": "laundry detergent",
+              "part": "body",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "laundry detergent",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准好爸爸洗衣液瓶身以便抓取",
+            "target_id": 1,
+            "coords": [
+              791,
+              231
+            ]
+          },
+          {
+            "component": [
+              "laundry detergent",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧好爸爸洗衣液瓶身",
+            "target_id": 1,
+            "coords": [
+              791,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取海飞丝洗发露",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取海飞丝洗发露",
+        "intent_analysis": {
+          "user_intent": "抓取海飞丝洗发露",
+          "objects": [
+            {
+              "name": "海飞丝洗发露",
+              "components": [
+                {
+                  "id": 21,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 22,
+                  "part": "标签"
+                },
+                {
+                  "id": 6,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号(21,22,6)的海飞丝洗发露瓶身，确保瓶盖紧闭以防液体泄漏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "shampoo bottle",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准海飞丝洗发露瓶身以便抓取"
+            },
+            {
+              "component": [
+                "shampoo bottle",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧海飞丝洗发露瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "shampoo bottle",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "shampoo bottle",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "shampoo bottle",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准海飞丝洗发露瓶身以便抓取",
+            "target_id": 2,
+            "coords": [
+              852,
+              418
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧海飞丝洗发露瓶身",
+            "target_id": 2,
+            "coords": [
+              852,
+              418
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "intent_analysis": {
+          "user_intent": "抓取螺丝刀",
+          "objects": [
+            {
+              "name": "螺丝刀",
+              "components": [
+                {
+                  "id": 20,
+                  "part": "手柄"
+                },
+                {
+                  "id": 10,
+                  "part": "刀杆"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号20的手柄部分，确保手握稳固，避免刀杆部分（编号10）接触到其他物体或人员。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "screwdriver",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准螺丝刀的手柄部分以便抓取"
+            },
+            {
+              "component": [
+                "screwdriver",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧螺丝刀的手柄部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "screwdriver",
+              "part": "handle",
+              "id": 2
+            },
+            {
+              "object": "screwdriver",
+              "part": "handle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准螺丝刀的手柄部分以便抓取",
+            "target_id": 2,
+            "coords": [
+              852,
+              530
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝刀的手柄部分",
+            "target_id": 2,
+            "coords": [
+              852,
+              530
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

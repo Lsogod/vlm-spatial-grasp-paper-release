@@ -1,0 +1,289 @@
+{
+  "source_file": "../dist/0-99\\32_0000.npz",
+  "image_filename": "32_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "intent_analysis": {
+          "user_intent": "抓取鼠标",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 20,
+                  "part": "鼠标主体"
+                },
+                {
+                  "id": 4,
+                  "part": "鼠标按键"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号20的鼠标主体，注意避免误按编号4的鼠标按键。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准鼠标中部以便抓取"
+            },
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准鼠标中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              385,
+              175
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 1,
+            "coords": [
+              385,
+              175
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "香蕉主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号8的香蕉主体即可，无需其他操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中部以便抓取"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              819,
+              189
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 2,
+            "coords": [
+              819,
+              189
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取一字起子放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取一字起子放入蓝盖",
+        "final_action_plan": [
+          {
+            "component": [
+              "flathead screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中部的紫柄一字起子手柄以便抓取，无遮挡且易于夹持",
+            "target_id": 3,
+            "coords": [
+              598,
+              686
+            ]
+          },
+          {
+            "component": [
+              "flathead screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧一字起子手柄",
+            "target_id": 3,
+            "coords": [
+              598,
+              686
+            ]
+          },
+          {
+            "component": [
+              "blue cap",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色瓶盖开口正上方以便放入",
+            "target_id": 0,
+            "coords": [
+              847,
+              558
+            ]
+          },
+          {
+            "component": [
+              "flathead screwdriver",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "释放一字起子到蓝盖内",
+            "target_id": 3,
+            "coords": [
+              598,
+              686
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "完成放置后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

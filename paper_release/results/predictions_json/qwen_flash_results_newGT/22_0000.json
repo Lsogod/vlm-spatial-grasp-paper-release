@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\22_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将小球放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将小球放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue ball",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小球顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              538,
+              259
+            ]
+          },
+          {
+            "component": [
+              "blue ball",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住小球",
+            "target_id": 0,
+            "coords": [
+              538,
+              259
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将小球移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              678,
+              516
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放小球",
+            "target_id": 1,
+            "coords": [
+              678,
+              516
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将红笔放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将红笔放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "red pen",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到红笔顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              401,
+              257
+            ]
+          },
+          {
+            "component": [
+              "red pen",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住红笔",
+            "target_id": 0,
+            "coords": [
+              401,
+              257
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将红笔移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              678,
+              516
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放红笔",
+            "target_id": 1,
+            "coords": [
+              678,
+              516
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将草莓放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将草莓放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到草莓顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              509,
+              115
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住草莓",
+            "target_id": 0,
+            "coords": [
+              509,
+              115
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将草莓移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              678,
+              516
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放草莓",
+            "target_id": 1,
+            "coords": [
+              678,
+              516
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

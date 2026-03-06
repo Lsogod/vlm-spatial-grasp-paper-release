@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\10_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取李子放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子放入红杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "plum",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到李子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              422,
+              544
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住李子",
+            "target_id": 0,
+            "coords": [
+              422,
+              544
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "将李子移动到红色杯子开口处",
+            "target_id": 1,
+            "coords": [
+              592,
+              608
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开李子，使其落入杯中",
+            "target_id": 1,
+            "coords": [
+              592,
+              608
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛模型的抓取位",
+            "target_id": 0,
+            "coords": [
+              394,
+              393
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛模型",
+            "target_id": 0,
+            "coords": [
+              394,
+              393
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取海飞丝润发乳",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取海飞丝润发乳",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Head&Shoulders shampoo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到海飞丝润发乳中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              352,
+              177
+            ]
+          },
+          {
+            "component": [
+              "Head&Shoulders shampoo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧海飞丝润发乳",
+            "target_id": 0,
+            "coords": [
+              352,
+              177
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

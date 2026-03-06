@@ -1,0 +1,263 @@
+{
+  "source_file": "../dist/0-99\\18_0000.npz",
+  "image_filename": "18_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取酸奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取酸奶",
+        "intent_analysis": {
+          "user_intent": "抓取酸奶",
+          "objects": [
+            {
+              "name": "酸奶",
+              "components": [
+                {
+                  "id": 18,
+                  "part": "酸奶杯"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号18的酸奶杯，注意避免倾倒或挤压导致酸奶溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yogurt cup",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准酸奶杯的中部以便抓取"
+            },
+            {
+              "component": [
+                "yogurt cup",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧酸奶杯"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yogurt cup",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "yogurt cup",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yogurt cup",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准酸奶杯的中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              385,
+              259
+            ]
+          },
+          {
+            "component": [
+              "yogurt cup",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧酸奶杯",
+            "target_id": 1,
+            "coords": [
+              385,
+              259
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像中心位置无遮挡的香蕉中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              646,
+              502
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 2,
+            "coords": [
+              646,
+              502
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取起子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取起子",
+        "intent_analysis": {
+          "user_intent": "抓取起子",
+          "objects": [
+            {
+              "name": "起子",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "手柄"
+                },
+                {
+                  "id": 6,
+                  "part": "金属杆"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号10的手柄部分，确保手握稳固，避免接触编号6的金属杆以防滑或弄脏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "screwdriver",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准起子手柄部分以便抓取"
+            },
+            {
+              "component": [
+                "screwdriver",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧起子手柄"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "screwdriver",
+              "part": "handle",
+              "id": 2
+            },
+            {
+              "object": "screwdriver",
+              "part": "handle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准起子手柄部分以便抓取",
+            "target_id": 2,
+            "coords": [
+              441,
+              483
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧起子手柄",
+            "target_id": 2,
+            "coords": [
+              441,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

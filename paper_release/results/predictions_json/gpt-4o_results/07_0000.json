@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/0-99\\07_0000.npz",
+  "image_filename": "07_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取灰色犀牛玩具",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色犀牛玩具",
+        "intent_analysis": {
+          "user_intent": "抓取灰色犀牛玩具",
+          "objects": [
+            {
+              "name": "灰色犀牛玩具",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "玩具主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号8的灰色犀牛玩具，注意避免碰到周围的其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "gray rhino toy",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准灰色犀牛玩具的中部以便抓取"
+            },
+            {
+              "component": [
+                "gray rhino toy",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧灰色犀牛玩具"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "gray rhino toy",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "gray rhino toy",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "gray rhino toy",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准灰色犀牛玩具的中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              282,
+              282
+            ]
+          },
+          {
+            "component": [
+              "gray rhino toy",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色犀牛玩具",
+            "target_id": 1,
+            "coords": [
+              282,
+              282
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取猩猩",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猩猩",
+        "intent_analysis": {
+          "user_intent": "抓取猩猩玩偶",
+          "objects": [
+            {
+              "name": "猩猩玩偶",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "玩偶主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的猩猩玩偶，注意避免碰到周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准猩猩玩具的中部以便抓取"
+            },
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧猩猩玩具"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准猩猩玩具的中部以便抓取",
+            "target_id": 0,
+            "coords": [
+              357,
+              124
+            ]
+          },
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猩猩玩具",
+            "target_id": 0,
+            "coords": [
+              357,
+              124
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "intent_analysis": {
+          "user_intent": "抓取草莓",
+          "objects": [
+            {
+              "name": "草莓",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "草莓主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的草莓，注意轻拿轻放以免损坏草莓表面。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准草莓中部以便抓取"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧草莓"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准草莓中部以便抓取",
+            "target_id": 0,
+            "coords": [
+              357,
+              329
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓",
+            "target_id": 0,
+            "coords": [
+              357,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

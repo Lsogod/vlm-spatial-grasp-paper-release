@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/all\\73_0000.npz",
+  "image_filename": "73_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取猩猩",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猩猩",
+        "intent_analysis": {
+          "user_intent": "抓取猩猩模型",
+          "objects": [
+            {
+              "name": "猩猩模型",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "猩猩模型主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号9的猩猩模型，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准猩猩模型的中部实体区域，确保抓取稳定"
+            },
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧猩猩模型"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准猩猩模型的中部实体区域，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              637,
+              161
+            ]
+          },
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猩猩模型",
+            "target_id": 1,
+            "coords": [
+              637,
+              161
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "intent_analysis": {
+          "user_intent": "抓取鼠标",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "鼠标主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的鼠标主体，注意轻拿轻放，避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准鼠标中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标中部"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准鼠标中部实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              973,
+              441
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标中部",
+            "target_id": 2,
+            "coords": [
+              973,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取双面胶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶",
+        "intent_analysis": {
+          "user_intent": "抓取双面胶",
+          "objects": [
+            {
+              "name": "双面胶",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "胶带主体"
+                },
+                {
+                  "id": 20,
+                  "part": "胶带卷"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5和20的双面胶，确保抓取时用力适中，避免损坏胶带卷。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "double-sided tape",
+                "outer_ring"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准双面胶外圈的实体材质区域，避免抓取中心空洞"
+            },
+            {
+              "component": [
+                "double-sided tape",
+                "outer_ring"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧双面胶外圈的实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "double-sided tape",
+              "part": "outer_ring",
+              "id": 3
+            },
+            {
+              "object": "double-sided tape",
+              "part": "outer_ring",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "double-sided tape",
+              "outer_ring"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准双面胶外圈的实体材质区域，避免抓取中心空洞",
+            "target_id": 3,
+            "coords": [
+              763,
+              343
+            ]
+          },
+          {
+            "component": [
+              "double-sided tape",
+              "outer_ring"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧双面胶外圈的实体表面",
+            "target_id": 3,
+            "coords": [
+              763,
+              343
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

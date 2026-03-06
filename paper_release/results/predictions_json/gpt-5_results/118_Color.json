@@ -1,0 +1,207 @@
+{
+  "source_file": "../dist/all\\118_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将遥控器放到白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将遥控器放到白色笔筒中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器中心准备抓取",
+            "target_id": 0,
+            "coords": [
+              107,
+              51
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器",
+            "target_id": 0,
+            "coords": [
+              107,
+              51
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将遥控器移动到白色笔筒中心位置",
+            "target_id": 1,
+            "coords": [
+              261,
+              381
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪放置遥控器到白色笔筒中",
+            "target_id": 1,
+            "coords": [
+              261,
+              381
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色美工刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色美工刀中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              723,
+              424
+            ]
+          },
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色美工刀中部",
+            "target_id": 0,
+            "coords": [
+              723,
+              424
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将蓝色勺子放到白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将蓝色勺子放到白色笔筒中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "spoon",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到蓝色勺子的握持位置",
+            "target_id": 0,
+            "coords": [
+              559,
+              146
+            ]
+          },
+          {
+            "component": [
+              "spoon",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色勺子手柄",
+            "target_id": 0,
+            "coords": [
+              559,
+              146
+            ]
+          },
+          {
+            "component": [
+              "pen holder",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将蓝色勺子移动到白色笔筒的中心位置",
+            "target_id": 1,
+            "coords": [
+              261,
+              342
+            ]
+          },
+          {
+            "component": [
+              "pen holder",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将蓝色勺子放入白色笔筒",
+            "target_id": 1,
+            "coords": [
+              261,
+              342
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

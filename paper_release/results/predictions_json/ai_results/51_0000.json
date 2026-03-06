@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/0-99\\51_0000.npz",
+  "image_filename": "51_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "intent_analysis": {
+          "user_intent": "抓取梨子",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "梨子果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓取编号6的梨子，注意避免碰到周围的香蕉（编号8）和洗手液瓶（编号16），以防物品掉落或碰撞。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择图像中心偏右无遮挡的绿色梨子中部进行对准抓取"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧绿色梨子以确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心偏右无遮挡的绿色梨子中部进行对准抓取",
+            "target_id": 0,
+            "coords": [
+              833,
+              182
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧绿色梨子以确保稳定抓取",
+            "target_id": 0,
+            "coords": [
+              833,
+              182
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取桃子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子",
+        "intent_analysis": {
+          "user_intent": "抓取桃子",
+          "objects": [
+            {
+              "name": "桃子",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓取编号1的桃子，注意避免碰到周围的刀具（靠近胶带处）和其他物品以防滑落或受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心无遮挡的桃子中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧桃子以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心无遮挡的桃子中部以便稳定抓取",
+            "target_id": 0,
+            "coords": [
+              644,
+              399
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子以防滑落",
+            "target_id": 0,
+            "coords": [
+              644,
+              399
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗衣液",
+        "intent_analysis": {
+          "user_intent": "抓取洗衣液",
+          "objects": [
+            {
+              "name": "洗衣液瓶",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 16,
+                  "part": "按压泵头"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号3的瓶身，保持瓶身直立，避免按压编号16的泵头以防液体溢出。抓取时注意避开周围物品以防碰撞。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "laundry detergent",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准洗衣液瓶主体以便稳定抓取"
+            },
+            {
+              "component": [
+                "laundry detergent",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧洗衣液瓶主体"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "laundry detergent",
+              "part": "body",
+              "id": 4
+            },
+            {
+              "object": "laundry detergent",
+              "part": "body",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "laundry detergent",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准洗衣液瓶主体以便稳定抓取",
+            "target_id": 4,
+            "coords": [
+              833,
+              441
+            ]
+          },
+          {
+            "component": [
+              "laundry detergent",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗衣液瓶主体",
+            "target_id": 4,
+            "coords": [
+              833,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

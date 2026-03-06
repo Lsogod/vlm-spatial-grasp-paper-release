@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\05_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取护发素",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "PANTENE",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到护发素顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              394,
+              228
+            ]
+          },
+          {
+            "component": [
+              "PANTENE",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧护发素",
+            "target_id": 0,
+            "coords": [
+              394,
+              228
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取牙膏",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "toothpaste",
+              "opening"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到牙膏开口处准备抓取",
+            "target_id": 0,
+            "coords": [
+              643,
+              206
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "opening"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏管口",
+            "target_id": 0,
+            "coords": [
+              643,
+              206
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取红笔",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取红笔",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "red marker",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到红色笔的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              380,
+              473
+            ]
+          },
+          {
+            "component": [
+              "red marker",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色笔",
+            "target_id": 0,
+            "coords": [
+              380,
+              473
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

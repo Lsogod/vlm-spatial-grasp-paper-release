@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/100-129\\126_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              1199,
+              28
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 0,
+            "coords": [
+              1199,
+              28
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取猕猴桃",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猕猴桃",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "kiwi",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到猕猴桃顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              657,
+              421
+            ]
+          },
+          {
+            "component": [
+              "kiwi",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猕猴桃",
+            "target_id": 0,
+            "coords": [
+              657,
+              421
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取苹果",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取苹果",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "apple",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到苹果顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              522,
+              141
+            ]
+          },
+          {
+            "component": [
+              "apple",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧苹果",
+            "target_id": 0,
+            "coords": [
+              522,
+              141
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

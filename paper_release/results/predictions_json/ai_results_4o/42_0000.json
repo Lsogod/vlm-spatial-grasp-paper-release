@@ -1,0 +1,433 @@
+{
+  "source_file": "../dist/all\\42_0000.npz",
+  "image_filename": "42_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取草莓放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓放入红杯",
+        "intent_analysis": {
+          "user_intent": "抓取草莓放入红杯",
+          "objects": [
+            {
+              "name": "草莓",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "草莓主体"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 21,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓取编号4的草莓，将其移动到编号21的红杯上方，然后轻放入杯中，确保草莓完全进入杯内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准草莓中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧草莓"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯上方，准备放置草莓"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将草莓放入红杯"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 4
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准草莓中部实体表面，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              539,
+              455
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓",
+            "target_id": 1,
+            "coords": [
+              539,
+              455
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯上方，准备放置草莓",
+            "target_id": 4,
+            "coords": [
+              329,
+              525
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将草莓放入红杯",
+            "target_id": 1,
+            "coords": [
+              539,
+              455
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取李子放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子放入红杯",
+        "intent_analysis": {
+          "user_intent": "抓取李子放入红杯",
+          "objects": [
+            {
+              "name": "李子",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "果实"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 21,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓取编号3的李子，将其移动到编号21的红杯上方，然后轻放入杯中，确保李子不掉落或滚出杯子。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准李子中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧李子"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯上方，准备放置李子"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将李子放入红杯"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 5
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准李子中段实体表面，确保抓取稳定",
+            "target_id": 3,
+            "coords": [
+              707,
+              511
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子",
+            "target_id": 3,
+            "coords": [
+              707,
+              511
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯上方，准备放置李子",
+            "target_id": 5,
+            "coords": [
+              427,
+              525
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将李子放入红杯",
+            "target_id": 3,
+            "coords": [
+              707,
+              511
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "intent_analysis": {
+          "user_intent": "抓取鼠标",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "鼠标主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的鼠标主体，注意避免碰到周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准鼠标中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标中部实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": null
+            },
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准鼠标中部实体表面，确保抓取稳定",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标中部实体表面",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "source_file": "../dist/0-99\\02_0000.npz",
+  "image_filename": "02_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取李子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子",
+        "intent_analysis": {
+          "user_intent": "抓取李子",
+          "objects": [
+            {
+              "name": "李子",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "果实"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手直接抓取编号2的李子，注意力度适中以防捏破果皮。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow plum",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择图像中心偏左无遮挡的黄色李子中部进行对准抓取"
+            },
+            {
+              "component": [
+                "yellow plum",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色李子以确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow plum",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "yellow plum",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow plum",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心偏左无遮挡的黄色李子中部进行对准抓取",
+            "target_id": 0,
+            "coords": [
+              172,
+              266
+            ]
+          },
+          {
+            "component": [
+              "yellow plum",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色李子以确保稳定抓取",
+            "target_id": 0,
+            "coords": [
+              172,
+              266
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取梨子放入蓝盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子放入蓝盆",
+        "intent_analysis": {
+          "user_intent": "抓取梨子放入蓝盆",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "梨子果体"
+                }
+              ]
+            },
+            {
+              "name": "蓝盆",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或工具抓取编号5的梨子，确保握持稳固避免掉落，将其移动至编号9的蓝盆上方并轻放入盆中，避免用力过猛导致梨子损伤或盆倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "green pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择图像中心附近无遮挡的绿色梨子中部进行对准抓取"
+            },
+            {
+              "component": [
+                "green pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧绿色梨子以便搬运"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的杯沿正上方以便放置梨子"
+            },
+            {
+              "component": [
+                "green pear",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "在蓝色盆上方释放梨子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "green pear",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "green pear",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 4
+            },
+            {
+              "object": "green pear",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "green pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心附近无遮挡的绿色梨子中部进行对准抓取",
+            "target_id": 5,
+            "coords": [
+              318,
+              340
+            ]
+          },
+          {
+            "component": [
+              "green pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧绿色梨子以便搬运",
+            "target_id": 5,
+            "coords": [
+              318,
+              340
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的杯沿正上方以便放置梨子",
+            "target_id": 4,
+            "coords": [
+              889,
+              322
+            ]
+          },
+          {
+            "component": [
+              "green pear",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆上方释放梨子",
+            "target_id": 5,
+            "coords": [
+              318,
+              340
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "香蕉果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号8的香蕉中部或根部，确保抓握稳固，避免用力过猛导致香蕉表皮损伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准图像中心附近无遮挡的香蕉中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像中心附近无遮挡的香蕉中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              570,
+              420
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉以防滑落",
+            "target_id": 2,
+            "coords": [
+              570,
+              420
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

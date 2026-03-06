@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/100-129\\110_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取胶带",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取胶带",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到胶带中心的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              453,
+              385
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取胶带",
+            "target_id": 0,
+            "coords": [
+              453,
+              385
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取遥控器",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取遥控器",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              1018,
+              142
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取遥控器",
+            "target_id": 0,
+            "coords": [
+              1018,
+              142
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑绿色的测距仪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑绿色的测距仪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "distance meter",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑绿色测距仪中部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              1030,
+              484
+            ]
+          },
+          {
+            "component": [
+              "distance meter",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取测距仪中部",
+            "target_id": 0,
+            "coords": [
+              1030,
+              484
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/100-129\\100_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶手柄处准备抓取",
+            "target_id": 0,
+            "coords": [
+              1210,
+              219
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶手柄",
+            "target_id": 0,
+            "coords": [
+              1210,
+              219
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              773,
+              416
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取香蕉",
+            "target_id": 0,
+            "coords": [
+              773,
+              416
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取蓝色勺子放到橘色托盘上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色勺子放到橘色托盘上",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "spoon",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝色勺子中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              664,
+              89
+            ]
+          },
+          {
+            "component": [
+              "spoon",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取蓝色勺子",
+            "target_id": 0,
+            "coords": [
+              664,
+              89
+            ]
+          },
+          {
+            "component": [
+              "tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将蓝色勺子移动至橘色托盘中心上方",
+            "target_id": 1,
+            "coords": [
+              640,
+              360
+            ]
+          },
+          {
+            "component": [
+              "tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将蓝色勺子放置在橘色托盘上",
+            "target_id": 1,
+            "coords": [
+              640,
+              360
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

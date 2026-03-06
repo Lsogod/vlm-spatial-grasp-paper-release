@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/all\\88_0000.npz",
+  "image_filename": "88_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取刀",
+        "intent_analysis": {
+          "user_intent": "抓取刀",
+          "objects": [
+            {
+              "name": "刀",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "刀身"
+                },
+                {
+                  "id": 8,
+                  "part": "刀柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号8的刀柄，避免接触编号11的刀身以防受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准刀的红色手柄部分，确保抓取稳定且安全"
+            },
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧刀的手柄部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 6
+            },
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 6
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准刀的红色手柄部分，确保抓取稳定且安全",
+            "target_id": 6,
+            "coords": [
+              987,
+              455
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧刀的手柄部分",
+            "target_id": 6,
+            "coords": [
+              987,
+              455
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大宝sod蜜",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝sod蜜",
+        "intent_analysis": {
+          "user_intent": "抓取大宝SOD蜜",
+          "objects": [
+            {
+              "name": "大宝SOD蜜",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "瓶体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的大宝SOD蜜瓶体，注意避免碰倒周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "大宝sod蜜",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大宝SOD蜜瓶身中部，稳定抓取"
+            },
+            {
+              "component": [
+                "大宝sod蜜",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大宝SOD蜜瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "大宝sod蜜",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "大宝sod蜜",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "大宝sod蜜",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大宝SOD蜜瓶身中部，稳定抓取",
+            "target_id": 2,
+            "coords": [
+              525,
+              441
+            ]
+          },
+          {
+            "component": [
+              "大宝sod蜜",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝SOD蜜瓶身",
+            "target_id": 2,
+            "coords": [
+              525,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取右方的漱口水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右方的漱口水",
+        "intent_analysis": {
+          "user_intent": "抓取漱口水",
+          "objects": [
+            {
+              "name": "漱口水",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 8,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓住编号7的瓶身，确保瓶盖（编号8）未松动以防液体泄漏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouthwash",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准漱口水瓶身，瓶身为实体材质，抓取稳定"
+            },
+            {
+              "component": [
+                "mouthwash",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧漱口水瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouthwash",
+              "part": "body",
+              "id": 7
+            },
+            {
+              "object": "mouthwash",
+              "part": "body",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouthwash",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准漱口水瓶身，瓶身为实体材质，抓取稳定",
+            "target_id": 7,
+            "coords": [
+              833,
+              609
+            ]
+          },
+          {
+            "component": [
+              "mouthwash",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧漱口水瓶身",
+            "target_id": 7,
+            "coords": [
+              833,
+              609
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

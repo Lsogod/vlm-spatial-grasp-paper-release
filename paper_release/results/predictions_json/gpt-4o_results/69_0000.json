@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/0-99\\69_0000.npz",
+  "image_filename": "69_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "intent_analysis": {
+          "user_intent": "抓取梨子",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "梨子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的梨子，注意避免碰到周围的刀具和其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准梨子中部以便抓取"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧梨子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准梨子中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              658,
+              525
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 2,
+            "coords": [
+              658,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取蓝色螺母",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色螺母",
+        "intent_analysis": {
+          "user_intent": "抓取蓝色螺母",
+          "objects": [
+            {
+              "name": "蓝色螺母",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "螺母主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号7的蓝色螺母，注意避免碰到周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue nut",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色螺母的中部以便抓取"
+            },
+            {
+              "component": [
+                "blue nut",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色螺母"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue nut",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "blue nut",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue nut",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色螺母的中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              315,
+              546
+            ]
+          },
+          {
+            "component": [
+              "blue nut",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色螺母",
+            "target_id": 1,
+            "coords": [
+              315,
+              546
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黄色包装护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色包装护发素",
+        "intent_analysis": {
+          "user_intent": "抓取黄色包装护发素",
+          "objects": [
+            {
+              "name": "护发素",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "瓶盖"
+                },
+                {
+                  "id": 16,
+                  "part": "瓶身正面"
+                },
+                {
+                  "id": 17,
+                  "part": "瓶身背面"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号(6,16,17)的护发素瓶，确保抓取时握住瓶身部分以避免滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow conditioner",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黄色包装护发素中部以便抓取"
+            },
+            {
+              "component": [
+                "yellow conditioner",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色包装护发素"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow conditioner",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "yellow conditioner",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow conditioner",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黄色包装护发素中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              336,
+              382
+            ]
+          },
+          {
+            "component": [
+              "yellow conditioner",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色包装护发素",
+            "target_id": 2,
+            "coords": [
+              336,
+              382
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

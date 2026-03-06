@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\27_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取酸奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取酸奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "yogurt",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到酸奶中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              618,
+              141
+            ]
+          },
+          {
+            "component": [
+              "yogurt",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧酸奶",
+            "target_id": 0,
+            "coords": [
+              618,
+              141
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至大象玩具中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              928,
+              177
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取大象玩具",
+            "target_id": 0,
+            "coords": [
+              928,
+              177
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至草莓中心上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              418,
+              486
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取草莓",
+            "target_id": 0,
+            "coords": [
+              418,
+              486
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "返回初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

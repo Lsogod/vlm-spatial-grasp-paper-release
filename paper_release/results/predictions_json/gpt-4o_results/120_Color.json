@@ -1,0 +1,105 @@
+{
+  "source_file": "../dist/all\\120_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取右上方的电池",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右上方的电池",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "battery",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到电池的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              1216,
+              144
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取电池",
+            "target_id": 0,
+            "coords": [
+              1216,
+              144
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色锥子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色锥子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "black chisel",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色锥子的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              384,
+              324
+            ]
+          },
+          {
+            "component": [
+              "black chisel",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取黑色锥子",
+            "target_id": 0,
+            "coords": [
+              384,
+              324
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/all\\130.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将水杯放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将水杯放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "cup",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水杯的抓取位置",
+            "target_id": 0,
+            "coords": [
+              268,
+              307
+            ]
+          },
+          {
+            "component": [
+              "cup",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "抓紧水杯",
+            "target_id": 0,
+            "coords": [
+              268,
+              307
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的中心位置",
+            "target_id": 1,
+            "coords": [
+              160,
+              96
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开水杯，将其放入红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              160,
+              96
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将锤子放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将锤子放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到锤子中部的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              416,
+              352
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "抓取锤子",
+            "target_id": 0,
+            "coords": [
+              416,
+              352
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的中心位置",
+            "target_id": 1,
+            "coords": [
+              160,
+              96
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将锤子放入红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              160,
+              96
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将日光灯放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将日光灯放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "yellow flashlight",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到日光灯的抓取位置",
+            "target_id": 0,
+            "coords": [
+              416,
+              224
+            ]
+          },
+          {
+            "component": [
+              "yellow flashlight",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "抓取日光灯",
+            "target_id": 0,
+            "coords": [
+              416,
+              224
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的上方",
+            "target_id": 1,
+            "coords": [
+              160,
+              96
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将日光灯放入红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              160,
+              96
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "source_file": "../dist/0-99\\24_0000.npz",
+  "image_filename": "24_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将李子放入红杯中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将李子放入红杯中",
+        "intent_analysis": {
+          "user_intent": "将李子放入红杯中",
+          "objects": [
+            {
+              "name": "李子",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "果实"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号2的李子放入编号3的红杯中，确保李子完全进入杯体内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准李子中部以便抓取"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧李子"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯杯沿正上方以便放置"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放李子到红杯中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务结束回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 1
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准李子中部以便抓取",
+            "target_id": 5,
+            "coords": [
+              763,
+              609
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子",
+            "target_id": 5,
+            "coords": [
+              763,
+              609
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯杯沿正上方以便放置",
+            "target_id": 1,
+            "coords": [
+              830,
+              332
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放李子到红杯中",
+            "target_id": 5,
+            "coords": [
+              763,
+              609
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务结束回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将猩猩放入红杯中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将猩猩放入红杯中",
+        "intent_analysis": {
+          "user_intent": "将猩猩放入红杯中",
+          "objects": [
+            {
+              "name": "猩猩",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "猩猩玩偶"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号6的猩猩玩偶放入编号3的红杯中，确保猩猩玩偶完全进入杯体内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准猩猩中部以便抓取"
+            },
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧猩猩以确保稳定抓取"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯杯沿正上方以便放置"
+            },
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放猩猩，将其放入红杯中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 5
+            },
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准猩猩中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              714,
+              203
+            ]
+          },
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猩猩以确保稳定抓取",
+            "target_id": 2,
+            "coords": [
+              714,
+              203
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯杯沿正上方以便放置",
+            "target_id": 5,
+            "coords": [
+              763,
+              268
+            ]
+          },
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放猩猩，将其放入红杯中",
+            "target_id": 2,
+            "coords": [
+              714,
+              203
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将梨子放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将梨子放入盆中",
+        "intent_analysis": {
+          "user_intent": "将梨子放入盆中",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "梨子主体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号1的梨子放入编号4的盆中，确保梨子完全进入盆内，避免掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准梨子的中部以便抓取"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧梨子"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的边缘上方以便放置"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放梨子到蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务结束回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 3
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准梨子的中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              518,
+              126
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 1,
+            "coords": [
+              518,
+              126
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的边缘上方以便放置",
+            "target_id": 3,
+            "coords": [
+              371,
+              392
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放梨子到蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              518,
+              126
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务结束回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

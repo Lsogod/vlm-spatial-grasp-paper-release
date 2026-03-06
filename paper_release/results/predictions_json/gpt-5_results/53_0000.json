@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\53_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到河马中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              522,
+              209
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住河马中部",
+            "target_id": 0,
+            "coords": [
+              522,
+              209
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取牙膏盒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏盒",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "toothpaste box",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到牙膏盒中心准备抓取",
+            "target_id": 0,
+            "coords": [
+              966,
+              232
+            ]
+          },
+          {
+            "component": [
+              "toothpaste box",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏盒中心进行抓取",
+            "target_id": 0,
+            "coords": [
+              966,
+              232
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取身体乳",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取身体乳",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "body lotion",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到身体乳中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              819,
+              513
+            ]
+          },
+          {
+            "component": [
+              "body lotion",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧身体乳中部",
+            "target_id": 0,
+            "coords": [
+              819,
+              513
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

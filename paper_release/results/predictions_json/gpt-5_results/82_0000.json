@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\82_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取螺栓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺栓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺栓中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              222,
+              146
+            ]
+          },
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺栓中部",
+            "target_id": 0,
+            "coords": [
+              222,
+              146
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取中间位置的犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取中间位置的犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              817,
+              282
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛中间位置",
+            "target_id": 0,
+            "coords": [
+              817,
+              282
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛下面的河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛下面的河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到河马中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              833,
+              297
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马中部",
+            "target_id": 0,
+            "coords": [
+              833,
+              297
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

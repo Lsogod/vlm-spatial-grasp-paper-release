@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/all\\131.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将日光灯放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将日光灯放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "flashlight",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到日光灯中部的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              416,
+              288
+            ]
+          },
+          {
+            "component": [
+              "flashlight",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "抓紧日光灯中部",
+            "target_id": 0,
+            "coords": [
+              416,
+              288
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的中心位置",
+            "target_id": 1,
+            "coords": [
+              192,
+              128
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将日光灯放入红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              192,
+              128
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将香蕉灯放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉灯放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana lamp",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉灯的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              467,
+              396
+            ]
+          },
+          {
+            "component": [
+              "banana lamp",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "抓取香蕉灯",
+            "target_id": 0,
+            "coords": [
+              467,
+              396
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的中心位置",
+            "target_id": 1,
+            "coords": [
+              160,
+              96
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，放下香蕉灯",
+            "target_id": 1,
+            "coords": [
+              160,
+              96
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将水果刀放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将水果刀放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水果刀的抓取位置",
+            "target_id": 0,
+            "coords": [
+              128,
+              384
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "抓取水果刀",
+            "target_id": 0,
+            "coords": [
+              128,
+              384
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将水果刀移动到红色方形盘中",
+            "target_id": 1,
+            "coords": [
+              192,
+              128
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪放下水果刀",
+            "target_id": 1,
+            "coords": [
+              192,
+              128
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

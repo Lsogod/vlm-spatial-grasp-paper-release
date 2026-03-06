@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/all\\143.npz",
+  "image_filename": "143.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取苹果",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取苹果",
+        "intent_analysis": {
+          "user_intent": "抓取苹果",
+          "objects": [
+            {
+              "name": "苹果",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "苹果主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的苹果，注意轻拿轻放以免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "apple",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准苹果中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "apple",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧苹果"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "apple",
+              "part": "middle",
+              "id": null
+            },
+            {
+              "object": "apple",
+              "part": "middle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "apple",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准苹果中段实体表面，稳定且不易滑落",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "apple",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧苹果",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取锤子",
+        "intent_analysis": {
+          "user_intent": "抓取锤子",
+          "objects": [
+            {
+              "name": "锤子",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "锤头"
+                },
+                {
+                  "id": 18,
+                  "part": "锤柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号4的锤头或编号18的锤柄，确保抓取时用力适中以避免滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准锤子手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧锤子手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准锤子手柄部分，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              329,
+              343
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧锤子手柄，确保抓取牢固",
+            "target_id": 1,
+            "coords": [
+              329,
+              343
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水杯",
+        "intent_analysis": {
+          "user_intent": "抓取水杯",
+          "objects": [
+            {
+              "name": "水杯",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号7的水杯，注意避免碰倒周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红色水杯的杯沿，避免抓取空腔区域，确保稳定性"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红色水杯的杯沿"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 1
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红色水杯的杯沿，避免抓取空腔区域，确保稳定性",
+            "target_id": 1,
+            "coords": [
+              259,
+              315
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色水杯的杯沿",
+            "target_id": 1,
+            "coords": [
+              259,
+              315
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

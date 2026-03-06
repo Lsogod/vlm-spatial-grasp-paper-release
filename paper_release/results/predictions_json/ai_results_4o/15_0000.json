@@ -1,0 +1,376 @@
+{
+  "source_file": "../dist/all\\15_0000.npz",
+  "image_filename": "15_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将小刀放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将小刀放入红杯",
+        "intent_analysis": {
+          "user_intent": "将小刀放入红杯",
+          "objects": [
+            {
+              "name": "小刀",
+              "components": [
+                {
+                  "id": 14,
+                  "part": "刀身"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号14的小刀放入编号6的红杯中，注意避免刀刃朝外以确保安全。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准小刀的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧小刀手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯上方，准备放置小刀"
+            },
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将小刀放入红杯中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 6
+            },
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 6
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 3
+            },
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 6
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准小刀的手柄部分，便于稳定抓取",
+            "target_id": 6,
+            "coords": [
+              707,
+              497
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小刀手柄，确保抓取牢固",
+            "target_id": 6,
+            "coords": [
+              707,
+              497
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯上方，准备放置小刀",
+            "target_id": 3,
+            "coords": [
+              721,
+              343
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将小刀放入红杯中",
+            "target_id": 6,
+            "coords": [
+              707,
+              497
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取李子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子",
+        "intent_analysis": {
+          "user_intent": "抓取李子",
+          "objects": [
+            {
+              "name": "李子",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "果实"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓取编号5的李子即可，无需其他操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准李子中间的实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧李子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准李子中间的实体表面，确保抓取稳定",
+            "target_id": 3,
+            "coords": [
+              623,
+              147
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子",
+            "target_id": 3,
+            "coords": [
+              623,
+              147
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "intent_analysis": {
+          "user_intent": "抓取梨子",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "果实"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的梨子，注意避免碰到周围的其他物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准梨子中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧梨子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准梨子中段实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              623,
+              609
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 2,
+            "coords": [
+              623,
+              609
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

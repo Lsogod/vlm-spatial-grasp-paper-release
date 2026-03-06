@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\16_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhinoceros",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              483,
+              136
+            ]
+          },
+          {
+            "component": [
+              "rhinoceros",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛",
+            "target_id": 0,
+            "coords": [
+              483,
+              136
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              538,
+              459
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 0,
+            "coords": [
+              538,
+              459
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取蓝杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue cup",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝杯顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              345,
+              459
+            ]
+          },
+          {
+            "component": [
+              "blue cup",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝杯",
+            "target_id": 0,
+            "coords": [
+              345,
+              459
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

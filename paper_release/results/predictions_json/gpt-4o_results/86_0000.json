@@ -1,0 +1,411 @@
+{
+  "source_file": "../dist/0-99\\86_0000.npz",
+  "image_filename": "86_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将马克笔放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将马克笔放入盆中",
+        "intent_analysis": {
+          "user_intent": "将马克笔放入盆中",
+          "objects": [
+            {
+              "name": "马克笔",
+              "components": [
+                {
+                  "id": 17,
+                  "part": "笔身"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号17的马克笔放入编号5的盆中，无需额外操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "marker",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红色马克笔的中部以便抓取"
+            },
+            {
+              "component": [
+                "marker",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红色马克笔"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的边缘上方以便放置"
+            },
+            {
+              "component": [
+                "marker",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放红色马克笔到蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "marker",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "marker",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 0
+            },
+            {
+              "object": "marker",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "marker",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红色马克笔的中部以便抓取",
+            "target_id": 5,
+            "coords": [
+              462,
+              378
+            ]
+          },
+          {
+            "component": [
+              "marker",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色马克笔",
+            "target_id": 5,
+            "coords": [
+              462,
+              378
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的边缘上方以便放置",
+            "target_id": 0,
+            "coords": [
+              329,
+              161
+            ]
+          },
+          {
+            "component": [
+              "marker",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放红色马克笔到蓝色盆中",
+            "target_id": 5,
+            "coords": [
+              462,
+              378
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取下方灰色犀牛放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取下方灰色犀牛放入盆中",
+        "intent_analysis": {
+          "user_intent": "将灰色犀牛放入盆中",
+          "objects": [
+            {
+              "name": "灰色犀牛",
+              "components": [
+                {
+                  "id": 13,
+                  "part": "犀牛主体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "盆体"
+                },
+                {
+                  "id": 19,
+                  "part": "盆内图案"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号13的灰色犀牛，将其放入编号5的盆中，确保犀牛完全进入盆内，避免掉落或倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "gray rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准下方灰色犀牛的中部以便抓取"
+            },
+            {
+              "component": [
+                "gray rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧灰色犀牛"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的边缘正上方以便放置"
+            },
+            {
+              "component": [
+                "gray rhino",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放灰色犀牛到蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "gray rhino",
+              "part": "middle",
+              "id": 6
+            },
+            {
+              "object": "gray rhino",
+              "part": "middle",
+              "id": 6
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 0
+            },
+            {
+              "object": "gray rhino",
+              "part": "middle",
+              "id": 6
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "gray rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准下方灰色犀牛的中部以便抓取",
+            "target_id": 6,
+            "coords": [
+              245,
+              525
+            ]
+          },
+          {
+            "component": [
+              "gray rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色犀牛",
+            "target_id": 6,
+            "coords": [
+              245,
+              525
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的边缘正上方以便放置",
+            "target_id": 0,
+            "coords": [
+              259,
+              91
+            ]
+          },
+          {
+            "component": [
+              "gray rhino",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放灰色犀牛到蓝色盆中",
+            "target_id": 6,
+            "coords": [
+              245,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取牙膏放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏放入盆中",
+        "final_action_plan": [
+          {
+            "component": [
+              "blue toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色牙膏中部以便稳定抓取，牙膏位于图像下方无遮挡且靠近中心",
+            "target_id": 6,
+            "coords": [
+              326,
+              616
+            ]
+          },
+          {
+            "component": [
+              "blue toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色牙膏以确保搬运过程中不滑落",
+            "target_id": 6,
+            "coords": [
+              326,
+              616
+            ]
+          },
+          {
+            "component": [
+              "blue basin",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "将牙膏移动到蓝色盆内部的正上方位置以便放置",
+            "target_id": 2,
+            "coords": [
+              217,
+              273
+            ]
+          },
+          {
+            "component": [
+              "blue toothpaste",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "打开夹爪释放牙膏进入蓝色盆中",
+            "target_id": 6,
+            "coords": [
+              326,
+              616
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "完成放置任务后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

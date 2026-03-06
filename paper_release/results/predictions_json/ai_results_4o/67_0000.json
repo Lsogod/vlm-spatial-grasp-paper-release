@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/all\\67_0000.npz",
+  "image_filename": "67_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "intent_analysis": {
+          "user_intent": "抓取螺丝刀",
+          "objects": [
+            {
+              "name": "螺丝刀",
+              "components": [
+                {
+                  "id": 19,
+                  "part": "手柄"
+                },
+                {
+                  "id": 9,
+                  "part": "刀头"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取时需握住编号19的手柄部分，避免接触编号9的刀头以防滑或受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "screwdriver",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准螺丝刀的手柄部分，手柄为实体材质，便于稳定抓取"
+            },
+            {
+              "component": [
+                "screwdriver",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧螺丝刀手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "screwdriver",
+              "part": "handle",
+              "id": 0
+            },
+            {
+              "object": "screwdriver",
+              "part": "handle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准螺丝刀的手柄部分，手柄为实体材质，便于稳定抓取",
+            "target_id": 0,
+            "coords": [
+              889,
+              175
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝刀手柄，确保抓取牢固",
+            "target_id": 0,
+            "coords": [
+              889,
+              175
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取好爸爸洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取好爸爸洗衣液",
+        "intent_analysis": {
+          "user_intent": "抓取好爸爸洗衣液",
+          "objects": [
+            {
+              "name": "好爸爸洗衣液",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 6,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取时需同时握住编号7的瓶身和编号6的瓶盖，确保瓶盖未松动以防液体泄漏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "好爸爸洗衣液",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准好爸爸洗衣液瓶身中部，稳定抓取"
+            },
+            {
+              "component": [
+                "好爸爸洗衣液",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧好爸爸洗衣液瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "好爸爸洗衣液",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "好爸爸洗衣液",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "好爸爸洗衣液",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准好爸爸洗衣液瓶身中部，稳定抓取",
+            "target_id": 5,
+            "coords": [
+              329,
+              441
+            ]
+          },
+          {
+            "component": [
+              "好爸爸洗衣液",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧好爸爸洗衣液瓶身",
+            "target_id": 5,
+            "coords": [
+              329,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "intent_analysis": {
+          "user_intent": "抓取鼠标",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "鼠标主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的鼠标主体，确保手部稳固抓握，避免滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准鼠标中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标中部"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准鼠标中部实体表面，确保抓取稳定",
+            "target_id": 3,
+            "coords": [
+              609,
+              623
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标中部",
+            "target_id": 3,
+            "coords": [
+              609,
+              623
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "source_file": "../dist/0-99\\23_0000.npz",
+  "image_filename": "23_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将鼠标放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将鼠标放入盆中",
+        "final_action_plan": [
+          {
+            "component": [
+              "black mouse",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色鼠标主体以便抓取，鼠标位于图像中心区域且无遮挡",
+            "target_id": 1,
+            "coords": [
+              875,
+              301
+            ]
+          },
+          {
+            "component": [
+              "black mouse",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色鼠标以防掉落",
+            "target_id": 1,
+            "coords": [
+              875,
+              301
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆中心上方以便放置鼠标",
+            "target_id": 4,
+            "coords": [
+              539,
+              350
+            ]
+          },
+          {
+            "component": [
+              "black mouse",
+              "body"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中释放鼠标",
+            "target_id": 1,
+            "coords": [
+              875,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将小球放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将小球放入盆中",
+        "intent_analysis": {
+          "user_intent": "将小球放入盆中",
+          "objects": [
+            {
+              "name": "小球",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "球体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号2的小球拾起并放入编号4的盆中，确保小球完全进入盆内，避免掉落或滚出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue ball",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色小球的中部以便抓取"
+            },
+            {
+              "component": [
+                "blue ball",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色小球"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的边缘上方以便放置"
+            },
+            {
+              "component": [
+                "blue ball",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放蓝色小球到蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue ball",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "blue ball",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 2
+            },
+            {
+              "object": "blue ball",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue ball",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色小球的中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              766,
+              343
+            ]
+          },
+          {
+            "component": [
+              "blue ball",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色小球",
+            "target_id": 1,
+            "coords": [
+              766,
+              343
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的边缘上方以便放置",
+            "target_id": 2,
+            "coords": [
+              539,
+              350
+            ]
+          },
+          {
+            "component": [
+              "blue ball",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放蓝色小球到蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              766,
+              343
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将红笔放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将红笔放入盆中",
+        "intent_analysis": {
+          "user_intent": "将红笔放入盆中",
+          "objects": [
+            {
+              "name": "红笔",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "笔身"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号10的红笔拾起并放入编号4的盆中，确保红笔完全进入盆内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红笔中部以便抓取"
+            },
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红笔"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的边缘上方以便放置"
+            },
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放红笔到蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务结束回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 1
+            },
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红笔中部以便抓取",
+            "target_id": 3,
+            "coords": [
+              609,
+              385
+            ]
+          },
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红笔",
+            "target_id": 3,
+            "coords": [
+              609,
+              385
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的边缘上方以便放置",
+            "target_id": 1,
+            "coords": [
+              539,
+              350
+            ]
+          },
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放红笔到蓝色盆中",
+            "target_id": 3,
+            "coords": [
+              609,
+              385
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务结束回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

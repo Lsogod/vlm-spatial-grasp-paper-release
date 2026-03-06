@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\51_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              840,
+              187
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 0,
+            "coords": [
+              840,
+              187
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取桃子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到桃子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              650,
+              408
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子",
+            "target_id": 0,
+            "coords": [
+              650,
+              408
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗衣液",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "dish soap bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗衣液瓶顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              739,
+              292
+            ]
+          },
+          {
+            "component": [
+              "dish soap bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗衣液瓶",
+            "target_id": 0,
+            "coords": [
+              739,
+              292
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

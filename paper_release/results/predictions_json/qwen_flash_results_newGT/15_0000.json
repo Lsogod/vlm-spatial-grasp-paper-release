@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\15_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将小刀放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将小刀放入红杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小刀手柄处准备抓取",
+            "target_id": 0,
+            "coords": [
+              650,
+              499
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹住小刀",
+            "target_id": 0,
+            "coords": [
+              650,
+              499
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "将小刀移至红色杯子开口处",
+            "target_id": 1,
+            "coords": [
+              760,
+              228
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开小刀，放入红色杯子",
+            "target_id": 1,
+            "coords": [
+              760,
+              228
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取李子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到李子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              592,
+              128
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子",
+            "target_id": 0,
+            "coords": [
+              592,
+              128
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              636,
+              601
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 0,
+            "coords": [
+              636,
+              601
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

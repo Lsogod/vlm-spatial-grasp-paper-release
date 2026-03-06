@@ -1,0 +1,437 @@
+{
+  "source_file": "../dist/all\\113_Color.npz",
+  "image_filename": "113_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取左上角遥控器放入灰色透明箱中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上角遥控器放入灰色透明箱中",
+        "intent_analysis": {
+          "user_intent": "将左上角的遥控器放入灰色透明箱中",
+          "objects": [
+            {
+              "name": "遥控器",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "遥控器主体"
+                }
+              ]
+            },
+            {
+              "name": "灰色透明箱",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "箱体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号5的遥控器，将其移动并放入编号7的灰色透明箱中，确保放置时遥控器不会倾倒或损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准左上角遥控器的中部实体区域，确保抓取稳定"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧遥控器中部，确保抓取牢固"
+            },
+            {
+              "component": [
+                "gray transparent box",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到灰色透明箱的上方，为放置遥控器做准备"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将遥控器放入灰色透明箱中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "gray transparent box",
+              "part": "inside",
+              "id": 5
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准左上角遥控器的中部实体区域，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              105,
+              49
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器中部，确保抓取牢固",
+            "target_id": 2,
+            "coords": [
+              105,
+              49
+            ]
+          },
+          {
+            "component": [
+              "gray transparent box",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到灰色透明箱的上方，为放置遥控器做准备",
+            "target_id": 5,
+            "coords": [
+              1155,
+              553
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将遥控器放入灰色透明箱中",
+            "target_id": 2,
+            "coords": [
+              105,
+              49
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取左上角遥控器放入白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上角遥控器放入白色笔筒中",
+        "intent_analysis": {
+          "user_intent": "将左上角的遥控器放入白色笔筒中",
+          "objects": [
+            {
+              "name": "遥控器",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "遥控器主体"
+                }
+              ]
+            },
+            {
+              "name": "白色笔筒",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "笔筒主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号5的遥控器，将其移动到编号8的白色笔筒上方，调整角度后放入笔筒中，确保遥控器完全进入笔筒且不倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准左上角遥控器的中部实体区域，确保抓取稳定"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧遥控器中部，确保抓取成功"
+            },
+            {
+              "component": [
+                "white pen holder",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色笔筒的上方，为放置遥控器做准备"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将遥控器放入白色笔筒中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "white pen holder",
+              "part": "inside",
+              "id": 3
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准左上角遥控器的中部实体区域，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              105,
+              49
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器中部，确保抓取成功",
+            "target_id": 2,
+            "coords": [
+              105,
+              49
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒的上方，为放置遥控器做准备",
+            "target_id": 3,
+            "coords": [
+              595,
+              133
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将遥控器放入白色笔筒中",
+            "target_id": 2,
+            "coords": [
+              105,
+              49
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "intent_analysis": {
+          "user_intent": "抓取黑红色测温枪",
+          "objects": [
+            {
+              "name": "测温枪",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "枪身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的测温枪，注意避免碰到周围的容器边缘（编号7）。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑红色测温枪的手柄部位，手柄为实体材质，便于稳定抓取"
+            },
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧测温枪手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 3
+            },
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑红色测温枪的手柄部位，手柄为实体材质，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              623,
+              637
+            ]
+          },
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪手柄，确保抓取牢固",
+            "target_id": 3,
+            "coords": [
+              623,
+              637
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

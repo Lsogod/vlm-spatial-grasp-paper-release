@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/all\\48_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取猩猩放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猩猩放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到猩猩中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              912,
+              103
+            ]
+          },
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猩猩中部",
+            "target_id": 0,
+            "coords": [
+              912,
+              103
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              782,
+              445
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将猩猩放入蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              782,
+              445
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取洗发水放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗发水放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗发水瓶中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              677,
+              221
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗发水瓶中部",
+            "target_id": 0,
+            "coords": [
+              677,
+              221
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将洗发水瓶移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              792,
+              445
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将洗发水瓶放入蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              792,
+              445
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取塑料圆盖酸奶放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取塑料圆盖酸奶放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "plastic yogurt lid",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到塑料圆盖酸奶的顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              372,
+              73
+            ]
+          },
+          {
+            "component": [
+              "plastic yogurt lid",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧塑料圆盖酸奶",
+            "target_id": 0,
+            "coords": [
+              372,
+              73
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将塑料圆盖酸奶移动到蓝色盆的中心位置",
+            "target_id": 1,
+            "coords": [
+              782,
+              445
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将塑料圆盖酸奶放入蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              782,
+              445
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

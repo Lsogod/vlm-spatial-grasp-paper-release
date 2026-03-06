@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\151.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水杯",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "cup",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水杯的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              544,
+              128
+            ]
+          },
+          {
+            "component": [
+              "cup",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "抓紧水杯",
+            "target_id": 0,
+            "coords": [
+              544,
+              128
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取可乐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取可乐",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "cola can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到可乐中部的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              192,
+              160
+            ]
+          },
+          {
+            "component": [
+              "cola can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取可乐",
+            "target_id": 0,
+            "coords": [
+              192,
+              160
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取锤子",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到锤子把手的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              352,
+              320
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取锤子",
+            "target_id": 0,
+            "coords": [
+              352,
+              320
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

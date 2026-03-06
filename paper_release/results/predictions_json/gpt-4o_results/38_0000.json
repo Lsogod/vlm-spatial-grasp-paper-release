@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/0-99\\38_0000.npz",
+  "image_filename": "38_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取小样香水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取小样香水",
+        "intent_analysis": {
+          "user_intent": "抓取小样香水",
+          "objects": [
+            {
+              "name": "小样香水",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "香水瓶"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的小样香水瓶，注意避免碰倒周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "perfume sample",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准小样香水的中部以便抓取"
+            },
+            {
+              "component": [
+                "perfume sample",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧小样香水"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "perfume sample",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "perfume sample",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "perfume sample",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准小样香水的中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              924,
+              298
+            ]
+          },
+          {
+            "component": [
+              "perfume sample",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小样香水",
+            "target_id": 2,
+            "coords": [
+              924,
+              298
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大宝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝",
+        "intent_analysis": {
+          "user_intent": "抓取大宝",
+          "objects": [
+            {
+              "name": "大宝",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号7的瓶身，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "white bottle with red cap",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大宝瓶身以便抓取"
+            },
+            {
+              "component": [
+                "white bottle with red cap",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大宝瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "white bottle with red cap",
+              "part": "body",
+              "id": 0
+            },
+            {
+              "object": "white bottle with red cap",
+              "part": "body",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "white bottle with red cap",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大宝瓶身以便抓取",
+            "target_id": 0,
+            "coords": [
+              413,
+              259
+            ]
+          },
+          {
+            "component": [
+              "white bottle with red cap",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝瓶身",
+            "target_id": 0,
+            "coords": [
+              413,
+              259
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取洗手液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗手液",
+        "intent_analysis": {
+          "user_intent": "抓取洗手液",
+          "objects": [
+            {
+              "name": "洗手液",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 16,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的瓶身，确保瓶盖（编号16）紧闭以防液体泄漏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hand soap",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准洗手液瓶身以便抓取"
+            },
+            {
+              "component": [
+                "hand soap",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧洗手液瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hand soap",
+              "part": "body",
+              "id": 9
+            },
+            {
+              "object": "hand soap",
+              "part": "body",
+              "id": 9
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hand soap",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准洗手液瓶身以便抓取",
+            "target_id": 9,
+            "coords": [
+              413,
+              492
+            ]
+          },
+          {
+            "component": [
+              "hand soap",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗手液瓶身",
+            "target_id": 9,
+            "coords": [
+              413,
+              492
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

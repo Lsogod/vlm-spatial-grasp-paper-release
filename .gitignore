@@ -1,0 +1,12 @@
+# secrets
+**/.env
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+
+# OS
+**/.DS_Store
+
+# large local weights (not pushed to GitHub)
+vlm-spatial-grasp/sam_b.pt

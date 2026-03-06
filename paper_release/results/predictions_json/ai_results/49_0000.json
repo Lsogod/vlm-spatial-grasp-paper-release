@@ -1,0 +1,320 @@
+{
+  "source_file": "../dist/0-99\\49_0000.npz",
+  "image_filename": "49_0000.png",
+  "results": [
+    {
+      "task_index": 1,
+      "original_instruction": "抓取洗发水放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗发水放入盆中",
+        "intent_analysis": {
+          "user_intent": "抓取洗发水并放入盆中",
+          "objects": [
+            {
+              "name": "洗发水",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 15,
+                  "part": "瓶盖"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "盆底图案"
+                },
+                {
+                  "id": 5,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先用手抓住编号(11)的洗发水瓶身，确保瓶盖(15)拧紧以防泄漏；将洗发水整体放入编号(5)的盆中，注意放置平稳避免倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "shampoo bottle",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择图像中心附近无遮挡的白色蓝盖洗发水瓶主体并对准以便抓取"
+            },
+            {
+              "component": [
+                "shampoo bottle",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧洗发水瓶主体以确保稳定抓取"
+            },
+            {
+              "component": [
+                "blue basin",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "shampoo bottle",
+                "body"
+              ],
+              "action": "open_gripper",
+              "description": "释放洗发水瓶到盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "shampoo bottle",
+              "part": "body",
+              "id": 8
+            },
+            {
+              "object": "shampoo bottle",
+              "part": "body",
+              "id": 8
+            },
+            {
+              "object": "blue basin",
+              "part": "rim",
+              "id": 0
+            },
+            {
+              "object": "shampoo bottle",
+              "part": "body",
+              "id": 8
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "shampoo bottle",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心附近无遮挡的白色蓝盖洗发水瓶主体并对准以便抓取",
+            "target_id": 8,
+            "coords": [
+              567,
+              483
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗发水瓶主体以确保稳定抓取",
+            "target_id": 8,
+            "coords": [
+              567,
+              483
+            ]
+          },
+          {
+            "component": [
+              "blue basin",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的杯沿正上方以便放入",
+            "target_id": 0,
+            "coords": [
+              203,
+              231
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "body"
+            ],
+            "action": "open_gripper",
+            "description": "释放洗发水瓶到盆中",
+            "target_id": 8,
+            "coords": [
+              567,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色鼠标放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色鼠标放入盆中",
+        "final_action_plan": [
+          {
+            "component": [
+              "black mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色鼠标中段实体表面，确保夹持稳定",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "black mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色鼠标",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "blue bowl",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "将黑色鼠标移动到蓝色盆上方准备放入",
+            "target_id": 2,
+            "coords": [
+              343,
+              301
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "inside"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆内释放黑色鼠标",
+            "target_id": 2,
+            "coords": [
+              343,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 0,
+      "original_instruction": "抓取塑料圆盖酸奶放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取塑料圆盖酸奶放入盆中",
+        "final_action_plan": [
+          {
+            "component": [
+              "plastic round yogurt lid",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心附近无遮挡的塑料圆盖酸奶盖，对准顶部以便抓取",
+            "target_id": 10,
+            "coords": [
+              1029,
+              644
+            ]
+          },
+          {
+            "component": [
+              "plastic round yogurt lid",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧塑料圆盖酸奶盖",
+            "target_id": 10,
+            "coords": [
+              1029,
+              644
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "inner"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆内中心位置",
+            "target_id": 2,
+            "coords": [
+              343,
+              301
+            ]
+          },
+          {
+            "component": [
+              "plastic round yogurt lid",
+              "top"
+            ],
+            "action": "open_gripper",
+            "description": "在盆中释放塑料圆盖酸奶盖",
+            "target_id": 10,
+            "coords": [
+              1029,
+              644
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

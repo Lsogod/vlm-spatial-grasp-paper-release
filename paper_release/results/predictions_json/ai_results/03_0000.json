@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/0-99\\03_0000.npz",
+  "image_filename": "03_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "intent_analysis": {
+          "user_intent": "抓取鼠标",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 16,
+                  "part": "鼠标主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号16的鼠标主体两侧，确保手指自然放置在按键位置，避免用力过猛导致滑落或损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择位于图像中心无遮挡的鼠标中部进行对准抓取"
+            },
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标以确保稳固抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择位于图像中心无遮挡的鼠标中部进行对准抓取",
+            "target_id": 2,
+            "coords": [
+              588,
+              301
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标以确保稳固抓取",
+            "target_id": 2,
+            "coords": [
+              588,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取护发素",
+        "intent_analysis": {
+          "user_intent": "抓取护发素",
+          "objects": [
+            {
+              "name": "护发素",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 26,
+                  "part": "标签"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号10的瓶身，确保抓握稳固，避免挤压过度导致内容物溢出。可根据需要查看编号26的标签确认产品信息。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "gold conditioner bottle",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准金色护发素瓶主体以便稳定抓取，位置靠近图像中心且无遮挡"
+            },
+            {
+              "component": [
+                "gold conditioner bottle",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧护发素瓶主体"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "gold conditioner bottle",
+              "part": "body",
+              "id": 4
+            },
+            {
+              "object": "gold conditioner bottle",
+              "part": "body",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "gold conditioner bottle",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准金色护发素瓶主体以便稳定抓取，位置靠近图像中心且无遮挡",
+            "target_id": 4,
+            "coords": [
+              729,
+              388
+            ]
+          },
+          {
+            "component": [
+              "gold conditioner bottle",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧护发素瓶主体",
+            "target_id": 4,
+            "coords": [
+              729,
+              388
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取红笔",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取红笔",
+        "intent_analysis": {
+          "user_intent": "抓取红色笔",
+          "objects": [
+            {
+              "name": "红色笔",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "笔身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号9的红色笔身中部，确保握持稳固后再提起，避免碰到周围物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红笔中部以便稳定抓取，红笔位于图像下方无遮挡"
+            },
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红笔以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红笔中部以便稳定抓取，红笔位于图像下方无遮挡",
+            "target_id": 2,
+            "coords": [
+              838,
+              539
+            ]
+          },
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红笔以防滑落",
+            "target_id": 2,
+            "coords": [
+              838,
+              539
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

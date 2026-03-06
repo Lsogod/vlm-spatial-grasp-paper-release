@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\41_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓草莓放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓草莓放入红杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到草莓顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              294,
+              364
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓",
+            "target_id": 0,
+            "coords": [
+              294,
+              364
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色杯子开口处",
+            "target_id": 1,
+            "coords": [
+              478,
+              352
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开草莓，放入杯中",
+            "target_id": 1,
+            "coords": [
+              478,
+              352
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓桃子放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓桃子放入红杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到桃子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              711,
+              475
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子",
+            "target_id": 0,
+            "coords": [
+              711,
+              475
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯开口处",
+            "target_id": 1,
+            "coords": [
+              473,
+              349
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开桃子放入红杯",
+            "target_id": 1,
+            "coords": [
+              473,
+              349
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂归零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓鼠标放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓鼠标放入红杯",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              791,
+              365
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              791,
+              365
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色杯子开口处",
+            "target_id": 1,
+            "coords": [
+              480,
+              352
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开鼠标，放入红色杯子",
+            "target_id": 1,
+            "coords": [
+              480,
+              352
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

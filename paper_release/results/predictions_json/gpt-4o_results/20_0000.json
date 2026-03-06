@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/0-99\\20_0000.npz",
+  "image_filename": "20_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "香蕉主体"
+                },
+                {
+                  "id": 20,
+                  "part": "香蕉尾部"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3和编号20标注的香蕉主体和尾部，确保抓取时用力适中以避免损坏香蕉。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中部以便抓取"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              357,
+              231
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 2,
+            "coords": [
+              357,
+              231
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取酸奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取酸奶",
+        "intent_analysis": {
+          "user_intent": "抓取酸奶",
+          "objects": [
+            {
+              "name": "酸奶",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 21,
+                  "part": "瓶口"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的酸奶瓶身，注意握紧避免滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yogurt",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准酸奶杯的中部以便抓取"
+            },
+            {
+              "component": [
+                "yogurt",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧酸奶杯"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yogurt",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "yogurt",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yogurt",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准酸奶杯的中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              343,
+              483
+            ]
+          },
+          {
+            "component": [
+              "yogurt",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧酸奶杯",
+            "target_id": 1,
+            "coords": [
+              343,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取大宝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝",
+        "intent_analysis": {
+          "user_intent": "抓取大宝",
+          "objects": [
+            {
+              "name": "大宝",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "瓶体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号9的大宝瓶体，注意避免碰倒周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "white bottle with red cap",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大宝瓶身以便抓取"
+            },
+            {
+              "component": [
+                "white bottle with red cap",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大宝瓶"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "white bottle with red cap",
+              "part": "body",
+              "id": 3
+            },
+            {
+              "object": "white bottle with red cap",
+              "part": "body",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "white bottle with red cap",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大宝瓶身以便抓取",
+            "target_id": 3,
+            "coords": [
+              567,
+              651
+            ]
+          },
+          {
+            "component": [
+              "white bottle with red cap",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝瓶",
+            "target_id": 3,
+            "coords": [
+              567,
+              651
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

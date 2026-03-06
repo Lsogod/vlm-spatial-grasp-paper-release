@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/all\\102_Color.npz",
+  "image_filename": "102_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取冰淇淋甜筒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取冰淇淋甜筒",
+        "intent_analysis": {
+          "user_intent": "抓取冰淇淋甜筒",
+          "objects": [
+            {
+              "name": "冰淇淋甜筒",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "甜筒主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号11的冰淇淋甜筒，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "ice cream cone",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准冰淇淋甜筒中段实体表面，确保抓取稳定性"
+            },
+            {
+              "component": [
+                "ice cream cone",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧冰淇淋甜筒中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "ice cream cone",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "ice cream cone",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "ice cream cone",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准冰淇淋甜筒中段实体表面，确保抓取稳定性",
+            "target_id": 1,
+            "coords": [
+              805,
+              343
+            ]
+          },
+          {
+            "component": [
+              "ice cream cone",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧冰淇淋甜筒中段实体表面",
+            "target_id": 1,
+            "coords": [
+              805,
+              343
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "intent_analysis": {
+          "user_intent": "抓取黑红色测温枪",
+          "objects": [
+            {
+              "name": "测温枪",
+              "components": [
+                {
+                  "id": 13,
+                  "part": "枪身"
+                },
+                {
+                  "id": 7,
+                  "part": "枪柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号13和7组成的测温枪，确保手部握住枪柄（编号7）以便于操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑红色测温枪的手柄部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧测温枪的手柄部位"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 7
+            },
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑红色测温枪的手柄部位，便于稳定抓取",
+            "target_id": 7,
+            "coords": [
+              749,
+              525
+            ]
+          },
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪的手柄部位",
+            "target_id": 7,
+            "coords": [
+              749,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取巧克力",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取巧克力",
+        "intent_analysis": {
+          "user_intent": "抓取巧克力",
+          "objects": [
+            {
+              "name": "巧克力",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "巧克力块"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号10的巧克力块，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "chocolate",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准巧克力中间的实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "chocolate",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧巧克力"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "chocolate",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "chocolate",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "chocolate",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准巧克力中间的实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              483,
+              455
+            ]
+          },
+          {
+            "component": [
+              "chocolate",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧巧克力",
+            "target_id": 1,
+            "coords": [
+              483,
+              455
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

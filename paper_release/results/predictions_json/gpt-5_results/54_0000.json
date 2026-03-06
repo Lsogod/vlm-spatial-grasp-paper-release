@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\54_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到草莓中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              559,
+              441
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓中部",
+            "target_id": 0,
+            "coords": [
+              559,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到河马中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              677,
+              400
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住河马中部",
+            "target_id": 0,
+            "coords": [
+              677,
+              400
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取牙膏盒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏盒",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "toothpaste box",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到牙膏盒中心准备抓取",
+            "target_id": 0,
+            "coords": [
+              677,
+              314
+            ]
+          },
+          {
+            "component": [
+              "toothpaste box",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏盒中心",
+            "target_id": 0,
+            "coords": [
+              677,
+              314
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

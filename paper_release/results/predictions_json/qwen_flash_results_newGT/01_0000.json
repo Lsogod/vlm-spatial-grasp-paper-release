@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\01_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将香蕉放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              747,
+              237
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹住香蕉",
+            "target_id": 0,
+            "coords": [
+              747,
+              237
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将香蕉移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              199,
+              509
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心打开夹爪，放置香蕉",
+            "target_id": 1,
+            "coords": [
+              199,
+              509
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将梨放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将梨放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨的顶部以抓取",
+            "target_id": 0,
+            "coords": [
+              515,
+              120
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨",
+            "target_id": 0,
+            "coords": [
+              515,
+              120
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将梨移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              203,
+              508
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放梨",
+            "target_id": 1,
+            "coords": [
+              203,
+              508
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将恐龙玩具放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将恐龙玩具放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "toy dinosaur",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到恐龙玩具顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              243,
+              168
+            ]
+          },
+          {
+            "component": [
+              "toy dinosaur",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住恐龙玩具",
+            "target_id": 0,
+            "coords": [
+              243,
+              168
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将恐龙玩具移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              199,
+              509
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放恐龙玩具",
+            "target_id": 1,
+            "coords": [
+              199,
+              509
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

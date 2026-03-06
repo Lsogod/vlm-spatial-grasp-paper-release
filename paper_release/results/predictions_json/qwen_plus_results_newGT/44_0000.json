@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\44_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至梨子中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              203,
+              283
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取梨子",
+            "target_id": 0,
+            "coords": [
+              203,
+              283
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取罐头",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取罐头",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "can",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到罐头中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              337,
+              454
+            ]
+          },
+          {
+            "component": [
+              "can",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取罐头",
+            "target_id": 0,
+            "coords": [
+              337,
+              454
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色包装的亮白牙膏",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色包装的亮白牙膏",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色包装亮白牙膏的中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              798,
+              319
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色包装亮白牙膏中部",
+            "target_id": 0,
+            "coords": [
+              798,
+              319
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\159.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水果刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水果刀",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水果刀手柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              188,
+              416
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水果刀手柄",
+            "target_id": 0,
+            "coords": [
+              188,
+              416
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取日光灯",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "light bulb",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到日光灯顶部抓取位置",
+            "target_id": 0,
+            "coords": [
+              522,
+              534
+            ]
+          },
+          {
+            "component": [
+              "light bulb",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧日光灯",
+            "target_id": 0,
+            "coords": [
+              522,
+              534
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取苹果",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取苹果",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "apple",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到苹果顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              504,
+              195
+            ]
+          },
+          {
+            "component": [
+              "apple",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧苹果",
+            "target_id": 0,
+            "coords": [
+              504,
+              195
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

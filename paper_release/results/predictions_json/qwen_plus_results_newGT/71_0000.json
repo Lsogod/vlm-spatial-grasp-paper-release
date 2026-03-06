@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\71_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取电动螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取电动螺丝刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "electric screwdriver",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到电动螺丝刀中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              823,
+              300
+            ]
+          },
+          {
+            "component": [
+              "electric screwdriver",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电动螺丝刀中部",
+            "target_id": 0,
+            "coords": [
+              823,
+              300
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黄色包装护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色包装护发素",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hair conditioner",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黄色包装护发素中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              686,
+              449
+            ]
+          },
+          {
+            "component": [
+              "hair conditioner",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色包装护发素中部",
+            "target_id": 0,
+            "coords": [
+              686,
+              449
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到刀的中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              823,
+              563
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取刀",
+            "target_id": 0,
+            "coords": [
+              823,
+              563
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

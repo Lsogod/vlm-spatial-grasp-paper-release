@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\39_0000.npz",
+  "results": [
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大宝放入蓝盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝放入蓝盆",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "detergent bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大宝洗洁精瓶顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              550,
+              226
+            ]
+          },
+          {
+            "component": [
+              "detergent bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝洗洁精瓶",
+            "target_id": 0,
+            "coords": [
+              550,
+              226
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝盆中心位置",
+            "target_id": 1,
+            "coords": [
+              716,
+              531
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝盆中心释放大宝洗洁精瓶",
+            "target_id": 1,
+            "coords": [
+              716,
+              531
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香水放入蓝盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香水放入蓝盆",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香水瓶顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              560,
+              213
+            ]
+          },
+          {
+            "component": [
+              "bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香水瓶",
+            "target_id": 0,
+            "coords": [
+              560,
+              213
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将香水瓶移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              716,
+              531
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放香水瓶",
+            "target_id": 1,
+            "coords": [
+              716,
+              531
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香水放入蓝盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香水放入蓝盆",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香水瓶顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              576,
+              206
+            ]
+          },
+          {
+            "component": [
+              "bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香水瓶",
+            "target_id": 0,
+            "coords": [
+              576,
+              206
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将香水瓶移动到蓝色盆中心位置",
+            "target_id": 1,
+            "coords": [
+              718,
+              531
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色盆中心释放香水瓶",
+            "target_id": 1,
+            "coords": [
+              718,
+              531
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

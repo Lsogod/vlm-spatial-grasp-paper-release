@@ -1,0 +1,259 @@
+{
+  "source_file": "../dist/0-99\\61_0000.npz",
+  "image_filename": "61_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "intent_analysis": {
+          "user_intent": "抓取河马",
+          "objects": [
+            {
+              "name": "河马",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "河马主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号8的河马主体，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hippo",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准河马中部以便抓取"
+            },
+            {
+              "component": [
+                "hippo",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧河马"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hippo",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "hippo",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准河马中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              609,
+              175
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马",
+            "target_id": 1,
+            "coords": [
+              609,
+              175
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取右上方的漱口水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右上方的漱口水",
+        "final_action_plan": [
+          {
+            "component": [
+              "mouthwash bottle",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准右上方无遮挡且靠近图像边缘的漱口水瓶身以便抓取",
+            "target_id": 2,
+            "coords": [
+              922,
+              184
+            ]
+          },
+          {
+            "component": [
+              "mouthwash bottle",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧漱口水瓶身",
+            "target_id": 2,
+            "coords": [
+              922,
+              184
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取右边的大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右边的大象",
+        "intent_analysis": {
+          "user_intent": "抓取右边的大象",
+          "objects": [
+            {
+              "name": "大象",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "整体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号10的大象，注意避免碰倒周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "elephant",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准右边大象的中部以便抓取"
+            },
+            {
+              "component": [
+                "elephant",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧右边的大象"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "elephant",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "elephant",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准右边大象的中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              1029,
+              287
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧右边的大象",
+            "target_id": 2,
+            "coords": [
+              1029,
+              287
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

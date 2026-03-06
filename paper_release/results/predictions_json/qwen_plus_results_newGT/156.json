@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\156.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取小黄鸭",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取小黄鸭",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "duck",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小黄鸭的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              176,
+              76
+            ]
+          },
+          {
+            "component": [
+              "duck",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取小黄鸭",
+            "target_id": 0,
+            "coords": [
+              176,
+              76
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取锤子",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到锤子中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              403,
+              370
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取锤子",
+            "target_id": 0,
+            "coords": [
+              403,
+              370
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              560,
+              368
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取香蕉",
+            "target_id": 0,
+            "coords": [
+              560,
+              368
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[0-99]
+  - idx=1: 001_01_0000.png | instruction=将香蕉放入盆中
+  - idx=33: 033_33_0000.png | instruction=抓取香水放入蓝盖
+  - idx=66: 066_66_0000.png | instruction=抓取鼠标
+  - idx=99: 099_99_0000.png | instruction=抓取梨子
+  - grid: 0-99_grid.png
+[100-129]
+  - idx=100: 100_100_Color.png | instruction=抓取水壶
+  - idx=110: 110_110_Color.png | instruction=抓取胶带
+  - idx=119: 119_119_Color.png | instruction=抓取蓝扣白色透明盒子
+  - idx=129: 129_129_Color.png | instruction=抓取电池放到中间的圆形杯托上
+  - grid: 100-129_grid.png
+[130-159]
+  - idx=130: 130_130.png | instruction=将水杯放入红色方形盘中
+  - idx=140: 140_140.png | instruction=抓取水壶
+  - idx=149: 149_149.png | instruction=抓取右下方香蕉
+  - idx=159: 159_159.png | instruction=抓取水果刀
+  - grid: 130-159_grid.png

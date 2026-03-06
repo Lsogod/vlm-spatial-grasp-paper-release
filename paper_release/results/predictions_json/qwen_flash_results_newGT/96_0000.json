@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\96_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取大宝黑色按压头的洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝黑色按压头的洗面奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "face wash",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗面奶按压头位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              276,
+              338
+            ]
+          },
+          {
+            "component": [
+              "face wash",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗面奶按压头",
+            "target_id": 0,
+            "coords": [
+              276,
+              338
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              673,
+              195
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              673,
+              195
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              633,
+              453
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨子",
+            "target_id": 0,
+            "coords": [
+              633,
+              453
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

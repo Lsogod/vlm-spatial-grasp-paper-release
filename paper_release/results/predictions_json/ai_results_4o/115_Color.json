@@ -1,0 +1,441 @@
+{
+  "source_file": "../dist/all\\115_Color.npz",
+  "image_filename": "115_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取美工刀放到灰色透明箱中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取美工刀放到灰色透明箱中",
+        "intent_analysis": {
+          "user_intent": "将美工刀放入灰色透明箱中",
+          "objects": [
+            {
+              "name": "美工刀",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "刀体"
+                }
+              ]
+            },
+            {
+              "name": "灰色透明箱",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "箱体"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号5的美工刀，将其放入编号8的灰色透明箱中，确保美工刀平稳放置，避免刀刃外露以确保安全。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "utility knife",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准美工刀中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "utility knife",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧美工刀中段，确保抓取牢固"
+            },
+            {
+              "component": [
+                "gray transparent box",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到灰色透明箱的上方，为放置美工刀做准备"
+            },
+            {
+              "component": [
+                "utility knife",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将美工刀放入灰色透明箱中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "utility knife",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "utility knife",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "gray transparent box",
+              "part": "inside",
+              "id": 7
+            },
+            {
+              "object": "utility knife",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "utility knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准美工刀中段实体表面，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              819,
+              245
+            ]
+          },
+          {
+            "component": [
+              "utility knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧美工刀中段，确保抓取牢固",
+            "target_id": 3,
+            "coords": [
+              819,
+              245
+            ]
+          },
+          {
+            "component": [
+              "gray transparent box",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到灰色透明箱的上方，为放置美工刀做准备",
+            "target_id": 7,
+            "coords": [
+              735,
+              511
+            ]
+          },
+          {
+            "component": [
+              "utility knife",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将美工刀放入灰色透明箱中",
+            "target_id": 3,
+            "coords": [
+              819,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取锤子",
+        "intent_analysis": {
+          "user_intent": "抓取锤子",
+          "objects": [
+            {
+              "name": "锤子",
+              "components": [
+                {
+                  "id": 14,
+                  "part": "锤头"
+                },
+                {
+                  "id": 6,
+                  "part": "锤柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号6的锤柄部分，确保握紧以避免滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准锤子手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧锤子手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准锤子手柄部分，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              455,
+              91
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧锤子手柄，确保抓取牢固",
+            "target_id": 1,
+            "coords": [
+              455,
+              91
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑红色测温枪放到螺丝盒子上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪放到螺丝盒子上",
+        "intent_analysis": {
+          "user_intent": "抓取黑红色测温枪放到螺丝盒子上",
+          "objects": [
+            {
+              "name": "测温枪",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "枪体"
+                }
+              ]
+            },
+            {
+              "name": "螺丝盒子",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "盒体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓取编号10的测温枪，确保稳固后，将其放置在编号12的螺丝盒子上，注意避免碰倒螺丝盒子或其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑红色测温枪的手柄部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧测温枪的手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "screw box",
+                "top"
+              ],
+              "action": "move_to_point",
+              "description": "移动到螺丝盒子上方，准备放置测温枪"
+            },
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将测温枪放置在螺丝盒子上"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "回到初始位姿，完成任务"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 5
+            },
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 5
+            },
+            {
+              "object": "screw box",
+              "part": "top",
+              "id": 1
+            },
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑红色测温枪的手柄部位，便于稳定抓取",
+            "target_id": 5,
+            "coords": [
+              735,
+              581
+            ]
+          },
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪的手柄，确保抓取牢固",
+            "target_id": 5,
+            "coords": [
+              735,
+              581
+            ]
+          },
+          {
+            "component": [
+              "screw box",
+              "top"
+            ],
+            "action": "move_to_point",
+            "description": "移动到螺丝盒子上方，准备放置测温枪",
+            "target_id": 1,
+            "coords": [
+              245,
+              231
+            ]
+          },
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将测温枪放置在螺丝盒子上",
+            "target_id": 5,
+            "coords": [
+              735,
+              581
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "回到初始位姿，完成任务",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

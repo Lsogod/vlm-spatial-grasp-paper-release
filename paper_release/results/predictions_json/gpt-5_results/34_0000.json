@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\34_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香水放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香水放入蓝盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到香水中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              784,
+              186
+            ]
+          },
+          {
+            "component": [
+              "perfume",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香水中部",
+            "target_id": 0,
+            "coords": [
+              784,
+              186
+            ]
+          },
+          {
+            "component": [
+              "blue lid",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将香水移动到蓝盖中心位置",
+            "target_id": 1,
+            "coords": [
+              933,
+              314
+            ]
+          },
+          {
+            "component": [
+              "blue lid",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将香水放入蓝盖",
+            "target_id": 1,
+            "coords": [
+              933,
+              314
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大宝sod",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝sod",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "white bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到白色瓶子的中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              784,
+              550
+            ]
+          },
+          {
+            "component": [
+              "white bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住白色瓶子中部",
+            "target_id": 0,
+            "coords": [
+              784,
+              550
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取罐头",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取罐头",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "can",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到罐头顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              372,
+              167
+            ]
+          },
+          {
+            "component": [
+              "can",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧罐头顶部",
+            "target_id": 0,
+            "coords": [
+              372,
+              167
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

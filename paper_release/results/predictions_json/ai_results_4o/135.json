@@ -1,0 +1,502 @@
+{
+  "source_file": "../dist/all\\135.npz",
+  "image_filename": "135.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将香蕉放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉放入红色方形盘中",
+        "intent_analysis": {
+          "user_intent": "将香蕉放入红色方形盘中",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "香蕉"
+                }
+              ]
+            },
+            {
+              "name": "红色方形盘",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "盘体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号8的香蕉放入编号12的红色方形盘中，确保香蕉完全位于盘内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "red square tray",
+                "middle"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红色方形盘的上方，准备放置香蕉"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将香蕉放入红色方形盘中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "red square tray",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中段实体表面，稳定且不易滑落",
+            "target_id": 5,
+            "coords": [
+              581,
+              245
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 5,
+            "coords": [
+              581,
+              245
+            ]
+          },
+          {
+            "component": [
+              "red square tray",
+              "middle"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的上方，准备放置香蕉",
+            "target_id": 1,
+            "coords": [
+              301,
+              119
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将香蕉放入红色方形盘中",
+            "target_id": 5,
+            "coords": [
+              581,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将橙子放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将橙子放入红色方形盘中",
+        "intent_analysis": {
+          "user_intent": "将橙子放入红色方形盘中",
+          "objects": [
+            {
+              "name": "橙子",
+              "components": [
+                {
+                  "id": 13,
+                  "part": "橙子主体"
+                }
+              ]
+            },
+            {
+              "name": "红色方形盘",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "盘体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号13的橙子拾起并放入编号12的红色方形盘中，确保橙子完全放置在盘内以避免滚落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "orange",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准橙子中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "orange",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧橙子"
+            },
+            {
+              "component": [
+                "red square tray",
+                "middle"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红色方形盘的上方，准备放置橙子"
+            },
+            {
+              "component": [
+                "orange",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将橙子放入红色方形盘中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "orange",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "orange",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "red square tray",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "orange",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准橙子中段实体表面，便于稳定抓取",
+            "target_id": 5,
+            "coords": [
+              147,
+              301
+            ]
+          },
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧橙子",
+            "target_id": 5,
+            "coords": [
+              147,
+              301
+            ]
+          },
+          {
+            "component": [
+              "red square tray",
+              "middle"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的上方，准备放置橙子",
+            "target_id": 1,
+            "coords": [
+              301,
+              119
+            ]
+          },
+          {
+            "component": [
+              "orange",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将橙子放入红色方形盘中",
+            "target_id": 5,
+            "coords": [
+              147,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将锤子放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将锤子放入红色方形盘中",
+        "intent_analysis": {
+          "user_intent": "将锤子放入红色方形盘中",
+          "objects": [
+            {
+              "name": "锤子",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "锤头"
+                },
+                {
+                  "id": 14,
+                  "part": "锤柄"
+                }
+              ]
+            },
+            {
+              "name": "红色方形盘",
+              "components": [
+                {
+                  "id": 12,
+                  "part": "盘体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号(14)的锤柄，将锤子平稳地放入编号12的红色方形盘中，确保锤子完全位于盘内，避免碰撞其他物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准锤子手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧锤子手柄，确保抓取牢固"
+            },
+            {
+              "component": [
+                "red tray",
+                "middle"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红色方形盘的上方，准备放置锤子"
+            },
+            {
+              "component": [
+                "hammer",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将锤子放入红色方形盘中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 7
+            },
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 7
+            },
+            {
+              "object": "red tray",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "hammer",
+              "part": "handle",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准锤子手柄部分，便于稳定抓取",
+            "target_id": 7,
+            "coords": [
+              399,
+              399
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧锤子手柄，确保抓取牢固",
+            "target_id": 7,
+            "coords": [
+              399,
+              399
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "middle"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的上方，准备放置锤子",
+            "target_id": 1,
+            "coords": [
+              301,
+              119
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将锤子放入红色方形盘中",
+            "target_id": 7,
+            "coords": [
+              399,
+              399
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

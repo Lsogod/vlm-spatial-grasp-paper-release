@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/100-129\\102_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取冰淇淋甜筒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取冰淇淋甜筒",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "ice cream cone",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到冰淇淋甜筒顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              798,
+              314
+            ]
+          },
+          {
+            "component": [
+              "ice cream cone",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧冰淇淋甜筒顶部",
+            "target_id": 0,
+            "coords": [
+              798,
+              314
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "heat gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到测温枪手柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              869,
+              468
+            ]
+          },
+          {
+            "component": [
+              "heat gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪手柄",
+            "target_id": 0,
+            "coords": [
+              869,
+              468
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取巧克力",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取巧克力",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "chocolate",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到巧克力中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              522,
+              441
+            ]
+          },
+          {
+            "component": [
+              "chocolate",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧巧克力",
+            "target_id": 0,
+            "coords": [
+              522,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

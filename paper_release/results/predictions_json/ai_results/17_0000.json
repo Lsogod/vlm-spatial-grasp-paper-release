@@ -1,0 +1,381 @@
+{
+  "source_file": "../dist/0-99\\17_0000.npz",
+  "image_filename": "17_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取犀牛放入红杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛放入红杯",
+        "intent_analysis": {
+          "user_intent": "将犀牛放入红杯中",
+          "objects": [
+            {
+              "name": "犀牛模型",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "犀牛全身"
+                }
+              ]
+            },
+            {
+              "name": "红杯",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号4的犀牛模型，保持稳定避免掉落，将其移动到编号6的红杯上方并轻轻放入杯中，确保犀牛模型完全进入杯内且不倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心且无遮挡的犀牛中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧犀牛确保搬运过程中不滑落"
+            },
+            {
+              "component": [
+                "red cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红杯杯沿正上方以便放入犀牛"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放犀牛使其落入红杯中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "red cup",
+              "part": "rim",
+              "id": 5
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心且无遮挡的犀牛中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              595,
+              245
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛确保搬运过程中不滑落",
+            "target_id": 2,
+            "coords": [
+              595,
+              245
+            ]
+          },
+          {
+            "component": [
+              "red cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红杯杯沿正上方以便放入犀牛",
+            "target_id": 5,
+            "coords": [
+              418,
+              628
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放犀牛使其落入红杯中",
+            "target_id": 2,
+            "coords": [
+              595,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取六角口放入蓝杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取六角口放入蓝杯",
+        "intent_analysis": {
+          "user_intent": "抓取六角口并放入蓝杯中",
+          "objects": [
+            {
+              "name": "六角口",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "六角口主体"
+                }
+              ]
+            },
+            {
+              "name": "蓝杯",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先用手或工具稳固抓取编号8的六角口，确保握持牢固避免掉落；然后将其移动至编号3的蓝杯上方，轻轻放入杯中，避免碰撞杯壁导致杯体倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hexagonal nozzle",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像左下方的六角口中部，无遮挡且靠近中心，便于稳定抓取"
+            },
+            {
+              "component": [
+                "hexagonal nozzle",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧六角口以防滑落"
+            },
+            {
+              "component": [
+                "blue cup",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色杯子杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "hexagonal nozzle",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放六角口到蓝色杯子内"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hexagonal nozzle",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "hexagonal nozzle",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "blue cup",
+              "part": "rim",
+              "id": 1
+            },
+            {
+              "object": "hexagonal nozzle",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hexagonal nozzle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像左下方的六角口中部，无遮挡且靠近中心，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              357,
+              491
+            ]
+          },
+          {
+            "component": [
+              "hexagonal nozzle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧六角口以防滑落",
+            "target_id": 2,
+            "coords": [
+              357,
+              491
+            ]
+          },
+          {
+            "component": [
+              "blue cup",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色杯子杯沿正上方以便放入",
+            "target_id": 1,
+            "coords": [
+              245,
+              469
+            ]
+          },
+          {
+            "component": [
+              "hexagonal nozzle",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放六角口到蓝色杯子内",
+            "target_id": 2,
+            "coords": [
+              357,
+              491
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取洗发露",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗发露",
+        "final_action_plan": [
+          {
+            "component": [
+              "shampoo bottle",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准洗发露瓶身中段实体表面，稳定且不易滑落",
+            "target_id": 2,
+            "coords": [
+              812,
+              371
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗发露瓶身",
+            "target_id": 2,
+            "coords": [
+              812,
+              371
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

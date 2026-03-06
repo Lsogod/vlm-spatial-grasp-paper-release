@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/all\\54_0000.npz",
+  "image_filename": "54_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "intent_analysis": {
+          "user_intent": "抓取草莓",
+          "objects": [
+            {
+              "name": "草莓",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "草莓主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的草莓主体，注意避免碰到周围的其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准草莓中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧草莓"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准草莓中部实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              497,
+              511
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓",
+            "target_id": 1,
+            "coords": [
+              497,
+              511
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "intent_analysis": {
+          "user_intent": "抓取河马玩具",
+          "objects": [
+            {
+              "name": "河马玩具",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "整体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号11的河马玩具，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准河马玩具的中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧河马玩具"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准河马玩具的中段实体表面，确保抓取稳定",
+            "target_id": 3,
+            "coords": [
+              637,
+              469
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马玩具",
+            "target_id": 3,
+            "coords": [
+              637,
+              469
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取牙膏盒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏盒",
+        "intent_analysis": {
+          "user_intent": "抓取牙膏盒",
+          "objects": [
+            {
+              "name": "牙膏盒",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "盒体"
+                },
+                {
+                  "id": 17,
+                  "part": "包装文字"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的牙膏盒主体部分，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "toothpaste box",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准牙膏盒中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "toothpaste box",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧牙膏盒"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "toothpaste box",
+              "part": "middle",
+              "id": 4
+            },
+            {
+              "object": "toothpaste box",
+              "part": "middle",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "toothpaste box",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准牙膏盒中部实体表面，确保抓取稳定",
+            "target_id": 4,
+            "coords": [
+              539,
+              329
+            ]
+          },
+          {
+            "component": [
+              "toothpaste box",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏盒",
+            "target_id": 4,
+            "coords": [
+              539,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

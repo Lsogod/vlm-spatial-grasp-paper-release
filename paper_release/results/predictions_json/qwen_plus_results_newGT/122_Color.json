@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/100-129\\122_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取左上方黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上方黑色美工刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "utility knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到左上方黑色美工刀的手柄处准备抓取",
+            "target_id": 0,
+            "coords": [
+              152,
+              82
+            ]
+          },
+          {
+            "component": [
+              "utility knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧美工刀手柄完成抓取",
+            "target_id": 0,
+            "coords": [
+              152,
+              82
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色胶带",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色胶带",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色胶带中心上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              727,
+              141
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色胶带",
+            "target_id": 0,
+            "coords": [
+              727,
+              141
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手处准备抓取",
+            "target_id": 0,
+            "coords": [
+              1218,
+              266
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶把手",
+            "target_id": 0,
+            "coords": [
+              1218,
+              266
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

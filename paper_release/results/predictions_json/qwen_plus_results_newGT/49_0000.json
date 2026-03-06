@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\49_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取塑料圆盖酸奶放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取塑料圆盖酸奶放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "orange cup",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到橙色酸奶杯盖顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              968,
+              622
+            ]
+          },
+          {
+            "component": [
+              "orange cup",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧橙色酸奶杯盖",
+            "target_id": 0,
+            "coords": [
+              968,
+              622
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将酸奶杯盖移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              313,
+              324
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开 gripper，将杯盖放入盆中",
+            "target_id": 1,
+            "coords": [
+              313,
+              324
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取洗发水放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗发水放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗发水瓶中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              554,
+              572
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗发水瓶",
+            "target_id": 0,
+            "coords": [
+              554,
+              572
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将洗发水瓶移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              313,
+              324
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将洗发水放入盆中",
+            "target_id": 1,
+            "coords": [
+              313,
+              324
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色鼠标放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色鼠标放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色鼠标的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              939,
+              365
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色鼠标",
+            "target_id": 0,
+            "coords": [
+              939,
+              365
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将鼠标移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              313,
+              324
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将鼠标放入盆中",
+            "target_id": 1,
+            "coords": [
+              313,
+              324
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

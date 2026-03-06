@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\150.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取可乐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取可乐",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Coca-Cola can",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到可乐罐顶部抓取位置",
+            "target_id": 0,
+            "coords": [
+              162,
+              138
+            ]
+          },
+          {
+            "component": [
+              "Coca-Cola can",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧可乐罐",
+            "target_id": 0,
+            "coords": [
+              162,
+              138
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "red teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              545,
+              217
+            ]
+          },
+          {
+            "component": [
+              "red teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶把手",
+            "target_id": 0,
+            "coords": [
+              545,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取小黄鸭",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取小黄鸭",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "yellow duck",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小黄鸭顶部抓取位置",
+            "target_id": 0,
+            "coords": [
+              318,
+              547
+            ]
+          },
+          {
+            "component": [
+              "yellow duck",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小黄鸭",
+            "target_id": 0,
+            "coords": [
+              318,
+              547
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

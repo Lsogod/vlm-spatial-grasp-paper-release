@@ -1,0 +1,534 @@
+{
+  "source_file": "../dist/0-99\\21_0000.npz",
+  "image_filename": "21_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将骆驼放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将骆驼放入盆中",
+        "intent_analysis": {
+          "user_intent": "将骆驼放入盆中",
+          "objects": [
+            {
+              "name": "骆驼模型",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "骆驼身体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "盆体"
+                },
+                {
+                  "id": 4,
+                  "part": "盆内球体物"
+                },
+                {
+                  "id": 18,
+                  "part": "盆内黄色物"
+                },
+                {
+                  "id": 20,
+                  "part": "盆沿"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手抓住编号7的骆驼模型，确保稳固握持并避免掉落；将其缓慢放入编号1的盆中，注意避开盆内的编号4和编号18物体，避免碰撞或挤压；可从编号20的盆沿处将骆驼模型放入，确保其稳妥置于盆底。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "camel",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准骆驼中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "camel",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧骆驼以防搬运过程中掉落"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "camel",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "释放骆驼到盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "camel",
+              "part": "middle",
+              "id": 7
+            },
+            {
+              "object": "camel",
+              "part": "middle",
+              "id": 7
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 0
+            },
+            {
+              "object": "camel",
+              "part": "middle",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准骆驼中部以便稳定抓取",
+            "target_id": 7,
+            "coords": [
+              392,
+              259
+            ]
+          },
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧骆驼以防搬运过程中掉落",
+            "target_id": 7,
+            "coords": [
+              392,
+              259
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的杯沿正上方以便放入",
+            "target_id": 0,
+            "coords": [
+              651,
+              119
+            ]
+          },
+          {
+            "component": [
+              "camel",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "释放骆驼到盆中",
+            "target_id": 7,
+            "coords": [
+              392,
+              259
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将鼠标放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将鼠标放入盆中",
+        "intent_analysis": {
+          "user_intent": "将鼠标放入盆中",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "鼠标主体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "盆体"
+                },
+                {
+                  "id": 4,
+                  "part": "盆内物品1"
+                },
+                {
+                  "id": 18,
+                  "part": "盆内物品2"
+                },
+                {
+                  "id": 20,
+                  "part": "盆边"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号2的鼠标，将其缓慢放入编号1的盆中，注意避开盆内已有的编号4和编号18物品，避免碰撞或溅出盆内液体或物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于左下方的鼠标主体以便抓取，位置无遮挡且靠近中心区域"
+            },
+            {
+              "component": [
+                "mouse",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标主体以确保搬运稳定"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "mouse",
+                "body"
+              ],
+              "action": "open_gripper",
+              "description": "释放鼠标到盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "body",
+              "id": 9
+            },
+            {
+              "object": "mouse",
+              "part": "body",
+              "id": 9
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 5
+            },
+            {
+              "object": "mouse",
+              "part": "body",
+              "id": 9
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于左下方的鼠标主体以便抓取，位置无遮挡且靠近中心区域",
+            "target_id": 9,
+            "coords": [
+              329,
+              427
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标主体以确保搬运稳定",
+            "target_id": 9,
+            "coords": [
+              329,
+              427
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的杯沿正上方以便放入",
+            "target_id": 5,
+            "coords": [
+              833,
+              231
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "body"
+            ],
+            "action": "open_gripper",
+            "description": "释放鼠标到盆中",
+            "target_id": 9,
+            "coords": [
+              329,
+              427
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将草莓放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将草莓放入盆中",
+        "intent_analysis": {
+          "user_intent": "将草莓放入盆中",
+          "objects": [
+            {
+              "name": "草莓",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "草莓果实"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "盆体"
+                },
+                {
+                  "id": 4,
+                  "part": "盆内物品1"
+                },
+                {
+                  "id": 18,
+                  "part": "盆内物品2"
+                },
+                {
+                  "id": 20,
+                  "part": "盆边缘"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手拿起编号9的草莓，确保不挤压过度以免损坏果实，将其放入编号1的盆中，注意避开盆内已有的编号4和编号18物品，轻放在盆底或合适位置。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准草莓中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧草莓以防掉落"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的杯沿正上方以便放入"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪将草莓放入盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 9
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 9
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 3
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 9
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准草莓中部以便稳定抓取",
+            "target_id": 9,
+            "coords": [
+              553,
+              455
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓以防掉落",
+            "target_id": 9,
+            "coords": [
+              553,
+              455
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的杯沿正上方以便放入",
+            "target_id": 3,
+            "coords": [
+              525,
+              203
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将草莓放入盆中",
+            "target_id": 9,
+            "coords": [
+              553,
+              455
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

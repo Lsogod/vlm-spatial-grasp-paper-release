@@ -1,0 +1,380 @@
+{
+  "source_file": "../dist/all\\40_0000.npz",
+  "image_filename": "40_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取蓝盆中的大宝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝盆中的大宝",
+        "intent_analysis": {
+          "user_intent": "抓取蓝盆中的大宝",
+          "objects": [
+            {
+              "name": "蓝盆",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "盆体"
+                }
+              ]
+            },
+            {
+              "name": "大宝",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "瓶体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的大宝瓶体即可，无需移动编号11的蓝盆。注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色盆的边缘，避免干扰内部物品"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色盆的边缘以稳定抓取"
+            },
+            {
+              "component": [
+                "baby powder",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色盆中大宝瓶的中部实体表面，确保稳定抓取"
+            },
+            {
+              "component": [
+                "baby powder",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大宝瓶的中部实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 4
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 4
+            },
+            {
+              "object": "baby powder",
+              "part": "middle",
+              "id": 7
+            },
+            {
+              "object": "baby powder",
+              "part": "middle",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色盆的边缘，避免干扰内部物品",
+            "target_id": 4,
+            "coords": [
+              525,
+              483
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色盆的边缘以稳定抓取",
+            "target_id": 4,
+            "coords": [
+              525,
+              483
+            ]
+          },
+          {
+            "component": [
+              "baby powder",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色盆中大宝瓶的中部实体表面，确保稳定抓取",
+            "target_id": 7,
+            "coords": [
+              623,
+              497
+            ]
+          },
+          {
+            "component": [
+              "baby powder",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝瓶的中部实体表面",
+            "target_id": 7,
+            "coords": [
+              623,
+              497
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黄色小样香水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色小样香水",
+        "intent_analysis": {
+          "user_intent": "抓取黄色小样香水",
+          "objects": [
+            {
+              "name": "黄色小样香水",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "香水瓶"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号3的黄色小样香水瓶，注意避免碰倒周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow perfume sample",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黄色小样香水的中部实体区域，确保抓取稳定"
+            },
+            {
+              "component": [
+                "yellow perfume sample",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色小样香水"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow perfume sample",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "yellow perfume sample",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow perfume sample",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黄色小样香水的中部实体区域，确保抓取稳定",
+            "target_id": 0,
+            "coords": [
+              609,
+              301
+            ]
+          },
+          {
+            "component": [
+              "yellow perfume sample",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色小样香水",
+            "target_id": 0,
+            "coords": [
+              609,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取红色头的洗浴用品",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取红色头的洗浴用品",
+        "intent_analysis": {
+          "user_intent": "抓取红色头的洗浴用品",
+          "objects": [
+            {
+              "name": "洗浴用品",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "红色瓶盖"
+                },
+                {
+                  "id": 11,
+                  "part": "瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取编号5的红色瓶盖和编号11的瓶身，确保稳固抓取，避免瓶身滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "bath product with red cap",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红色头洗浴用品的瓶身，瓶身为实体材质，抓取稳定"
+            },
+            {
+              "component": [
+                "bath product with red cap",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红色头洗浴用品的瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "bath product with red cap",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "bath product with red cap",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "bath product with red cap",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红色头洗浴用品的瓶身，瓶身为实体材质，抓取稳定",
+            "target_id": 2,
+            "coords": [
+              637,
+              441
+            ]
+          },
+          {
+            "component": [
+              "bath product with red cap",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色头洗浴用品的瓶身",
+            "target_id": 2,
+            "coords": [
+              637,
+              441
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

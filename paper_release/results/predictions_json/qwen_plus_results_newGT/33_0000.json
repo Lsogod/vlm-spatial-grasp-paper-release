@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\33_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香水放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香水放入蓝盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "cyan bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到青色香水瓶中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              586,
+              443
+            ]
+          },
+          {
+            "component": [
+              "cyan bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧青色香水瓶",
+            "target_id": 0,
+            "coords": [
+              586,
+              443
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将香水瓶移至蓝色碗中心上方",
+            "target_id": 1,
+            "coords": [
+              323,
+              218
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将香水瓶放入蓝色碗中",
+            "target_id": 1,
+            "coords": [
+              323,
+              218
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标中心抓取姿态",
+            "target_id": 0,
+            "coords": [
+              650,
+              249
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取鼠标",
+            "target_id": 0,
+            "coords": [
+              650,
+              249
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂至香蕉中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              427,
+              434
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取香蕉",
+            "target_id": 0,
+            "coords": [
+              427,
+              434
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "返回初始零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\88_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到刀柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              970,
+              453
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧刀柄",
+            "target_id": 0,
+            "coords": [
+              970,
+              453
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大宝sod蜜",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝sod蜜",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Dabao SOD蜜",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大宝SOD蜜顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              559,
+              459
+            ]
+          },
+          {
+            "component": [
+              "Dabao SOD蜜",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝SOD蜜瓶身顶部",
+            "target_id": 0,
+            "coords": [
+              559,
+              459
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取右方的漱口水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右方的漱口水",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouthwash bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到漱口水瓶顶部的抓取位置",
+            "target_id": 0,
+            "coords": [
+              875,
+              381
+            ]
+          },
+          {
+            "component": [
+              "mouthwash bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧漱口水瓶",
+            "target_id": 0,
+            "coords": [
+              875,
+              381
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

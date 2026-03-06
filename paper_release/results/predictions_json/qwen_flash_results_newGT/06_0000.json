@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\06_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取电动螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取电动螺丝刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "drill",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到电动螺丝刀手柄位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              739,
+              227
+            ]
+          },
+          {
+            "component": [
+              "drill",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电动螺丝刀手柄",
+            "target_id": 0,
+            "coords": [
+              739,
+              227
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取零食",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取零食",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "orange lid",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到零食罐顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              504,
+              531
+            ]
+          },
+          {
+            "component": [
+              "orange lid",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧零食罐盖子",
+            "target_id": 0,
+            "coords": [
+              504,
+              531
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取蓝色螺母",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色螺母",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "blue nut",
+              "opening"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝色螺母的抓取位",
+            "target_id": 0,
+            "coords": [
+              473,
+              198
+            ]
+          },
+          {
+            "component": [
+              "blue nut",
+              "opening"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色螺母",
+            "target_id": 0,
+            "coords": [
+              473,
+              198
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

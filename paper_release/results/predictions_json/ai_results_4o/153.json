@@ -1,0 +1,311 @@
+{
+  "source_file": "../dist/all\\153.npz",
+  "image_filename": "153.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取日光灯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取日光灯",
+        "intent_analysis": {
+          "user_intent": "抓取日光灯",
+          "objects": [
+            {
+              "name": "日光灯",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "灯管"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号10的日光灯灯管，注意轻拿轻放，避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "fluorescent tube",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准日光灯中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "fluorescent tube",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧日光灯中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "fluorescent tube",
+              "part": "middle",
+              "id": null
+            },
+            {
+              "object": "fluorescent tube",
+              "part": "middle",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "fluorescent tube",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准日光灯中段实体表面，确保抓取稳定",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "fluorescent tube",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧日光灯中段实体表面",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "香蕉"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的香蕉，注意轻拿轻放以免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中段实体表面，稳定且不易滑落",
+            "target_id": 2,
+            "coords": [
+              567,
+              413
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 2,
+            "coords": [
+              567,
+              413
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取薯片盒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取薯片盒",
+        "intent_analysis": {
+          "user_intent": "抓取薯片盒",
+          "objects": [
+            {
+              "name": "薯片盒",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "盒体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号2的薯片盒，注意握持稳固以防掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "chips can",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准薯片盒中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "chips can",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧薯片盒"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "chips can",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "chips can",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "chips can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准薯片盒中段实体表面，确保抓取稳定",
+            "target_id": 0,
+            "coords": [
+              105,
+              483
+            ]
+          },
+          {
+            "component": [
+              "chips can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧薯片盒",
+            "target_id": 0,
+            "coords": [
+              105,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

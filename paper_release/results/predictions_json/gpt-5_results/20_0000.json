@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\20_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到香蕉中部的抓取位置",
+            "target_id": 0,
+            "coords": [
+              514,
+              209
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉中部",
+            "target_id": 0,
+            "coords": [
+              514,
+              209
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取酸奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取酸奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "yogurt",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到酸奶中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              261,
+              503
+            ]
+          },
+          {
+            "component": [
+              "yogurt",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧酸奶中部",
+            "target_id": 0,
+            "coords": [
+              261,
+              503
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取大宝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "white bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到白色瓶子的中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              912,
+              468
+            ]
+          },
+          {
+            "component": [
+              "white bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住白色瓶子中部",
+            "target_id": 0,
+            "coords": [
+              912,
+              468
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

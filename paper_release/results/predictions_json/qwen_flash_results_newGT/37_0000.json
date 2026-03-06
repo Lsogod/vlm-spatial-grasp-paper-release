@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\37_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取最小河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取最小河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到最小河马的抓取位",
+            "target_id": 0,
+            "coords": [
+              480,
+              508
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧最小河马",
+            "target_id": 0,
+            "coords": [
+              480,
+              508
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取最小河马放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取最小河马放入蓝盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到最小河马的抓取位",
+            "target_id": 0,
+            "coords": [
+              480,
+              508
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹住最小河马",
+            "target_id": 0,
+            "coords": [
+              480,
+              508
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将河马移动到蓝色碗中心位置",
+            "target_id": 1,
+            "coords": [
+              346,
+              229
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色碗中心释放河马",
+            "target_id": 1,
+            "coords": [
+              346,
+              229
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取双面胶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "3M tape",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到双面胶顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              583,
+              525
+            ]
+          },
+          {
+            "component": [
+              "3M tape",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧双面胶",
+            "target_id": 0,
+            "coords": [
+              583,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

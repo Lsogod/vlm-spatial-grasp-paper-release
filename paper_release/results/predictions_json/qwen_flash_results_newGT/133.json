@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/all\\133.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将可乐放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将可乐放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Coca-Cola can",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到可乐罐顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              165,
+              138
+            ]
+          },
+          {
+            "component": [
+              "Coca-Cola can",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住可乐罐",
+            "target_id": 0,
+            "coords": [
+              165,
+              138
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将可乐罐移动到红色托盘中心位置",
+            "target_id": 1,
+            "coords": [
+              311,
+              163
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在红色托盘中心释放可乐罐",
+            "target_id": 1,
+            "coords": [
+              311,
+              163
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将锤子放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将锤子放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到锤子手柄处，准备抓取",
+            "target_id": 0,
+            "coords": [
+              395,
+              382
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹住锤子手柄",
+            "target_id": 0,
+            "coords": [
+              395,
+              382
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将锤子移动到红色托盘中心位置",
+            "target_id": 1,
+            "coords": [
+              311,
+              163
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在红色托盘中心释放锤子",
+            "target_id": 1,
+            "coords": [
+              311,
+              163
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将小黄鸭放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将小黄鸭放入红色方形盘中",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "duck",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小黄鸭顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              106,
+              75
+            ]
+          },
+          {
+            "component": [
+              "duck",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住小黄鸭",
+            "target_id": 0,
+            "coords": [
+              106,
+              75
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将小黄鸭移动到红色方形盘中心位置",
+            "target_id": 1,
+            "coords": [
+              311,
+              163
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在红色方形盘中心释放小黄鸭",
+            "target_id": 1,
+            "coords": [
+              311,
+              163
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

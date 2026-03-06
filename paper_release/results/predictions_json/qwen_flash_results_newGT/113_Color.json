@@ -1,0 +1,207 @@
+{
+  "source_file": "../dist/100-129\\113_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取左上角遥控器放入灰色透明箱中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上角遥控器放入灰色透明箱中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              1062,
+              245
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器",
+            "target_id": 0,
+            "coords": [
+              1062,
+              245
+            ]
+          },
+          {
+            "component": [
+              "gray transparent box",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到灰色透明箱中心位置",
+            "target_id": 1,
+            "coords": [
+              842,
+              540
+            ]
+          },
+          {
+            "component": [
+              "gray transparent box",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开遥控器放入箱中",
+            "target_id": 1,
+            "coords": [
+              842,
+              540
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取左上角遥控器放入白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左上角遥控器放入白色笔筒中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              1062,
+              245
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器",
+            "target_id": 0,
+            "coords": [
+              1062,
+              245
+            ]
+          },
+          {
+            "component": [
+              "white bowl",
+              "opening"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒开口处",
+            "target_id": 1,
+            "coords": [
+              579,
+              195
+            ]
+          },
+          {
+            "component": [
+              "white bowl",
+              "opening"
+            ],
+            "action": "open_gripper",
+            "description": "松开遥控器放入笔筒",
+            "target_id": 1,
+            "coords": [
+              579,
+              195
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂归位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "measuring tape",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到测温枪顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              1062,
+              245
+            ]
+          },
+          {
+            "component": [
+              "measuring tape",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪",
+            "target_id": 0,
+            "coords": [
+              1062,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

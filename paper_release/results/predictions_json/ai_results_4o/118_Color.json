@@ -1,0 +1,428 @@
+{
+  "source_file": "../dist/all\\118_Color.npz",
+  "image_filename": "118_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将遥控器放到白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将遥控器放到白色笔筒中",
+        "intent_analysis": {
+          "user_intent": "将遥控器放到白色笔筒中",
+          "objects": [
+            {
+              "name": "遥控器",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "遥控器主体"
+                }
+              ]
+            },
+            {
+              "name": "白色笔筒",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "笔筒主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号11的遥控器拿起并垂直放入编号8的白色笔筒中，确保遥控器稳定放置且不倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准遥控器中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧遥控器"
+            },
+            {
+              "component": [
+                "white pen holder",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色笔筒上方，准备放置遥控器"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将遥控器放入白色笔筒中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 18
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 18
+            },
+            {
+              "object": "white pen holder",
+              "part": "inside",
+              "id": 4
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 18
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准遥控器中部实体表面，便于稳定抓取",
+            "target_id": 18,
+            "coords": null
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器",
+            "target_id": 18,
+            "coords": null
+          },
+          {
+            "component": [
+              "white pen holder",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒上方，准备放置遥控器",
+            "target_id": 4,
+            "coords": [
+              287,
+              399
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将遥控器放入白色笔筒中",
+            "target_id": 18,
+            "coords": null
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色美工刀",
+        "intent_analysis": {
+          "user_intent": "抓取黑色美工刀",
+          "objects": [
+            {
+              "name": "美工刀",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "刀身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号4的美工刀刀身，注意避免接触刀刃以防割伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑色美工刀中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "black utility knife",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色美工刀"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "black utility knife",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色美工刀中段实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              721,
+              525
+            ]
+          },
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色美工刀",
+            "target_id": 1,
+            "coords": [
+              721,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将蓝色勺子放到白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将蓝色勺子放到白色笔筒中",
+        "intent_analysis": {
+          "user_intent": "将蓝色勺子放到白色笔筒中",
+          "objects": [
+            {
+              "name": "蓝色勺子",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "勺子"
+                }
+              ]
+            },
+            {
+              "name": "白色笔筒",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "笔筒"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手拿起编号5的蓝色勺子，将其放入编号8的白色笔筒中，确保勺子稳定放置在笔筒内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色勺子的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色勺子的手柄部分"
+            },
+            {
+              "component": [
+                "white pen holder",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色笔筒的上方，为放置勺子做准备"
+            },
+            {
+              "component": [
+                "blue spoon",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将蓝色勺子放入白色笔筒中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "white pen holder",
+              "part": "inside",
+              "id": 6
+            },
+            {
+              "object": "blue spoon",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色勺子的手柄部分，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              413,
+              217
+            ]
+          },
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色勺子的手柄部分",
+            "target_id": 1,
+            "coords": [
+              413,
+              217
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒的上方，为放置勺子做准备",
+            "target_id": 6,
+            "coords": [
+              287,
+              399
+            ]
+          },
+          {
+            "component": [
+              "blue spoon",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将蓝色勺子放入白色笔筒中",
+            "target_id": 1,
+            "coords": [
+              413,
+              217
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

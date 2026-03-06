@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>基于视觉提示的具身智能空间感知增强方法研究</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2a37;
+      --muted: #52606d;
+      --primary: #0f766e;
+      --line: #d9e2ec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef3f8 0%, #f8fafc 100%);
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 48px; }
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 0 0 10px; }
+    p, li { line-height: 1.6; color: var(--text); }
+    .muted { color: var(--muted); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .img-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      background: #fff;
+    }
+    .img-card img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+    .img-card p {
+      margin: 8px 0 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f8fafc; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      overflow-x: auto;
+      font-size: 13px;
+    }
+    .kbd {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+    @media (max-width: 920px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>基于视觉提示的具身智能空间感知增强方法研究</h1>
+      <p class="muted">
+        论文补充主页：对齐论文中的数据、方法、实验与结果，并提供开源代码与复现入口。
+      </p>
+      <p>
+        仓库主页：
+        <a href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release" target="_blank" rel="noreferrer">
+          github.com/Lsogod/vlm-spatial-grasp-paper-release
+        </a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>1. 项目目录</h2>
+      <ul>
+        <li><span class="kbd">vlm-spatial-grasp</span>：论文主方法工程（SVA + SVP + 闭环抓取执行）。</li>
+        <li><span class="kbd">paper_release</span>：论文数据、标注工具、对比实验脚本、主结果表格与图表。</li>
+      </ul>
+      <p>
+        代码入口：
+        <a href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/vlm-spatial-grasp" target="_blank" rel="noreferrer">vlm-spatial-grasp</a>
+        |
+        <a href="https://github.com/Lsogod/vlm-spatial-grasp-paper-release/tree/main/paper_release" target="_blank" rel="noreferrer">paper_release</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. 数据集说明（与论文对齐）</h2>
+      <p>主评测数据：<span class="kbd">paper_release/data/dist_all</span>（160 个样本）。</p>
+      <ul>
+        <li>0-99：GraspNet-Desk</li>
+        <li>100-129：Real-Desk</li>
+        <li>130-159：Sim-Desk</li>
+      </ul>
+      <div class="grid-3">
+        <div class="img-card">
+          <img src="./assets/dataset_0_99.png" alt="GraspNet-Desk samples">
+          <p>GraspNet-Desk（0-99）样例</p>
+        </div>
+        <div class="img-card">
+          <img src="./assets/dataset_100_129.png" alt="Real-Desk samples">
+          <p>Real-Desk（100-129）样例</p>
+        </div>
+        <div class="img-card">
+          <img src="./assets/dataset_130_159.png" alt="Sim-Desk samples">
+          <p>Sim-Desk（130-159）样例</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. 论文实验映射</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>论文表号</th>
+            <th>含义</th>
+            <th>脚本</th>
+            <th>输出</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>表3-2</td>
+            <td>三域数据规模统计</td>
+            <td>按 <span class="kbd">dist_all</span> 前缀区间统计</td>
+            <td>数据划分口径</td>
+          </tr>
+          <tr>
+            <td>表3-4</td>
+            <td>三域静态评估（命中率/偏差）</td>
+            <td><span class="kbd">paper_release/experiments/table3_3.py</span></td>
+            <td><span class="kbd">results/tables/table3_3_ai_results*/summary.csv</span></td>
+          </tr>
+          <tr>
+            <td>表4-1</td>
+            <td>Full（Oracle-Action）主对比</td>
+            <td><span class="kbd">paper_release/experiments/table4_1.py</span></td>
+            <td><span class="kbd">table4_full.csv</span> / <span class="kbd">table4_full_recomputed.csv</span></td>
+          </tr>
+          <tr>
+            <td>表4-2</td>
+            <td>Strict（Supplementary）一致性评估</td>
+            <td><span class="kbd">paper_release/experiments/table4_2.py</span></td>
+            <td><span class="kbd">table4_2_strict.csv</span> / <span class="kbd">table4_2_strict_recomputed.csv</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="muted">说明：<span class="kbd">table3_3.py</span> 是历史脚本名，用于当前论文表3-4对应评估。</p>
+    </section>
+
+    <section class="card">
+      <h2>4. 结果图（表3-4对应）</h2>
+      <div class="grid-2">
+        <div class="img-card">
+          <img src="./assets/bar_A_hit_g.png" alt="A_hit_g">
+          <p>A_hit_g（抓取命中率，越高越好）</p>
+        </div>
+        <div class="img-card">
+          <img src="./assets/bar_A_hit_p.png" alt="A_hit_p">
+          <p>A_hit_p（放置命中率，越高越好）</p>
+        </div>
+        <div class="img-card">
+          <img src="./assets/bar_A_joint.png" alt="A_joint">
+          <p>A_joint（联合一致性，越高越好）</p>
+        </div>
+        <div class="img-card">
+          <img src="./assets/bar_D_spatial_g.png" alt="D_spatial_g">
+          <p>D_spatial_g（抓取偏差 px，越低越好）</p>
+        </div>
+        <div class="img-card">
+          <img src="./assets/bar_D_spatial_p.png" alt="D_spatial_p">
+          <p>D_spatial_p（放置偏差 px，越低越好）</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>5. 复现入口</h2>
+      <ul>
+        <li>批量推理（方法对比）：<span class="kbd">paper_release/experiments/*.py</span></li>
+        <li>主表评估：<span class="kbd">table3_3.py</span> / <span class="kbd">table4_1.py</span> / <span class="kbd">table4_2.py</span></li>
+        <li>交互执行入口：<span class="kbd">vlm-spatial-grasp/main_vlm.py</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>6. 引用方式</h2>
+      <pre>@misc{vlm_spatial_grasp_2026,
+  title        = {基于视觉提示的具身智能空间感知增强方法研究},
+  author       = {Your Name},
+  year         = {2026},
+  howpublished = {\url{https://github.com/Lsogod/vlm-spatial-grasp-paper-release}}
+}</pre>
+      <p class="muted">请在正式发布时将作者名与年份替换为论文最终信息。</p>
+    </section>
+  </div>
+</body>
+</html>

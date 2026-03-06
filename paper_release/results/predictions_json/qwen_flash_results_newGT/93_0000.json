@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\93_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取黄色包装护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色包装护发素",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Pantene tube",
+              "opening"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到护发素管口位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              609,
+              241
+            ]
+          },
+          {
+            "component": [
+              "Pantene tube",
+              "opening"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧护发素管口",
+            "target_id": 0,
+            "coords": [
+              609,
+              241
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取桃子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到桃子顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              478,
+              381
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子",
+            "target_id": 0,
+            "coords": [
+              478,
+              381
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取左下方骆驼",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左下方骆驼",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "camel",
+              "bottom"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到骆驼底部以抓取",
+            "target_id": 0,
+            "coords": [
+              390,
+              547
+            ]
+          },
+          {
+            "component": [
+              "camel",
+              "bottom"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧骆驼",
+            "target_id": 0,
+            "coords": [
+              390,
+              547
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

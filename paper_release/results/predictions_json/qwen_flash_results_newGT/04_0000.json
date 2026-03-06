@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\04_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取小球放入小盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取小球放入小盆",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "small ball",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小球顶部，准备抓取",
+            "target_id": 0,
+            "coords": [
+              657,
+              400
+            ]
+          },
+          {
+            "component": [
+              "small ball",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小球",
+            "target_id": 0,
+            "coords": [
+              657,
+              400
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色小盆中心位置",
+            "target_id": 1,
+            "coords": [
+              714,
+              301
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开小球，放入小盆中",
+            "target_id": 1,
+            "coords": [
+              714,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到鼠标顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              311,
+              241
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标",
+            "target_id": 0,
+            "coords": [
+              311,
+              241
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino toy",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛玩具顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              906,
+              382
+            ]
+          },
+          {
+            "component": [
+              "rhino toy",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛玩具",
+            "target_id": 0,
+            "coords": [
+              906,
+              382
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

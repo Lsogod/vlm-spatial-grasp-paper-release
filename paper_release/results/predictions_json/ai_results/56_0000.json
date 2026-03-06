@@ -1,0 +1,203 @@
+{
+  "source_file": "../dist/0-99\\56_0000.npz",
+  "image_filename": "56_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取马克笔",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取马克笔",
+        "intent_analysis": {
+          "user_intent": "抓取马克笔",
+          "objects": [
+            {
+              "name": "马克笔",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "笔身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓住编号6的马克笔笔身，注意避免触碰笔尖以防弄脏手或其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "red marker",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红色马克笔中部以便稳定抓取，位置靠近图像中心且无遮挡"
+            },
+            {
+              "component": [
+                "red marker",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红色马克笔"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "red marker",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "red marker",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "red marker",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红色马克笔中部以便稳定抓取，位置靠近图像中心且无遮挡",
+            "target_id": 0,
+            "coords": [
+              595,
+              203
+            ]
+          },
+          {
+            "component": [
+              "red marker",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红色马克笔",
+            "target_id": 0,
+            "coords": [
+              595,
+              203
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "final_action_plan": [
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像中心偏右无遮挡的大象中部进行抓取",
+            "target_id": 4,
+            "coords": [
+              656,
+              539
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象确保抓取稳定",
+            "target_id": 4,
+            "coords": [
+              656,
+              539
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取完成后回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取螺栓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺栓",
+        "final_action_plan": [
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准螺栓中段实体表面，便于稳定夹持",
+            "target_id": 0,
+            "coords": [
+              749,
+              434
+            ]
+          },
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺栓中段实体部分",
+            "target_id": 0,
+            "coords": [
+              749,
+              434
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

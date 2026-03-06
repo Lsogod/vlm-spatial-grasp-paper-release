@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\36_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大象顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              823,
+              251
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象",
+            "target_id": 0,
+            "coords": [
+              823,
+              251
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗面奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗面奶顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              780,
+              465
+            ]
+          },
+          {
+            "component": [
+              "bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗面奶瓶顶部",
+            "target_id": 0,
+            "coords": [
+              780,
+              465
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色碗中心位置",
+            "target_id": 1,
+            "coords": [
+              784,
+              509
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "在蓝色碗中心释放洗面奶",
+            "target_id": 1,
+            "coords": [
+              784,
+              509
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到河马中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              550,
+              488
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马",
+            "target_id": 0,
+            "coords": [
+              550,
+              488
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "source_file": "../dist/0-99\\09_0000.npz",
+  "image_filename": "09_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗面奶",
+        "intent_analysis": {
+          "user_intent": "抓取洗面奶",
+          "objects": [
+            {
+              "name": "洗面奶",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的洗面奶瓶身，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "facial cleanser",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准洗面奶主体以便抓取"
+            },
+            {
+              "component": [
+                "facial cleanser",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧洗面奶"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "facial cleanser",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "facial cleanser",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "facial cleanser",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准洗面奶主体以便抓取",
+            "target_id": 2,
+            "coords": [
+              301,
+              175
+            ]
+          },
+          {
+            "component": [
+              "facial cleanser",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗面奶",
+            "target_id": 2,
+            "coords": [
+              301,
+              175
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取洗发露",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗发露",
+        "final_action_plan": [
+          {
+            "component": [
+              "blue shampoo bottle",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心且无遮挡的蓝色洗发露瓶中部以便抓取",
+            "target_id": 2,
+            "coords": [
+              637,
+              180
+            ]
+          },
+          {
+            "component": [
+              "blue shampoo bottle",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色洗发露瓶",
+            "target_id": 2,
+            "coords": [
+              637,
+              180
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取李子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子",
+        "intent_analysis": {
+          "user_intent": "抓取李子",
+          "objects": [
+            {
+              "name": "李子",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "果实"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号5的李子，注意轻拿轻放以免损坏果实。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准李子中部以便抓取"
+            },
+            {
+              "component": [
+                "plum",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧李子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "plum",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准李子中部以便抓取",
+            "target_id": 0,
+            "coords": [
+              301,
+              469
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子",
+            "target_id": 0,
+            "coords": [
+              301,
+              469
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

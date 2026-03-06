@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/all\\117_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将蓝色勺子放入白色笔筒中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将蓝色勺子放入白色笔筒中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "spoon",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝色勺子的抓取位置",
+            "target_id": 0,
+            "coords": [
+              422,
+              273
+            ]
+          },
+          {
+            "component": [
+              "spoon",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "抓紧蓝色勺子",
+            "target_id": 0,
+            "coords": [
+              422,
+              273
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色笔筒的上方",
+            "target_id": 1,
+            "coords": [
+              576,
+              216
+            ]
+          },
+          {
+            "component": [
+              "white pen holder",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将蓝色勺子放入白色笔筒中",
+            "target_id": 1,
+            "coords": [
+              576,
+              216
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶的把手处准备抓取",
+            "target_id": 0,
+            "coords": [
+              1216,
+              144
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓住水壶的把手",
+            "target_id": 0,
+            "coords": [
+              1216,
+              144
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "将机械臂移回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色美工刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色美工刀的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              832,
+              324
+            ]
+          },
+          {
+            "component": [
+              "black utility knife",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪以抓取黑色美工刀",
+            "target_id": 0,
+            "coords": [
+              832,
+              324
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

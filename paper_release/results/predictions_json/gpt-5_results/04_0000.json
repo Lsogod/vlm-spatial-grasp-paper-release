@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/0-99\\04_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取小球放入小盆",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取小球放入小盆",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "ball",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到小球的抓取位置",
+            "target_id": 0,
+            "coords": [
+              677,
+              374
+            ]
+          },
+          {
+            "component": [
+              "ball",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧小球",
+            "target_id": 0,
+            "coords": [
+              677,
+              374
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将小球移动到小盆上方",
+            "target_id": 1,
+            "coords": [
+              723,
+              251
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将小球放入小盆",
+            "target_id": 1,
+            "coords": [
+              723,
+              251
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到鼠标中心上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              372,
+              221
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标中心进行抓取",
+            "target_id": 0,
+            "coords": [
+              372,
+              221
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到犀牛中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              985,
+              365
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛中部",
+            "target_id": 0,
+            "coords": [
+              985,
+              365
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "source_file": "../dist/100-129\\115_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取美工刀放到灰色透明箱中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取美工刀放到灰色透明箱中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "utility knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到美工刀手柄处准备抓取",
+            "target_id": 0,
+            "coords": [
+              869,
+              236
+            ]
+          },
+          {
+            "component": [
+              "utility knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧美工刀手柄",
+            "target_id": 0,
+            "coords": [
+              869,
+              236
+            ]
+          },
+          {
+            "component": [
+              "transparent container",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将美工刀移至灰色透明箱中心上方",
+            "target_id": 1,
+            "coords": [
+              837,
+              542
+            ]
+          },
+          {
+            "component": [
+              "transparent container",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将美工刀放入箱中",
+            "target_id": 1,
+            "coords": [
+              837,
+              542
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取锤子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取锤子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到锤子中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              527,
+              148
+            ]
+          },
+          {
+            "component": [
+              "hammer",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取锤子",
+            "target_id": 0,
+            "coords": [
+              527,
+              148
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑红色测温枪放到螺丝盒子上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪放到螺丝盒子上",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "thermal gun",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑红色测温枪中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              750,
+              536
+            ]
+          },
+          {
+            "component": [
+              "thermal gun",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪中部",
+            "target_id": 0,
+            "coords": [
+              750,
+              536
+            ]
+          },
+          {
+            "component": [
+              "screw box",
+              "top"
+            ],
+            "action": "move_to_point",
+            "description": "将测温枪移至螺丝盒顶部上方",
+            "target_id": 1,
+            "coords": [
+              268,
+              234
+            ]
+          },
+          {
+            "component": [
+              "screw box",
+              "top"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，放置测温枪于螺丝盒顶部",
+            "target_id": 1,
+            "coords": [
+              268,
+              234
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

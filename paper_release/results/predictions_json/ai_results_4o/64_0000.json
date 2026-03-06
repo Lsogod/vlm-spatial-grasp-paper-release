@@ -1,0 +1,376 @@
+{
+  "source_file": "../dist/all\\64_0000.npz",
+  "image_filename": "64_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取桃子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取桃子",
+        "intent_analysis": {
+          "user_intent": "抓取桃子",
+          "objects": [
+            {
+              "name": "桃子",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的桃子，注意避免碰到旁边的其他物体（如编号9的骆驼玩具和编号3的盘子）。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准桃子中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "peach",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧桃子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "peach",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准桃子中部实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              581,
+              469
+            ]
+          },
+          {
+            "component": [
+              "peach",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧桃子",
+            "target_id": 1,
+            "coords": [
+              581,
+              469
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "intent_analysis": {
+          "user_intent": "抓取草莓",
+          "objects": [
+            {
+              "name": "草莓",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "草莓主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的草莓，注意轻拿轻放以免损坏草莓表面。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准草莓中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧草莓"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准草莓中部实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              301,
+              329
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓",
+            "target_id": 1,
+            "coords": [
+              301,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取双面胶放到盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶放到盆中",
+        "intent_analysis": {
+          "user_intent": "抓取双面胶放到盆中",
+          "objects": [
+            {
+              "name": "双面胶",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "胶带卷"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓取编号5的双面胶，将其移动并放入编号3的盆中，确保双面胶完整放入盆内，避免掉落或倾倒。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "double-sided tape",
+                "outer_ring"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准双面胶外圈实体材质区域，避免抓取空洞中心"
+            },
+            {
+              "component": [
+                "double-sided tape",
+                "outer_ring"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧双面胶外圈实体表面"
+            },
+            {
+              "component": [
+                "basin",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到盆的内部上方，准备放置双面胶"
+            },
+            {
+              "component": [
+                "double-sided tape",
+                "outer_ring"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将双面胶放入盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "double-sided tape",
+              "part": "outer_ring",
+              "id": 2
+            },
+            {
+              "object": "double-sided tape",
+              "part": "outer_ring",
+              "id": 2
+            },
+            {
+              "object": "basin",
+              "part": "inside",
+              "id": 1
+            },
+            {
+              "object": "double-sided tape",
+              "part": "outer_ring",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "double-sided tape",
+              "outer_ring"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准双面胶外圈实体材质区域，避免抓取空洞中心",
+            "target_id": 2,
+            "coords": [
+              861,
+              483
+            ]
+          },
+          {
+            "component": [
+              "double-sided tape",
+              "outer_ring"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧双面胶外圈实体表面",
+            "target_id": 2,
+            "coords": [
+              861,
+              483
+            ]
+          },
+          {
+            "component": [
+              "basin",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到盆的内部上方，准备放置双面胶",
+            "target_id": 1,
+            "coords": [
+              483,
+              371
+            ]
+          },
+          {
+            "component": [
+              "double-sided tape",
+              "outer_ring"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将双面胶放入盆中",
+            "target_id": 2,
+            "coords": [
+              861,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

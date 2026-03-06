@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\97_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "pear",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到梨子中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              828,
+              259
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取梨子",
+            "target_id": 0,
+            "coords": [
+              828,
+              259
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色猩猩玩具",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色猩猩玩具",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "black gorilla toy",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色猩猩玩具中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              483,
+              220
+            ]
+          },
+          {
+            "component": [
+              "black gorilla toy",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取黑色猩猩玩具",
+            "target_id": 0,
+            "coords": [
+              483,
+              220
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取螺栓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺栓",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "bolt",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺栓中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              709,
+              213
+            ]
+          },
+          {
+            "component": [
+              "bolt",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取螺栓",
+            "target_id": 0,
+            "coords": [
+              709,
+              213
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

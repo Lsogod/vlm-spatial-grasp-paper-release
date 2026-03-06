@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\65_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取好爸爸洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取好爸爸洗衣液",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "KIDO baby laundry liquid",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到好爸爸洗衣液中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              780,
+              237
+            ]
+          },
+          {
+            "component": [
+              "KIDO baby laundry liquid",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧好爸爸洗衣液中部",
+            "target_id": 0,
+            "coords": [
+              780,
+              237
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取海飞丝洗发露",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取海飞丝洗发露",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "head & shoulders shampoo",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到海飞丝洗发露中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              828,
+              408
+            ]
+          },
+          {
+            "component": [
+              "head & shoulders shampoo",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧海飞丝洗发露中部",
+            "target_id": 0,
+            "coords": [
+              828,
+              408
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "screwdriver",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺丝刀中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              780,
+              520
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取螺丝刀",
+            "target_id": 0,
+            "coords": [
+              780,
+              520
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

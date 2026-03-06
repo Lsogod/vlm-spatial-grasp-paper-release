@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/all\\37_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取最小河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取最小河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到最小河马的中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              418,
+              406
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧最小河马的中部",
+            "target_id": 0,
+            "coords": [
+              418,
+              406
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取最小河马放入蓝盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取最小河马放入蓝盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到最小河马的中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              418,
+              406
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧最小河马",
+            "target_id": 0,
+            "coords": [
+              418,
+              406
+            ]
+          },
+          {
+            "component": [
+              "blue lid",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将最小河马移动到蓝盖中心位置",
+            "target_id": 1,
+            "coords": [
+              296,
+              235
+            ]
+          },
+          {
+            "component": [
+              "blue lid",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪将最小河马放入蓝盖",
+            "target_id": 1,
+            "coords": [
+              296,
+              235
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取双面胶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到双面胶中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              657,
+              503
+            ]
+          },
+          {
+            "component": [
+              "tape",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧双面胶",
+            "target_id": 0,
+            "coords": [
+              657,
+              503
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

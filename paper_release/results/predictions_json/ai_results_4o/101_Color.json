@@ -1,0 +1,380 @@
+{
+  "source_file": "../dist/all\\101_Color.npz",
+  "image_filename": "101_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "壶身"
+                },
+                {
+                  "id": 13,
+                  "part": "壶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号11的壶身即可，注意避免触碰编号13的壶盖以防滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手区域，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 0
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手区域，便于稳定抓取",
+            "target_id": 0,
+            "coords": [
+              567,
+              91
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 0,
+            "coords": [
+              567,
+              91
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黄色水杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色水杯",
+        "intent_analysis": {
+          "user_intent": "抓取黄色水杯",
+          "objects": [
+            {
+              "name": "黄色水杯",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的黄色水杯，注意握住杯柄以确保稳固。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow cup",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黄色水杯的把手，便于稳定抓取"
+            },
+            {
+              "component": [
+                "yellow cup",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色水杯的把手"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow cup",
+              "part": "handle",
+              "id": 3
+            },
+            {
+              "object": "yellow cup",
+              "part": "handle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow cup",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黄色水杯的把手，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              1057,
+              259
+            ]
+          },
+          {
+            "component": [
+              "yellow cup",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色水杯的把手",
+            "target_id": 3,
+            "coords": [
+              1057,
+              259
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取巧克力放入白色方形容器中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取巧克力放入白色方形容器中",
+        "intent_analysis": {
+          "user_intent": "抓取巧克力放入白色方形容器中",
+          "objects": [
+            {
+              "name": "巧克力",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "巧克力块"
+                }
+              ]
+            },
+            {
+              "name": "白色方形容器",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "容器主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先抓取编号10的巧克力块，确保稳固抓取后，将其放入编号1的白色方形容器中，注意避免掉落或倾斜容器。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "chocolate",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准巧克力中间的实体部分，确保抓取稳定"
+            },
+            {
+              "component": [
+                "chocolate",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧巧克力"
+            },
+            {
+              "component": [
+                "white square container",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到白色方形容器的上方，为放置巧克力做准备"
+            },
+            {
+              "component": [
+                "chocolate",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将巧克力放入白色方形容器中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "chocolate",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "chocolate",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "white square container",
+              "part": "inside",
+              "id": 1
+            },
+            {
+              "object": "chocolate",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "chocolate",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准巧克力中间的实体部分，确保抓取稳定",
+            "target_id": 5,
+            "coords": [
+              455,
+              455
+            ]
+          },
+          {
+            "component": [
+              "chocolate",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧巧克力",
+            "target_id": 5,
+            "coords": [
+              455,
+              455
+            ]
+          },
+          {
+            "component": [
+              "white square container",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色方形容器的上方，为放置巧克力做准备",
+            "target_id": 1,
+            "coords": [
+              805,
+              287
+            ]
+          },
+          {
+            "component": [
+              "chocolate",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将巧克力放入白色方形容器中",
+            "target_id": 5,
+            "coords": [
+              455,
+              455
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

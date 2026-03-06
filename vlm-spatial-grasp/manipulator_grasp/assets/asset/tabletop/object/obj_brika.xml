@@ -1,0 +1,51 @@
+<mujocoinclude>
+  <asset>
+    <!-- 壶身网格 -->
+    <mesh name="brika_body" file="../mesh/birika.STL" scale="0.001 0.001 0.001"/>
+
+    <!-- 简单材质 -->
+    <material name="brika_mat" rgba="0.7 0.7 0.7 1" specular="0.3"/>
+  </asset>
+
+  <worldbody>
+    <!-- 壶身：自由物体 -->
+    <body name="brika" pos="1.30 0.90 0.740">
+      <joint name="brika_free" type="free" damping="0.1"/>
+
+      <!-- 视觉：不参与碰撞 -->
+      <geom name="brika_vis"
+            type="mesh" mesh="brika_body" material="brika_mat"
+            pos="0 0 0.18"
+            contype="0" conaffinity="0"/>
+
+      <!-- ============ 碰撞：用多个简单几何覆盖整壶 ============ -->
+
+      <!-- 1) 壶身主体 -->
+      <geom name="brika_col_body"
+            type="cylinder" size="0.07 0.07"
+            pos="0 0 0.18"
+            rgba="0 0 0 0"
+            contype="1" conaffinity="1" condim="4"
+            density="150"
+            solref="0.002 1" solimp="0.95 0.99 0.001"/>
+
+      <!-- 2) 壶嘴 -->
+      <geom name="brika_col_spout"
+            type="capsule" size="0.015"
+            fromto="0.05 0.00 0.22   0.12 0.00 0.22"
+            rgba="0 0 0 0"
+            contype="1" conaffinity="1" condim="4"
+            density="50"
+            solref="0.002 1" solimp="0.95 0.99 0.001"/>
+
+      <!-- 3) 把手 -->
+      <geom name="brika_col_handle"
+            type="capsule" size="0.018"
+            fromto="-0.06 0.05 0.22   -0.06 -0.05 0.22"
+            rgba="0 0 0 0"
+            contype="1" conaffinity="1" condim="4"
+            density="50"
+            solref="0.002 1" solimp="0.95 0.99 0.001"/>
+    </body>
+  </worldbody>
+</mujocoinclude>

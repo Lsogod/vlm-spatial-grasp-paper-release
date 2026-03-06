@@ -1,0 +1,327 @@
+{
+  "source_file": "../dist/0-99\\05_0000.npz",
+  "image_filename": "05_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取护发素",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取护发素",
+        "intent_analysis": {
+          "user_intent": "抓取护发素",
+          "objects": [
+            {
+              "name": "护发素",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 18,
+                  "part": "背面标签"
+                },
+                {
+                  "id": 9,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号1的瓶身，确保瓶盖编号9朝上以防泄漏；避免挤压过度导致护发素溢出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "conditioner",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准金色护发素瓶身中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "conditioner",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧护发素瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "conditioner",
+              "part": "body",
+              "id": 3
+            },
+            {
+              "object": "conditioner",
+              "part": "body",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "conditioner",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准金色护发素瓶身中部以便稳定抓取",
+            "target_id": 3,
+            "coords": [
+              357,
+              301
+            ]
+          },
+          {
+            "component": [
+              "conditioner",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧护发素瓶身",
+            "target_id": 3,
+            "coords": [
+              357,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取牙膏",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏",
+        "intent_analysis": {
+          "user_intent": "抓取牙膏",
+          "objects": [
+            {
+              "name": "牙膏",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "牙膏管身"
+                },
+                {
+                  "id": 4,
+                  "part": "牙膏盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号8的牙膏管身，确保抓取时手指避开编号4的牙膏盖以防松动或掉落。可根据需要调整握持位置以便后续使用。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "toothpaste",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心且无遮挡的牙膏中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "toothpaste",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧牙膏以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "toothpaste",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "toothpaste",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心且无遮挡的牙膏中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              735,
+              294
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏以防滑落",
+            "target_id": 2,
+            "coords": [
+              735,
+              294
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取红笔",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取红笔",
+        "intent_analysis": {
+          "user_intent": "抓取红笔",
+          "objects": [
+            {
+              "name": "红笔",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "笔身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号7的红笔笔身中部，确保握持稳固后再提起，避免碰到周围物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准红笔中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "red pen",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧红笔防止滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "red pen",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红笔中部以便稳定抓取",
+            "target_id": 0,
+            "coords": [
+              448,
+              455
+            ]
+          },
+          {
+            "component": [
+              "red pen",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧红笔防止滑落",
+            "target_id": 0,
+            "coords": [
+              448,
+              455
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

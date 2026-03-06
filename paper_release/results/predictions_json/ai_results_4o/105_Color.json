@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/all\\105_Color.npz",
+  "image_filename": "105_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取遥控器",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取遥控器",
+        "intent_analysis": {
+          "user_intent": "抓取遥控器",
+          "objects": [
+            {
+              "name": "遥控器",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "遥控器主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的遥控器主体，注意避免碰到周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准遥控器中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "remote control",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧遥控器中部"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "remote control",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准遥控器中部实体表面，确保抓取稳定",
+            "target_id": 2,
+            "coords": [
+              665,
+              245
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器中部",
+            "target_id": 2,
+            "coords": [
+              665,
+              245
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取白色带黄色旋钮的杯盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取白色带黄色旋钮的杯盖",
+        "intent_analysis": {
+          "user_intent": "抓取白色带黄色旋钮的杯盖",
+          "objects": [
+            {
+              "name": "杯盖",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "白色杯盖"
+                },
+                {
+                  "id": 11,
+                  "part": "黄色旋钮"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号11的杯盖，确保抓取时握住黄色旋钮部分以便于操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "white lid with yellow knob",
+                "sidewall"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准白色带黄色旋钮的杯盖侧壁，避免抓取旋钮部分以确保稳定性"
+            },
+            {
+              "component": [
+                "white lid with yellow knob",
+                "sidewall"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧杯盖侧壁以完成抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "white lid with yellow knob",
+              "part": "sidewall",
+              "id": null
+            },
+            {
+              "object": "white lid with yellow knob",
+              "part": "sidewall",
+              "id": null
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "white lid with yellow knob",
+              "sidewall"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准白色带黄色旋钮的杯盖侧壁，避免抓取旋钮部分以确保稳定性",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "white lid with yellow knob",
+              "sidewall"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧杯盖侧壁以完成抓取",
+            "target_id": null,
+            "coords": null,
+            "warning": "ID Not Found"
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "intent_analysis": {
+          "user_intent": "抓取黑红色测温枪",
+          "objects": [
+            {
+              "name": "测温枪",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "枪体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号8的测温枪，确保握住枪体部分以便于操作。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑红色测温枪的手柄部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "black and red thermometer gun",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧测温枪的手柄部位"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "black and red thermometer gun",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑红色测温枪的手柄部位，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              903,
+              539
+            ]
+          },
+          {
+            "component": [
+              "black and red thermometer gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧测温枪的手柄部位",
+            "target_id": 1,
+            "coords": [
+              903,
+              539
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

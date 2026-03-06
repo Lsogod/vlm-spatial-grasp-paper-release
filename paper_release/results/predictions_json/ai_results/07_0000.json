@@ -1,0 +1,263 @@
+{
+  "source_file": "../dist/0-99\\07_0000.npz",
+  "image_filename": "07_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取灰色犀牛玩具",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色犀牛玩具",
+        "final_action_plan": [
+          {
+            "component": [
+              "grey rhino toy",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准灰色犀牛玩具中段实体表面，避开头部与四肢以确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              388,
+              210
+            ]
+          },
+          {
+            "component": [
+              "grey rhino toy",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色犀牛玩具中段实体部分",
+            "target_id": 1,
+            "coords": [
+              388,
+              210
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取猩猩",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取猩猩",
+        "intent_analysis": {
+          "user_intent": "抓取猩猩玩偶",
+          "objects": [
+            {
+              "name": "猩猩玩偶",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "猩猩上半身"
+                },
+                {
+                  "id": 8,
+                  "part": "猩猩下半身"
+                }
+              ]
+            }
+          ],
+          "constraints": "先将编号(4)与编号(8)的猩猩玩偶部件组合在一起，确保连接稳固后再进行抓取。抓取时应握住玩偶的主体部分，避免用力过猛导致部件分离。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像左上方无遮挡的猩猩中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "gorilla",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧猩猩确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "gorilla",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像左上方无遮挡的猩猩中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              388,
+              210
+            ]
+          },
+          {
+            "component": [
+              "gorilla",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧猩猩确保抓取牢固",
+            "target_id": 2,
+            "coords": [
+              388,
+              210
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取草莓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取草莓",
+        "intent_analysis": {
+          "user_intent": "抓取草莓",
+          "objects": [
+            {
+              "name": "草莓",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "草莓果体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手或工具抓取编号2的草莓，注意力度适中以防捏坏果体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准草莓中部以便稳定抓取，草莓位于图像中心附近且无遮挡"
+            },
+            {
+              "component": [
+                "strawberry",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧草莓以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "strawberry",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准草莓中部以便稳定抓取，草莓位于图像中心附近且无遮挡",
+            "target_id": 0,
+            "coords": [
+              357,
+              329
+            ]
+          },
+          {
+            "component": [
+              "strawberry",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧草莓以防滑落",
+            "target_id": 0,
+            "coords": [
+              357,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\148.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水杯",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "cup",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水杯中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              300,
+              332
+            ]
+          },
+          {
+            "component": [
+              "cup",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水杯中部",
+            "target_id": 0,
+            "coords": [
+              300,
+              332
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取薯片桶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取薯片桶",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "chips can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到薯片桶中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              66,
+              529
+            ]
+          },
+          {
+            "component": [
+              "chips can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧薯片桶中部",
+            "target_id": 0,
+            "coords": [
+              66,
+              529
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取苹果",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取苹果",
+        "image_size": [
+          640,
+          640
+        ],
+        "action_components": [
+          {
+            "component": [
+              "apple",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到苹果中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              492,
+              177
+            ]
+          },
+          {
+            "component": [
+              "apple",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧苹果",
+            "target_id": 0,
+            "coords": [
+              492,
+              177
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

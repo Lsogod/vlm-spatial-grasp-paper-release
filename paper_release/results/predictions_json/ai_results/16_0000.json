@@ -1,0 +1,315 @@
+{
+  "source_file": "../dist/0-99\\16_0000.npz",
+  "image_filename": "16_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取犀牛模型",
+          "objects": [
+            {
+              "name": "犀牛模型",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "犀牛整体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手稳固抓住编号7的犀牛模型中部，避免用力过大以防损坏模型的细节部位（如角和尾巴）。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像上方的犀牛中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧犀牛确保稳固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像上方的犀牛中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              463,
+              155
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛确保稳固",
+            "target_id": 2,
+            "coords": [
+              463,
+              155
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取梨子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取梨子",
+        "intent_analysis": {
+          "user_intent": "抓取梨子",
+          "objects": [
+            {
+              "name": "梨子",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "梨子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手或工具抓取编号2的梨子主体，注意避免用力过猛以防损坏梨子表面。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像左上方无遮挡的黄色梨子中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "yellow pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色梨子以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow pear",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "yellow pear",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像左上方无遮挡的黄色梨子中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              308,
+              322
+            ]
+          },
+          {
+            "component": [
+              "yellow pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色梨子以防滑落",
+            "target_id": 2,
+            "coords": [
+              308,
+              322
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取蓝杯",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝杯",
+        "intent_analysis": {
+          "user_intent": "抓取蓝色的杯子",
+          "objects": [
+            {
+              "name": "蓝色杯子",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "杯体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或机械手臂抓住编号6的蓝色杯体，确保握持稳固，避免用力过大导致杯子变形或滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue cup",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像左下方无遮挡的蓝色杯子主体以便抓取"
+            },
+            {
+              "component": [
+                "blue cup",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色杯子主体"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue cup",
+              "part": "body",
+              "id": 2
+            },
+            {
+              "object": "blue cup",
+              "part": "body",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue cup",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像左下方无遮挡的蓝色杯子主体以便抓取",
+            "target_id": 2,
+            "coords": [
+              287,
+              469
+            ]
+          },
+          {
+            "component": [
+              "blue cup",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色杯子主体",
+            "target_id": 2,
+            "coords": [
+              287,
+              469
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

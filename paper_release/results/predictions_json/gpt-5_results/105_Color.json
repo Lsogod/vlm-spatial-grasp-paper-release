@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\105_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取遥控器",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取遥控器",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动机械臂到遥控器中心上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              636,
+              235
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧遥控器中心进行抓取",
+            "target_id": 0,
+            "coords": [
+              636,
+              235
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取白色带黄色旋钮的杯盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取白色带黄色旋钮的杯盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "white cup lid",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到白色杯盖顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              912,
+              151
+            ]
+          },
+          {
+            "component": [
+              "white cup lid",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取白色杯盖",
+            "target_id": 0,
+            "coords": [
+              912,
+              151
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "black red thermometer gun",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑红色测温枪的握柄位置",
+            "target_id": 0,
+            "coords": [
+              912,
+              513
+            ]
+          },
+          {
+            "component": [
+              "black red thermometer gun",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑红色测温枪的握柄",
+            "target_id": 0,
+            "coords": [
+              912,
+              513
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

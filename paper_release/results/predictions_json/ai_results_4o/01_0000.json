@@ -1,0 +1,502 @@
+{
+  "source_file": "../dist/all\\01_0000.npz",
+  "image_filename": "01_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将香蕉放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉放入盆中",
+        "intent_analysis": {
+          "user_intent": "将香蕉放入盆中",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "香蕉主体"
+                },
+                {
+                  "id": 8,
+                  "part": "香蕉尾部"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手拿住编号(6,8)的香蕉，将其放入编号7的盆中，确保香蕉完全进入盆内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的上方，准备放置香蕉"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将香蕉放入蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 7
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 7
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 11
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中段实体表面，稳定且不易滑落",
+            "target_id": 7,
+            "coords": [
+              777,
+              301
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 7,
+            "coords": [
+              777,
+              301
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的上方，准备放置香蕉",
+            "target_id": 11,
+            "coords": [
+              105,
+              511
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将香蕉放入蓝色盆中",
+            "target_id": 7,
+            "coords": [
+              777,
+              301
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将梨放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将梨放入盆中",
+        "intent_analysis": {
+          "user_intent": "将梨放入盆中",
+          "objects": [
+            {
+              "name": "梨",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "梨"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "盆"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接将编号5的梨放入编号7的盆中，确保梨完全进入盆内，避免掉落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准梨的中部实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧梨的中部，确保抓取牢固"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "rim"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的上方，准备放置梨"
+            },
+            {
+              "component": [
+                "pear",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将梨放入蓝色盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "blue bowl",
+              "part": "rim",
+              "id": 6
+            },
+            {
+              "object": "pear",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准梨的中部实体表面，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              525,
+              91
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧梨的中部，确保抓取牢固",
+            "target_id": 1,
+            "coords": [
+              525,
+              91
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "rim"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的上方，准备放置梨",
+            "target_id": 6,
+            "coords": [
+              105,
+              511
+            ]
+          },
+          {
+            "component": [
+              "pear",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将梨放入蓝色盆中",
+            "target_id": 1,
+            "coords": [
+              525,
+              91
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将恐龙玩具放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将恐龙玩具放入盆中",
+        "intent_analysis": {
+          "user_intent": "将恐龙玩具放入盆中",
+          "objects": [
+            {
+              "name": "恐龙玩具",
+              "components": [
+                {
+                  "id": 26,
+                  "part": "玩具主体"
+                }
+              ]
+            },
+            {
+              "name": "盆",
+              "components": [
+                {
+                  "id": 7,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号26的恐龙玩具拾起并放入编号7的盆中，确保玩具完全进入盆内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "dinosaur toy",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准恐龙玩具的中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "dinosaur toy",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧恐龙玩具"
+            },
+            {
+              "component": [
+                "blue bowl",
+                "inside"
+              ],
+              "action": "move_to_point",
+              "description": "移动到蓝色盆的上方准备放置"
+            },
+            {
+              "component": [
+                "dinosaur toy",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将恐龙玩具放入盆中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "dinosaur toy",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "dinosaur toy",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "blue bowl",
+              "part": "inside",
+              "id": 2
+            },
+            {
+              "object": "dinosaur toy",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "dinosaur toy",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准恐龙玩具的中部实体表面，确保抓取稳定",
+            "target_id": 0,
+            "coords": [
+              217,
+              147
+            ]
+          },
+          {
+            "component": [
+              "dinosaur toy",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧恐龙玩具",
+            "target_id": 0,
+            "coords": [
+              217,
+              147
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "inside"
+            ],
+            "action": "move_to_point",
+            "description": "移动到蓝色盆的上方准备放置",
+            "target_id": 2,
+            "coords": [
+              105,
+              511
+            ]
+          },
+          {
+            "component": [
+              "dinosaur toy",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将恐龙玩具放入盆中",
+            "target_id": 0,
+            "coords": [
+              217,
+              147
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

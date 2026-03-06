@@ -1,0 +1,216 @@
+{
+  "source_file": "../dist/all\\120_Color.npz",
+  "image_filename": "120_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取右上方的电池",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右上方的电池",
+        "intent_analysis": {
+          "user_intent": "抓取右上方的电池",
+          "objects": [
+            {
+              "name": "电池",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "电池主体"
+                },
+                {
+                  "id": 8,
+                  "part": "电池标签"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号(2,8)的电池，注意轻拿轻放，避免损坏电池或标签。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准右上方电池的中部实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "battery",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧电池中部"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 4
+            },
+            {
+              "object": "battery",
+              "part": "middle",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准右上方电池的中部实体表面，确保抓取稳定",
+            "target_id": 4,
+            "coords": [
+              1113,
+              119
+            ]
+          },
+          {
+            "component": [
+              "battery",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧电池中部",
+            "target_id": 4,
+            "coords": [
+              1113,
+              119
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色锥子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色锥子",
+        "intent_analysis": {
+          "user_intent": "抓取黑色锥子",
+          "objects": [
+            {
+              "name": "黑色锥子",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "锥子主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号10的黑色锥子，注意握住锥子主体以确保安全。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "black cone",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准黑色锥子中段实体表面，确保抓取稳定"
+            },
+            {
+              "component": [
+                "black cone",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黑色锥子"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "black cone",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "black cone",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "black cone",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准黑色锥子中段实体表面，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              259,
+              343
+            ]
+          },
+          {
+            "component": [
+              "black cone",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑色锥子",
+            "target_id": 1,
+            "coords": [
+              259,
+              343
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

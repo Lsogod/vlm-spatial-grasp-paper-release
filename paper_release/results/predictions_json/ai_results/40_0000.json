@@ -1,0 +1,272 @@
+{
+  "source_file": "../dist/0-99\\40_0000.npz",
+  "image_filename": "40_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取蓝盆中的大宝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝盆中的大宝",
+        "intent_analysis": {
+          "user_intent": "从蓝色盆中抓取大宝牌乳液瓶",
+          "objects": [
+            {
+              "name": "大宝牌乳液瓶",
+              "components": [
+                {
+                  "id": 5,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 11,
+                  "part": "瓶盖"
+                }
+              ]
+            },
+            {
+              "name": "蓝色盆",
+              "components": [
+                {
+                  "id": 14,
+                  "part": "盆体"
+                }
+              ]
+            }
+          ],
+          "constraints": "先将蓝色盆稳定放置，确保不倾倒盆内其他物品；伸手抓住编号5的瓶身并配合握住编号11的瓶盖位置以防滑落；在抓取过程中避免碰撞盆内其他物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "Johnson's baby powder",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝盆中部的大宝爽身粉瓶身以便稳定抓取"
+            },
+            {
+              "component": [
+                "Johnson's baby powder",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大宝爽身粉瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "Johnson's baby powder",
+              "part": "body",
+              "id": 3
+            },
+            {
+              "object": "Johnson's baby powder",
+              "part": "body",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "Johnson's baby powder",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝盆中部的大宝爽身粉瓶身以便稳定抓取",
+            "target_id": 3,
+            "coords": [
+              606,
+              490
+            ]
+          },
+          {
+            "component": [
+              "Johnson's baby powder",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝爽身粉瓶身",
+            "target_id": 3,
+            "coords": [
+              606,
+              490
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黄色小样香水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黄色小样香水",
+        "intent_analysis": {
+          "user_intent": "抓取黄色小样香水",
+          "objects": [
+            {
+              "name": "黄色小样香水",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "香水瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手抓取编号3的香水瓶身，注意握持稳固以防滑落或洒出。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yellow sample perfume",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心附近无遮挡的黄色小样香水中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "yellow sample perfume",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧黄色小样香水以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yellow sample perfume",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "yellow sample perfume",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yellow sample perfume",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心附近无遮挡的黄色小样香水中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              686,
+              378
+            ]
+          },
+          {
+            "component": [
+              "yellow sample perfume",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黄色小样香水以防滑落",
+            "target_id": 1,
+            "coords": [
+              686,
+              378
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取红色头的洗浴用品",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取红色头的洗浴用品",
+        "final_action_plan": [
+          {
+            "component": [
+              "red-cap bath bottle",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准红色瓶盖的洗浴用品瓶身实体表面，瓶身稳定易抓",
+            "target_id": 3,
+            "coords": [
+              606,
+              490
+            ]
+          },
+          {
+            "component": [
+              "red-cap bath bottle",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧瓶身实体表面",
+            "target_id": 3,
+            "coords": [
+              606,
+              490
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

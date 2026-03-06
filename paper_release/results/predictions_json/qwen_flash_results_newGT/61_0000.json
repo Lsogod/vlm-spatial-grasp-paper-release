@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\61_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取河马",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippo",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到河马顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              627,
+              184
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马",
+            "target_id": 0,
+            "coords": [
+              627,
+              184
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取右上方的漱口水",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右上方的漱口水",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "mouthwash bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到漱口水瓶顶部的抓取位",
+            "target_id": 0,
+            "coords": [
+              899,
+              173
+            ]
+          },
+          {
+            "component": [
+              "mouthwash bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧漱口水瓶",
+            "target_id": 0,
+            "coords": [
+              899,
+              173
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取右边的大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右边的大象",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大象中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              963,
+              322
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象",
+            "target_id": 0,
+            "coords": [
+              963,
+              322
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

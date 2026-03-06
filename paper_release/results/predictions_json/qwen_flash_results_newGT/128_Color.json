@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/100-129\\128_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取蓝色冰淇淋",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色冰淇淋",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "ice cream",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到蓝色冰淇淋顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              518,
+              414
+            ]
+          },
+          {
+            "component": [
+              "ice cream",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹住蓝色冰淇淋",
+            "target_id": 0,
+            "coords": [
+              518,
+              414
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取中间带黄色旋钮的白色杯盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取中间带黄色旋钮的白色杯盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "white lid",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到白色杯盖顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              560,
+              112
+            ]
+          },
+          {
+            "component": [
+              "white lid",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧白色杯盖",
+            "target_id": 0,
+            "coords": [
+              560,
+              112
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "tea pot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶把手位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              1021,
+              115
+            ]
+          },
+          {
+            "component": [
+              "tea pot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶把手",
+            "target_id": 0,
+            "coords": [
+              1021,
+              115
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

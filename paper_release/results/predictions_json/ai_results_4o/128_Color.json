@@ -1,0 +1,327 @@
+{
+  "source_file": "../dist/all\\128_Color.npz",
+  "image_filename": "128_Color.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取蓝色冰淇淋",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取蓝色冰淇淋",
+        "intent_analysis": {
+          "user_intent": "抓取蓝色冰淇淋",
+          "objects": [
+            {
+              "name": "蓝色冰淇淋",
+              "components": [
+                {
+                  "id": 22,
+                  "part": "冰淇淋顶部"
+                },
+                {
+                  "id": 19,
+                  "part": "冰淇淋底座"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号22和19组成的蓝色冰淇淋，注意轻拿轻放以避免损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "blue ice cream",
+                "cone"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准蓝色冰淇淋的圆锥部分，确保抓取稳定"
+            },
+            {
+              "component": [
+                "blue ice cream",
+                "cone"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧蓝色冰淇淋的圆锥部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "blue ice cream",
+              "part": "cone",
+              "id": 1
+            },
+            {
+              "object": "blue ice cream",
+              "part": "cone",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "blue ice cream",
+              "cone"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准蓝色冰淇淋的圆锥部分，确保抓取稳定",
+            "target_id": 1,
+            "coords": [
+              511,
+              413
+            ]
+          },
+          {
+            "component": [
+              "blue ice cream",
+              "cone"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧蓝色冰淇淋的圆锥部分",
+            "target_id": 1,
+            "coords": [
+              511,
+              413
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取中间带黄色旋钮的白色杯盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取中间带黄色旋钮的白色杯盖",
+        "intent_analysis": {
+          "user_intent": "抓取中间带黄色旋钮的白色杯盖",
+          "objects": [
+            {
+              "name": "白色杯盖",
+              "components": [
+                {
+                  "id": 20,
+                  "part": "杯盖主体"
+                },
+                {
+                  "id": 16,
+                  "part": "黄色旋钮"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号20的白色杯盖，同时注意抓住编号16的黄色旋钮以确保稳定。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "white lid with yellow knob",
+                "sidewall"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准白色杯盖的侧壁实体部分，避免抓取黄色旋钮以确保稳定性"
+            },
+            {
+              "component": [
+                "white lid with yellow knob",
+                "sidewall"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧白色杯盖的侧壁实体部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "white lid with yellow knob",
+              "part": "sidewall",
+              "id": 2
+            },
+            {
+              "object": "white lid with yellow knob",
+              "part": "sidewall",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "white lid with yellow knob",
+              "sidewall"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准白色杯盖的侧壁实体部分，避免抓取黄色旋钮以确保稳定性",
+            "target_id": 2,
+            "coords": [
+              539,
+              189
+            ]
+          },
+          {
+            "component": [
+              "white lid with yellow knob",
+              "sidewall"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧白色杯盖的侧壁实体部分",
+            "target_id": 2,
+            "coords": [
+              539,
+              189
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 24,
+                  "part": "壶身"
+                },
+                {
+                  "id": 14,
+                  "part": "壶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号24的壶身即可，若需要打开壶盖，可先取下编号14的壶盖。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 5
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 5,
+            "coords": [
+              1015,
+              119
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 5,
+            "coords": [
+              1015,
+              119
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

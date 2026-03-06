@@ -1,0 +1,502 @@
+{
+  "source_file": "../dist/all\\131.npz",
+  "image_filename": "131.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将日光灯放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将日光灯放入红色方形盘中",
+        "intent_analysis": {
+          "user_intent": "将日光灯放入红色方形盘中",
+          "objects": [
+            {
+              "name": "日光灯",
+              "components": [
+                {
+                  "id": 16,
+                  "part": "灯管"
+                }
+              ]
+            },
+            {
+              "name": "红色方形盘",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "盘体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号16的日光灯水平拿起，小心避免碰撞或掉落，然后将其放入编号6的红色方形盘中，确保灯管完全位于盘内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "flashlight",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准日光灯中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "flashlight",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧日光灯中段实体表面"
+            },
+            {
+              "component": [
+                "red tray",
+                "middle"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红色方形盘的上方，准备放置日光灯"
+            },
+            {
+              "component": [
+                "flashlight",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将日光灯放入红色方形盘中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "flashlight",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "flashlight",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "red tray",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "flashlight",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "flashlight",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准日光灯中段实体表面，便于稳定抓取",
+            "target_id": 5,
+            "coords": [
+              413,
+              315
+            ]
+          },
+          {
+            "component": [
+              "flashlight",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧日光灯中段实体表面",
+            "target_id": 5,
+            "coords": [
+              413,
+              315
+            ]
+          },
+          {
+            "component": [
+              "red tray",
+              "middle"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的上方，准备放置日光灯",
+            "target_id": 1,
+            "coords": [
+              231,
+              119
+            ]
+          },
+          {
+            "component": [
+              "flashlight",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将日光灯放入红色方形盘中",
+            "target_id": 5,
+            "coords": [
+              413,
+              315
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将香蕉灯放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将香蕉灯放入红色方形盘中",
+        "intent_analysis": {
+          "user_intent": "将香蕉灯放入红色方形盘中",
+          "objects": [
+            {
+              "name": "香蕉灯",
+              "components": [
+                {
+                  "id": 11,
+                  "part": "灯体"
+                }
+              ]
+            },
+            {
+              "name": "红色方形盘",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "盘体"
+                }
+              ]
+            }
+          ],
+          "constraints": "将编号11的香蕉灯拾起，移动并放入编号6的红色方形盘中，确保灯体稳定放置在盘内。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana lamp",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉灯中段实体表面，稳定抓取"
+            },
+            {
+              "component": [
+                "banana lamp",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉灯"
+            },
+            {
+              "component": [
+                "red square tray",
+                "middle"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红色方形盘的上方，准备放置"
+            },
+            {
+              "component": [
+                "banana lamp",
+                "middle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将香蕉灯放入红色方形盘中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana lamp",
+              "part": "middle",
+              "id": 7
+            },
+            {
+              "object": "banana lamp",
+              "part": "middle",
+              "id": 7
+            },
+            {
+              "object": "red square tray",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "banana lamp",
+              "part": "middle",
+              "id": 7
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana lamp",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉灯中段实体表面，稳定抓取",
+            "target_id": 7,
+            "coords": [
+              511,
+              413
+            ]
+          },
+          {
+            "component": [
+              "banana lamp",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉灯",
+            "target_id": 7,
+            "coords": [
+              511,
+              413
+            ]
+          },
+          {
+            "component": [
+              "red square tray",
+              "middle"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的上方，准备放置",
+            "target_id": 1,
+            "coords": [
+              231,
+              119
+            ]
+          },
+          {
+            "component": [
+              "banana lamp",
+              "middle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将香蕉灯放入红色方形盘中",
+            "target_id": 7,
+            "coords": [
+              511,
+              413
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将水果刀放入红色方形盘中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将水果刀放入红色方形盘中",
+        "intent_analysis": {
+          "user_intent": "将水果刀放入红色方形盘中",
+          "objects": [
+            {
+              "name": "水果刀",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "刀刃"
+                },
+                {
+                  "id": 17,
+                  "part": "刀柄"
+                }
+              ]
+            },
+            {
+              "name": "红色方形盘",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "盘体"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号17的刀柄，将编号9的刀刃朝上，轻轻放入编号6的红色方形盘中，确保刀刃不接触盘边以避免损坏或危险。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水果刀的手柄部分，便于安全抓取"
+            },
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水果刀的手柄，确保稳定抓取"
+            },
+            {
+              "component": [
+                "red rectangular tray",
+                "middle"
+              ],
+              "action": "move_to_point",
+              "description": "移动到红色方形盘的中间上方，准备放置水果刀"
+            },
+            {
+              "component": [
+                "knife",
+                "handle"
+              ],
+              "action": "open_gripper",
+              "description": "松开夹爪，将水果刀放入红色方形盘中"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "任务完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 8
+            },
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 8
+            },
+            {
+              "object": "red rectangular tray",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "knife",
+              "part": "handle",
+              "id": 8
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水果刀的手柄部分，便于安全抓取",
+            "target_id": 8,
+            "coords": [
+              161,
+              385
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水果刀的手柄，确保稳定抓取",
+            "target_id": 8,
+            "coords": [
+              161,
+              385
+            ]
+          },
+          {
+            "component": [
+              "red rectangular tray",
+              "middle"
+            ],
+            "action": "move_to_point",
+            "description": "移动到红色方形盘的中间上方，准备放置水果刀",
+            "target_id": 3,
+            "coords": [
+              133,
+              203
+            ]
+          },
+          {
+            "component": [
+              "knife",
+              "handle"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将水果刀放入红色方形盘中",
+            "target_id": 8,
+            "coords": [
+              161,
+              385
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "任务完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

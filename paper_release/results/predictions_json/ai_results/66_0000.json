@@ -1,0 +1,263 @@
+{
+  "source_file": "../dist/0-99\\66_0000.npz",
+  "image_filename": "66_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取鼠标",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取鼠标",
+        "intent_analysis": {
+          "user_intent": "抓取鼠标",
+          "objects": [
+            {
+              "name": "鼠标",
+              "components": [
+                {
+                  "id": 17,
+                  "part": "鼠标主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "确保周围物体（如编号3的瓶子和编号18的螺丝刀）不阻挡鼠标，伸手抓住编号17的鼠标主体两侧，避免用力过猛以防损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准鼠标中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "mouse",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧鼠标防止滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "mouse",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准鼠标中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              824,
+              502
+            ]
+          },
+          {
+            "component": [
+              "mouse",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧鼠标防止滑落",
+            "target_id": 1,
+            "coords": [
+              824,
+              502
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取好爸爸洗衣液",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取好爸爸洗衣液",
+        "intent_analysis": {
+          "user_intent": "抓取好爸爸洗衣液",
+          "objects": [
+            {
+              "name": "好爸爸洗衣液",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "量杯盖"
+                },
+                {
+                  "id": 3,
+                  "part": "瓶身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号3的瓶身以确保稳定，可先确认编号1的量杯盖是否拧紧以防液体泄漏，然后将洗衣液整体提起。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "好爸爸洗衣液",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准好爸爸洗衣液瓶身中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "好爸爸洗衣液",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧好爸爸洗衣液瓶身"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "好爸爸洗衣液",
+              "part": "body",
+              "id": 1
+            },
+            {
+              "object": "好爸爸洗衣液",
+              "part": "body",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "好爸爸洗衣液",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准好爸爸洗衣液瓶身中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              525,
+              553
+            ]
+          },
+          {
+            "component": [
+              "好爸爸洗衣液",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧好爸爸洗衣液瓶身",
+            "target_id": 1,
+            "coords": [
+              525,
+              553
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取海飞丝洗发露",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取海飞丝洗发露",
+        "final_action_plan": [
+          {
+            "component": [
+              "海飞丝洗发露",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准海飞丝洗发露瓶身实体表面，避开瓶口确保稳定抓取",
+            "target_id": 1,
+            "coords": [
+              973,
+              688
+            ]
+          },
+          {
+            "component": [
+              "海飞丝洗发露",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧瓶身实体表面",
+            "target_id": 1,
+            "coords": [
+              973,
+              688
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    }
+  ]
+}

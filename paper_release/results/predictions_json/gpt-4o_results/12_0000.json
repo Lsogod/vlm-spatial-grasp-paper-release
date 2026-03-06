@@ -1,0 +1,203 @@
+{
+  "source_file": "../dist/0-99\\12_0000.npz",
+  "image_filename": "12_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取双面胶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取双面胶",
+        "final_action_plan": [
+          {
+            "component": [
+              "double-sided tape",
+              "outer rim"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心附近无遮挡的双面胶外圈以便抓取",
+            "target_id": 2,
+            "coords": [
+              567,
+              371
+            ]
+          },
+          {
+            "component": [
+              "double-sided tape",
+              "outer rim"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧双面胶",
+            "target_id": 2,
+            "coords": [
+              567,
+              371
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取李子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子",
+        "final_action_plan": [
+          {
+            "component": [
+              "purple plum",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像中心位置无遮挡的紫色李子中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              604,
+              166
+            ]
+          },
+          {
+            "component": [
+              "purple plum",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧紫色李子",
+            "target_id": 1,
+            "coords": [
+              604,
+              166
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取犀牛玩具",
+          "objects": [
+            {
+              "name": "犀牛玩具",
+              "components": [
+                {
+                  "id": 6,
+                  "part": "玩具主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号6的犀牛玩具，注意避免碰倒周围的物品。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准犀牛玩具的中部以便抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧犀牛玩具"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准犀牛玩具的中部以便抓取",
+            "target_id": 1,
+            "coords": [
+              749,
+              224
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧犀牛玩具",
+            "target_id": 1,
+            "coords": [
+              749,
+              224
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

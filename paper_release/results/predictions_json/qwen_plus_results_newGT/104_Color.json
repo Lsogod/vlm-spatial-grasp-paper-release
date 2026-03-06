@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/100-129\\104_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取白色带黄色旋钮的杯盖",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取白色带黄色旋钮的杯盖",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "white lid",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到白色带黄色旋钮杯盖的中心抓取姿态",
+            "target_id": 0,
+            "coords": [
+              870,
+              159
+            ]
+          },
+          {
+            "component": [
+              "white lid",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取杯盖",
+            "target_id": 0,
+            "coords": [
+              870,
+              159
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "thermometer",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑红色测温枪中部抓取姿态",
+            "target_id": 0,
+            "coords": [
+              951,
+              522
+            ]
+          },
+          {
+            "component": [
+              "thermometer",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取测温枪",
+            "target_id": 0,
+            "coords": [
+              951,
+              522
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回零位",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取遥控器",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取遥控器",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote control",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              645,
+              243
+            ]
+          },
+          {
+            "component": [
+              "remote control",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取遥控器",
+            "target_id": 0,
+            "coords": [
+              645,
+              243
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

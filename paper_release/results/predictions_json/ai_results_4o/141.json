@@ -1,0 +1,323 @@
+{
+  "source_file": "../dist/all\\141.npz",
+  "image_filename": "141.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取可乐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取可乐",
+        "intent_analysis": {
+          "user_intent": "抓取可乐",
+          "objects": [
+            {
+              "name": "可乐",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "可乐罐"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的可乐罐，注意避免倾倒或挤压罐体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "cola can",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准可乐罐中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "cola can",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧可乐罐中段以确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "cola can",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "cola can",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "cola can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准可乐罐中段实体表面，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              175,
+              161
+            ]
+          },
+          {
+            "component": [
+              "cola can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧可乐罐中段以确保抓取牢固",
+            "target_id": 2,
+            "coords": [
+              175,
+              161
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取可乐",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取可乐",
+        "intent_analysis": {
+          "user_intent": "抓取可乐",
+          "objects": [
+            {
+              "name": "可乐罐",
+              "components": [
+                {
+                  "id": 1,
+                  "part": "罐体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号1的可乐罐，注意握持稳固以防滑落。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "cola can",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准可乐罐中段实体表面，便于稳定抓取"
+            },
+            {
+              "component": [
+                "cola can",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧可乐罐中段实体表面"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "cola can",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "cola can",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "cola can",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准可乐罐中段实体表面，便于稳定抓取",
+            "target_id": 2,
+            "coords": [
+              175,
+              161
+            ]
+          },
+          {
+            "component": [
+              "cola can",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧可乐罐中段实体表面",
+            "target_id": 2,
+            "coords": [
+              175,
+              161
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "intent_analysis": {
+          "user_intent": "抓取水壶",
+          "objects": [
+            {
+              "name": "水壶",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "壶身"
+                },
+                {
+                  "id": 11,
+                  "part": "壶盖"
+                },
+                {
+                  "id": 6,
+                  "part": "壶盖旋钮"
+                }
+              ]
+            }
+          ],
+          "constraints": "抓取水壶时，可以直接抓住编号3的壶身。如果需要打开壶盖，先旋转编号6的壶盖旋钮，再取下编号11的壶盖。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准水壶的把手部位，便于稳定抓取"
+            },
+            {
+              "component": [
+                "kettle",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧水壶的把手，确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 3
+            },
+            {
+              "object": "kettle",
+              "part": "handle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准水壶的把手部位，便于稳定抓取",
+            "target_id": 3,
+            "coords": [
+              357,
+              189
+            ]
+          },
+          {
+            "component": [
+              "kettle",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧水壶的把手，确保抓取牢固",
+            "target_id": 3,
+            "coords": [
+              357,
+              189
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

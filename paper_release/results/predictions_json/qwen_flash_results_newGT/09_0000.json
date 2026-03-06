@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\09_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取洗面奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗面奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "face wash bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗面奶瓶顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              448,
+              502
+            ]
+          },
+          {
+            "component": [
+              "face wash bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗面奶瓶顶部",
+            "target_id": 0,
+            "coords": [
+              448,
+              502
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取洗发露",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取洗发露",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "shampoo bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到洗发露瓶顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              448,
+              502
+            ]
+          },
+          {
+            "component": [
+              "shampoo bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧洗发露瓶",
+            "target_id": 0,
+            "coords": [
+              448,
+              502
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取李子",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取李子",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "plum",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到李子顶部准备抓取",
+            "target_id": 0,
+            "coords": [
+              308,
+              482
+            ]
+          },
+          {
+            "component": [
+              "plum",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧李子",
+            "target_id": 0,
+            "coords": [
+              308,
+              482
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

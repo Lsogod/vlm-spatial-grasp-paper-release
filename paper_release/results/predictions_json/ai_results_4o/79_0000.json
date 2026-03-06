@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/all\\79_0000.npz",
+  "image_filename": "79_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取螺丝刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺丝刀",
+        "intent_analysis": {
+          "user_intent": "抓取螺丝刀",
+          "objects": [
+            {
+              "name": "螺丝刀",
+              "components": [
+                {
+                  "id": 19,
+                  "part": "螺丝刀主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号19的螺丝刀主体，注意握住手柄部分以确保安全。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "screwdriver",
+                "handle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准螺丝刀的手柄部分，便于稳定抓取"
+            },
+            {
+              "component": [
+                "screwdriver",
+                "handle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧螺丝刀的手柄部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "screwdriver",
+              "part": "handle",
+              "id": 1
+            },
+            {
+              "object": "screwdriver",
+              "part": "handle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准螺丝刀的手柄部分，便于稳定抓取",
+            "target_id": 1,
+            "coords": [
+              805,
+              105
+            ]
+          },
+          {
+            "component": [
+              "screwdriver",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝刀的手柄部分",
+            "target_id": 1,
+            "coords": [
+              805,
+              105
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 34,
+                  "part": "香蕉主体"
+                },
+                {
+                  "id": 6,
+                  "part": "香蕉柄"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓住编号34的香蕉主体或编号6的香蕉柄，确保抓取时用力适中以避免损坏香蕉。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准香蕉中段实体表面，稳定且不易滑落"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 5
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 5
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准香蕉中段实体表面，稳定且不易滑落",
+            "target_id": 5,
+            "coords": [
+              455,
+              609
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 5,
+            "coords": [
+              455,
+              609
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大象",
+        "intent_analysis": {
+          "user_intent": "抓取大象玩具",
+          "objects": [
+            {
+              "name": "大象玩具",
+              "components": [
+                {
+                  "id": 8,
+                  "part": "玩具主体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接抓取编号8的大象玩具，注意避免碰到周围的物体。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "elephant",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准大象主体部分，稳定且易于抓取"
+            },
+            {
+              "component": [
+                "elephant",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大象主体部分"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回零"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "elephant",
+              "part": "body",
+              "id": 3
+            },
+            {
+              "object": "elephant",
+              "part": "body",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "elephant",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准大象主体部分，稳定且易于抓取",
+            "target_id": 3,
+            "coords": [
+              329,
+              329
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大象主体部分",
+            "target_id": 3,
+            "coords": [
+              329,
+              329
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

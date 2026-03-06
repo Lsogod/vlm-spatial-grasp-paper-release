@@ -1,0 +1,327 @@
+{
+  "source_file": "../dist/0-99\\20_0000.npz",
+  "image_filename": "20_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "intent_analysis": {
+          "user_intent": "抓取香蕉",
+          "objects": [
+            {
+              "name": "香蕉",
+              "components": [
+                {
+                  "id": 3,
+                  "part": "香蕉中段"
+                },
+                {
+                  "id": 20,
+                  "part": "香蕉尾端"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或工具从编号(3,20)位置抓取香蕉，注意保持握持稳定，避免用力过大压坏香蕉。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准图像中心位置无遮挡的香蕉中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "banana",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧香蕉以防滑落"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 4
+            },
+            {
+              "object": "banana",
+              "part": "middle",
+              "id": 4
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准图像中心位置无遮挡的香蕉中部以便稳定抓取",
+            "target_id": 4,
+            "coords": [
+              434,
+              266
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉以防滑落",
+            "target_id": 4,
+            "coords": [
+              434,
+              266
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取酸奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取酸奶",
+        "intent_analysis": {
+          "user_intent": "抓取酸奶",
+          "objects": [
+            {
+              "name": "酸奶杯",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "杯身"
+                },
+                {
+                  "id": 21,
+                  "part": "杯底"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手或夹具抓取编号(2,21)的酸奶杯，保持竖直避免倾倒，力度适中防止挤压变形。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "yogurt cup",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "选择图像左下方无遮挡的橙色酸奶杯中部进行对准抓取"
+            },
+            {
+              "component": [
+                "yogurt cup",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧酸奶杯以确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "yogurt cup",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "yogurt cup",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "yogurt cup",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "选择图像左下方无遮挡的橙色酸奶杯中部进行对准抓取",
+            "target_id": 1,
+            "coords": [
+              343,
+              483
+            ]
+          },
+          {
+            "component": [
+              "yogurt cup",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧酸奶杯以确保稳定抓取",
+            "target_id": 1,
+            "coords": [
+              343,
+              483
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取大宝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝",
+        "intent_analysis": {
+          "user_intent": "抓取大宝牌护肤品",
+          "objects": [
+            {
+              "name": "大宝护肤品瓶",
+              "components": [
+                {
+                  "id": 9,
+                  "part": "瓶身"
+                },
+                {
+                  "id": 8,
+                  "part": "瓶盖"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手握住编号9的瓶身，确保瓶盖编号8朝上以防内容物泄漏，保持瓶身竖直状态进行抓取。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "Dabao bottle",
+                "body"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像下方的大宝瓶主体，位置居中且无遮挡，便于稳定抓取"
+            },
+            {
+              "component": [
+                "Dabao bottle",
+                "body"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧大宝瓶主体以确保稳固抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "Dabao bottle",
+              "part": "body",
+              "id": 0
+            },
+            {
+              "object": "Dabao bottle",
+              "part": "body",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "Dabao bottle",
+              "body"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像下方的大宝瓶主体，位置居中且无遮挡，便于稳定抓取",
+            "target_id": 0,
+            "coords": [
+              567,
+              553
+            ]
+          },
+          {
+            "component": [
+              "Dabao bottle",
+              "body"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝瓶主体以确保稳固抓取",
+            "target_id": 0,
+            "coords": [
+              567,
+              553
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

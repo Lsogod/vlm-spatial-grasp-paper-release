@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\26_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将牙膏放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将牙膏放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "DARLIE",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到牙膏中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              591,
+              277
+            ]
+          },
+          {
+            "component": [
+              "DARLIE",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏",
+            "target_id": 0,
+            "coords": [
+              591,
+              277
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将牙膏移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              837,
+              352
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开牙膏，使其落入盆中",
+            "target_id": 1,
+            "coords": [
+              837,
+              352
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "将螺丝放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将螺丝放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "screw",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到螺丝上方准备抓取",
+            "target_id": 0,
+            "coords": [
+              567,
+              616
+            ]
+          },
+          {
+            "component": [
+              "screw",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺丝",
+            "target_id": 0,
+            "coords": [
+              567,
+              616
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将螺丝移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              837,
+              356
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将螺丝放入盆中",
+            "target_id": 1,
+            "coords": [
+              837,
+              356
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将黑色头的洗面奶放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将黑色头的洗面奶放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "DARLIE",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑头洗面奶中部准备抓取",
+            "target_id": 0,
+            "coords": [
+              592,
+              277
+            ]
+          },
+          {
+            "component": [
+              "DARLIE",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧黑头洗面奶",
+            "target_id": 0,
+            "coords": [
+              592,
+              277
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将洗面奶移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              837,
+              356
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开洗面奶，使其落入盆中",
+            "target_id": 1,
+            "coords": [
+              837,
+              356
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

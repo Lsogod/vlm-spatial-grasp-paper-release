@@ -1,0 +1,181 @@
+{
+  "source_file": "../dist/all\\116_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取水壶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取水壶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到水壶的把手位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              1216,
+              144
+            ]
+          },
+          {
+            "component": [
+              "teapot",
+              "handle"
+            ],
+            "action": "close_gripper",
+            "description": "抓紧水壶的把手",
+            "target_id": 0,
+            "coords": [
+              1216,
+              144
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "将机械臂移回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑色美工刀",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑色美工刀",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "black cutter",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑色美工刀的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              742,
+              324
+            ]
+          },
+          {
+            "component": [
+              "black cutter",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取黑色美工刀",
+            "target_id": 0,
+            "coords": [
+              742,
+              324
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "将遥控器放到白色储物盒上",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将遥控器放到白色储物盒上",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "remote",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到遥控器的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              102,
+              129
+            ]
+          },
+          {
+            "component": [
+              "remote",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "抓取遥控器",
+            "target_id": 0,
+            "coords": [
+              102,
+              129
+            ]
+          },
+          {
+            "component": [
+              "white box",
+              "top"
+            ],
+            "action": "move_to_point",
+            "description": "移动到白色储物盒的顶部位置",
+            "target_id": 1,
+            "coords": [
+              448,
+              180
+            ]
+          },
+          {
+            "component": [
+              "white box",
+              "top"
+            ],
+            "action": "open_gripper",
+            "description": "释放遥控器到白色储物盒上",
+            "target_id": 1,
+            "coords": [
+              448,
+              180
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

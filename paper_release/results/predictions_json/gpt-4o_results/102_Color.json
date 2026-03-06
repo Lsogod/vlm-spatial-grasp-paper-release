@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/all\\102_Color.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取冰淇淋甜筒",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取冰淇淋甜筒",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "ice cream cone",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到冰淇淋甜筒的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              742,
+              288
+            ]
+          },
+          {
+            "component": [
+              "ice cream cone",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取冰淇淋甜筒",
+            "target_id": 0,
+            "coords": [
+              742,
+              288
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取黑红色测温枪",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取黑红色测温枪",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "black red thermometer gun",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到黑红色测温枪的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              960,
+              540
+            ]
+          },
+          {
+            "component": [
+              "black red thermometer gun",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取黑红色测温枪",
+            "target_id": 0,
+            "coords": [
+              960,
+              540
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取巧克力",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取巧克力",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "chocolate",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到巧克力的抓取位姿",
+            "target_id": 0,
+            "coords": [
+              480,
+              360
+            ]
+          },
+          {
+            "component": [
+              "chocolate",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "闭合夹爪抓取巧克力",
+            "target_id": 0,
+            "coords": [
+              480,
+              360
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

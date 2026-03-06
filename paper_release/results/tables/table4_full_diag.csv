@@ -1,0 +1,7 @@
+﻿Method,npz_matched,tasks_seen,tasks_used,Ng,missing_coord_g,oob_coord_g,no_region_g,Np,missing_coord_p,oob_coord_p,no_region_p
+E1-GPT-5 (Free-coordinate),160,479,479,479,0,0,0,107,0,0,0
+E1-GPT-4o (Free-coordinate),160,479,479,479,1,0,0,107,0,0,0
+E2-Qwen3-VL-Plus (Trained),160,479,479,479,0,0,0,107,0,0,0
+E2-Qwen3-VL-Flash (Trained),160,479,479,479,0,0,0,109,0,0,2
+"E3-GPT-5 (SVP-Full, Ours)",100,300,300,300,3,0,0,67,0,0,0
+"E3-GPT-4o (SVP-Full, Ours)",160,479,479,480,21,0,0,107,4,0,1

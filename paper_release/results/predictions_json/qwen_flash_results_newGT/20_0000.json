@@ -1,0 +1,155 @@
+{
+  "source_file": "../dist/0-99\\20_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取香蕉",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取香蕉",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到香蕉中间位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              431,
+              277
+            ]
+          },
+          {
+            "component": [
+              "banana",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧香蕉",
+            "target_id": 0,
+            "coords": [
+              431,
+              277
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取酸奶",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取酸奶",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "yogurt cup",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到酸奶杯顶部抓取位置",
+            "target_id": 0,
+            "coords": [
+              337,
+              525
+            ]
+          },
+          {
+            "component": [
+              "yogurt cup",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧酸奶杯",
+            "target_id": 0,
+            "coords": [
+              337,
+              525
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂回到初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取大宝",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取大宝",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "Dabao bottle",
+              "top"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到大宝瓶子顶部的抓取姿态",
+            "target_id": 0,
+            "coords": [
+              576,
+              601
+            ]
+          },
+          {
+            "component": [
+              "Dabao bottle",
+              "top"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧大宝瓶子",
+            "target_id": 0,
+            "coords": [
+              576,
+              601
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

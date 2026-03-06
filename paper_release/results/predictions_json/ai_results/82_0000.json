@@ -1,0 +1,259 @@
+{
+  "source_file": "../dist/0-99\\82_0000.npz",
+  "image_filename": "82_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取螺栓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺栓",
+        "final_action_plan": [
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准螺栓中段实体表面，便于稳定夹持",
+            "target_id": 1,
+            "coords": [
+              287,
+              203
+            ]
+          },
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺栓中段实体表面",
+            "target_id": 1,
+            "coords": [
+              287,
+              203
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回零",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      },
+      "is_retry": true
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取中间位置的犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取中间位置的犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取中间位置的犀牛模型",
+          "objects": [
+            {
+              "name": "犀牛模型",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "犀牛整体"
+                }
+              ]
+            }
+          ],
+          "constraints": "使用合适的抓取工具或手部直接抓取编号4的犀牛模型，注意从身体中部或腿部下方稳固握住，避免用力过猛导致模型损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中间且无遮挡的灰色犀牛中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧灰色犀牛中部确保稳固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中间且无遮挡的灰色犀牛中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              766,
+              340
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色犀牛中部确保稳固",
+            "target_id": 1,
+            "coords": [
+              766,
+              340
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取犀牛下面的河马",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取犀牛下面的河马",
+        "intent_analysis": {
+          "user_intent": "抓取犀牛下面的河马",
+          "objects": [
+            {
+              "name": "河马",
+              "components": [
+                {
+                  "id": 24,
+                  "part": "河马全身"
+                }
+              ]
+            }
+          ],
+          "constraints": "用手从犀牛（编号4）下方伸过去，抓住编号24的河马全身，注意避开周围的剪刀（编号27）等尖锐物品以防受伤。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于犀牛下方的河马中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "hippopotamus",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧河马确保抓取牢固"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取完成后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 1
+            },
+            {
+              "object": "hippopotamus",
+              "part": "middle",
+              "id": 1
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于犀牛下方的河马中部以便稳定抓取",
+            "target_id": 1,
+            "coords": [
+              924,
+              427
+            ]
+          },
+          {
+            "component": [
+              "hippopotamus",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧河马确保抓取牢固",
+            "target_id": 1,
+            "coords": [
+              924,
+              427
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取完成后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

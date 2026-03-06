@@ -1,0 +1,233 @@
+{
+  "source_file": "../dist/0-99\\87_0000.npz",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "将棕色河马放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "将棕色河马放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "hippo",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到棕色河马中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              304,
+              365
+            ]
+          },
+          {
+            "component": [
+              "hippo",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧棕色河马",
+            "target_id": 0,
+            "coords": [
+              304,
+              365
+            ]
+          },
+          {
+            "component": [
+              "bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将河马移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              599,
+              302
+            ]
+          },
+          {
+            "component": [
+              "bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将河马放入盆中",
+            "target_id": 1,
+            "coords": [
+              599,
+              302
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取灰色犀牛放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取灰色犀牛放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "rhino",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到灰色犀牛中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              908,
+              106
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧灰色犀牛",
+            "target_id": 0,
+            "coords": [
+              908,
+              106
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将犀牛移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              599,
+              307
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开夹爪，将犀牛放入盆中",
+            "target_id": 1,
+            "coords": [
+              599,
+              307
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取牙膏放入盆中",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取牙膏放入盆中",
+        "image_size": [
+          1280,
+          720
+        ],
+        "action_components": [
+          {
+            "component": [
+              "toothpaste",
+              "center"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "移动到牙膏中心位置准备抓取",
+            "target_id": 0,
+            "coords": [
+              1002,
+              461
+            ]
+          },
+          {
+            "component": [
+              "toothpaste",
+              "center"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧牙膏",
+            "target_id": 0,
+            "coords": [
+              1002,
+              461
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "move_to_point",
+            "description": "将牙膏移至蓝色盆中心上方",
+            "target_id": 1,
+            "coords": [
+              599,
+              306
+            ]
+          },
+          {
+            "component": [
+              "blue bowl",
+              "center"
+            ],
+            "action": "open_gripper",
+            "description": "松开牙膏，使其落入盆中",
+            "target_id": 1,
+            "coords": [
+              599,
+              306
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "机械臂返回初始位置",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}

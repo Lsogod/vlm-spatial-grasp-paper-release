@@ -1,0 +1,319 @@
+{
+  "source_file": "../dist/0-99\\57_0000.npz",
+  "image_filename": "57_0000.png",
+  "results": [
+    {
+      "task_index": 0,
+      "original_instruction": "抓取左边的犀牛",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取左边的犀牛",
+        "intent_analysis": {
+          "user_intent": "抓取左边的犀牛模型",
+          "objects": [
+            {
+              "name": "犀牛模型",
+              "components": [
+                {
+                  "id": 2,
+                  "part": "犀牛身体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手或工具抓取编号2的犀牛身体，注意保持稳定力度以防滑落或损坏模型。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准左侧犀牛中部以便稳定抓取"
+            },
+            {
+              "component": [
+                "rhino",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧左侧犀牛"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            },
+            {
+              "object": "rhino",
+              "part": "middle",
+              "id": 2
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准左侧犀牛中部以便稳定抓取",
+            "target_id": 2,
+            "coords": [
+              357,
+              376
+            ]
+          },
+          {
+            "component": [
+              "rhino",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧左侧犀牛",
+            "target_id": 2,
+            "coords": [
+              357,
+              376
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 1,
+      "original_instruction": "抓取螺栓",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取螺栓",
+        "intent_analysis": {
+          "user_intent": "抓取螺栓",
+          "objects": [
+            {
+              "name": "螺栓",
+              "components": [
+                {
+                  "id": 10,
+                  "part": "螺栓本体"
+                }
+              ]
+            }
+          ],
+          "constraints": "直接用手或工具抓取编号10的螺栓，注意保持手部稳定，避免滑落或滚动到其他位置。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "bolt",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准位于图像中心偏右且无遮挡的螺栓中部以便抓取"
+            },
+            {
+              "component": [
+                "bolt",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧螺栓以确保稳定抓取"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "bolt",
+              "part": "middle",
+              "id": 0
+            },
+            {
+              "object": "bolt",
+              "part": "middle",
+              "id": 0
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准位于图像中心偏右且无遮挡的螺栓中部以便抓取",
+            "target_id": 0,
+            "coords": [
+              816,
+              276
+            ]
+          },
+          {
+            "component": [
+              "bolt",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧螺栓以确保稳定抓取",
+            "target_id": 0,
+            "coords": [
+              816,
+              276
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    },
+    {
+      "task_index": 2,
+      "original_instruction": "抓取右边的大象",
+      "ai_inference": {
+        "status": "success",
+        "instruction": "抓取右边的大象",
+        "intent_analysis": {
+          "user_intent": "抓取右边的大象玩具",
+          "objects": [
+            {
+              "name": "大象玩具",
+              "components": [
+                {
+                  "id": 4,
+                  "part": "大象身体"
+                },
+                {
+                  "id": 10,
+                  "part": "大象尾巴"
+                }
+              ]
+            }
+          ],
+          "constraints": "先确保编号10的大象尾巴与编号4的大象身体连接牢固，避免在抓取过程中脱落。用手或工具从大象身体稳固部位抓取，避免用力过猛导致损坏。"
+        },
+        "raw_plan": {
+          "action_components": [
+            {
+              "component": [
+                "elephant",
+                "middle"
+              ],
+              "action": "move_to_grasp_pose",
+              "description": "对准右侧大象中部以便稳定抓取，位置无遮挡且靠近图像中心右侧"
+            },
+            {
+              "component": [
+                "elephant",
+                "middle"
+              ],
+              "action": "close_gripper",
+              "description": "夹紧右侧大象"
+            },
+            {
+              "component": [
+                "arm",
+                "base"
+              ],
+              "action": "back_to_zero",
+              "description": "抓取成功后回到初始位姿"
+            }
+          ]
+        },
+        "id_mapping": {
+          "results": [
+            {
+              "object": "elephant",
+              "part": "middle",
+              "id": 3
+            },
+            {
+              "object": "elephant",
+              "part": "middle",
+              "id": 3
+            }
+          ]
+        },
+        "final_action_plan": [
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "move_to_grasp_pose",
+            "description": "对准右侧大象中部以便稳定抓取，位置无遮挡且靠近图像中心右侧",
+            "target_id": 3,
+            "coords": [
+              847,
+              385
+            ]
+          },
+          {
+            "component": [
+              "elephant",
+              "middle"
+            ],
+            "action": "close_gripper",
+            "description": "夹紧右侧大象",
+            "target_id": 3,
+            "coords": [
+              847,
+              385
+            ]
+          },
+          {
+            "component": [
+              "arm",
+              "base"
+            ],
+            "action": "back_to_zero",
+            "description": "抓取成功后回到初始位姿",
+            "target_id": null,
+            "coords": null
+          }
+        ]
+      }
+    }
+  ]
+}
